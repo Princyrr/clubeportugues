@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-20">
+    <div className="pt-32">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-green-800 to-red-800">
         <div className="absolute inset-0 bg-black/20" />
@@ -108,9 +108,9 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Horário de Funcionamento</h3>
                     <p className="text-gray-600">
-                      Segunda a Sexta: 8h às 22h<br />
+                      Segunda a Sexta: 8h às 20h<br />
                       Sábado e Domingo: 8h às 12h<br />
-                      Feriados: 10h às 18h
+                      Feriados: 8h às 12h
                     </p>
                   </div>
                 </div>

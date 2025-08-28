@@ -57,7 +57,7 @@ const NewsDetail = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-32">
       {/* Back Button */}
       <section className="py-6 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

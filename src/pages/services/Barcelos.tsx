@@ -1,55 +1,55 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Coffee, Clock, MapPin, Heart, Users, Utensils } from 'lucide-react';
+import { Clock, MapPin, Heart, Users, Utensils } from 'lucide-react';
 
 const Barcelos = () => {
   const menuItems = [
     {
-      category: 'Cafés Especiais',
+      category: 'Almoço Comercial',
       items: [
-        { name: 'Café da Bica', description: 'Café expresso tradicional português', price: 'R$ 6,00' },
-        { name: 'Galão', description: 'Café com leite no copo alto', price: 'R$ 8,00' },
-        { name: 'Meia de Leite', description: 'Café com leite na chávena', price: 'R$ 7,00' }
+        { name: 'Filé à Parmegiana', description: 'Filé de carne com molho especial, arroz e fritas', price: 'R$ 28,00' },
+        { name: 'Frango Grelhado', description: 'Peito de frango grelhado com legumes e arroz', price: 'R$ 25,00' },
+        { name: 'Bacalhau à Moda', description: 'Bacalhau ao forno com batatas e cebola', price: 'R$ 32,00' }
       ]
     },
     {
-      category: 'Doces e Salgados',
+      category: 'Lanches',
       items: [
-        { name: 'Pastel de Nata', description: 'Tradicional pastel de nata quentinho', price: 'R$ 5,00' },
-        { name: 'Bola de Berlim', description: 'Doce frito com creme pasteleiro', price: 'R$ 7,00' },
-        { name: 'Rissol de Camarão', description: 'Salgado crocante com recheio de camarão', price: 'R$ 8,00' }
+        { name: 'Hambúrguer Artesanal', description: 'Hambúrguer bovino com queijo e molho especial', price: 'R$ 22,00' },
+        { name: 'Sanduíche de Frango', description: 'Frango desfiado, queijo e salada no pão artesanal', price: 'R$ 18,00' },
+        { name: 'Hot Dog Especial', description: 'Cachorro-quente completo com molho especial', price: 'R$ 15,00' }
       ]
     },
     {
-      category: 'Bebidas Refrescantes',
+      category: 'Bebidas e Drinks',
       items: [
-        { name: 'Sumol', description: 'Refrigerante português sabor laranja', price: 'R$ 6,00' },
-        { name: 'Água das Pedras', description: 'Água mineral com gás portuguesa', price: 'R$ 5,00' },
-        { name: 'Imperial', description: 'Cerveja portuguesa gelada', price: 'R$ 8,00' }
+        { name: 'Cerveja Gelada', description: 'Cerveja nacional ou importada', price: 'R$ 8,00' },
+        { name: 'Caipirinha', description: 'Tradicional drink brasileiro com limão e cachaça', price: 'R$ 15,00' },
+        { name: 'Refrigerante', description: 'Variedade de sabores', price: 'R$ 6,00' }
       ]
     }
   ];
 
   const ambiences = [
     {
-      title: 'Ambiente Acolhedor',
-      description: 'Um espaço que recria a atmosfera das cafeterias tradicionais de Portugal',
+      title: 'Ambiente Descontraído',
+      description: 'Perfeito para relaxar após o trabalho ou se encontrar com amigos',
       icon: Heart
     },
     {
-      title: 'Encontro Social',
-      description: 'Local perfeito para conversar com amigos e fazer novos contatos',
+      title: 'Encontros e Convivência',
+      description: 'Espaço ideal para reuniões, happy hours e confraternizações',
       icon: Users
     },
     {
-      title: 'Sabores Autênticos',
-      description: 'Receitas originais trazidas diretamente de Portugal',
+      title: 'Sabor Autêntico',
+      description: 'Petiscos, pratos e drinks preparados com cuidado e qualidade',
       icon: Utensils
     }
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-32">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
@@ -67,12 +67,12 @@ const Barcelos = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <Coffee className="w-16 h-16 text-yellow-300 mx-auto mb-6" />
+            <Utensils className="w-16 h-16 text-yellow-300 mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Cafeteria <span className="text-yellow-300">Barcelos</span>
+              Bar <span className="text-yellow-300">Barcelos</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
-              O melhor do café português no coração do clube. Tradição, sabor e aconchego em cada xícara.
+              Localizado no Clube Português do Recife, oferecemos almoço comercial, lanches, petiscos e drinks refrescantes em um ambiente acolhedor.
             </p>
             <button className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black font-semibold px-8 py-4 rounded-lg hover:from-yellow-300 hover:to-amber-400 transition-all duration-300 transform hover:scale-105 shadow-lg">
               Conheça Nosso Cardápio
@@ -92,22 +92,18 @@ const Barcelos = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                A Essência do <span className="text-amber-600">Café Português</span>
+                A Essência do <span className="text-amber-600">Bar Barcelos</span>
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                A Cafeteria Barcelos é um pedacinho de Portugal no Recife. Inspirada nas 
-                tradicionais cafeterias portuguesas, oferecemos um ambiente aconchegante 
-                onde você pode saborear o melhor café e os doces mais queridos de Portugal.
+                Um bar acolhedor com tradição portuguesa, oferecendo pratos, lanches e drinks para todos os gostos.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Nosso café é importado diretamente das melhores torrefações portuguesas, 
-                garantindo aquele sabor único que faz parte da cultura lusitana. Cada xícara 
-                é preparada com o carinho e a técnica tradicional portuguesa.
+                Nossa missão é proporcionar momentos de descontração e sabor, combinando qualidade, variedade e ambiente agradável.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4 bg-amber-50 rounded-lg">
                   <div className="text-2xl font-bold text-amber-600 mb-1">100%</div>
-                  <div className="text-sm text-gray-600">Café Português</div>
+                  <div className="text-sm text-gray-600">Atendimento de Qualidade</div>
                 </div>
                 <div className="text-center p-4 bg-amber-50 rounded-lg">
                   <div className="text-2xl font-bold text-amber-600 mb-1">7h</div>
@@ -126,13 +122,13 @@ const Barcelos = () => {
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.pexels.com/photos/1002543/pexels-photo-1002543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Cafeteria Barcelos"
+                  alt="Bar Barcelos"
                   className="w-full h-96 object-cover"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-amber-500 to-orange-600 text-white p-6 rounded-2xl shadow-xl">
-                <Coffee className="w-8 h-8 mb-2" />
-                <div className="text-lg font-bold">Café Tradicional</div>
+                <Utensils className="w-8 h-8 mb-2" />
+                <div className="text-lg font-bold">Sabor e Tradição</div>
                 <div className="text-sm opacity-90">Desde 1923</div>
               </div>
             </motion.div>
@@ -154,7 +150,7 @@ const Barcelos = () => {
               Nosso <span className="text-orange-600">Cardápio</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Sabores autênticos que transportam você diretamente para as cafeterias de Lisboa
+              Delícias que agradam todos os paladares: pratos, lanches e drinks refrescantes
             </p>
           </motion.div>
 
@@ -199,10 +195,10 @@ const Barcelos = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Mais que uma <span className="text-amber-600">Cafeteria</span>
+              Mais que um <span className="text-amber-600">Bar</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Um espaço de convivência e tradição portuguesa
+              Um espaço de convivência, sabor e tradição
             </p>
           </motion.div>
 
@@ -240,9 +236,10 @@ const Barcelos = () => {
               <Clock className="w-12 h-12 text-white mx-auto mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Horário de Funcionamento</h3>
               <div className="text-amber-100 space-y-2">
-                <p>Segunda a Sexta: 7h às 22h</p>
-                <p>Sábado: 7h às 20h</p>
-                <p>Domingo: 8h às 18h</p>
+                <p>Terça a Sexta: 9h às 17h</p>
+                <p>Sábado: 9h às 16h</p>
+                <p>Domingo: 9h às 16h</p>
+                <p>Segunda: FECHADO</p>
                 <p className="text-sm mt-4">*Sujeito a alterações em feriados</p>
               </div>
             </motion.div>
@@ -256,8 +253,8 @@ const Barcelos = () => {
               <MapPin className="w-12 h-12 text-white mx-auto mb-6" />
               <h3 className="text-2xl font-bold text-white mb-4">Localização</h3>
               <div className="text-amber-100 space-y-2">
-                <p>Térreo do Clube Português</p>
-                <p>Próximo à recepção principal</p>
+                <p>Dentro do Clube Português</p>
+                <p>Próximo à Quadra de Esportes</p>
                 <p>Entrada independente disponível</p>
                 <p className="text-sm mt-4">Acesso para não-sócios também</p>
               </div>

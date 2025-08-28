@@ -1,6 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Trophy, Users, Calendar, Award, Heart, Target } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Trophy, Users, Award, Heart, Target } from 'lucide-react';
+import Diretoria from "../components/Diretoria";
+
 
 const About = () => {
   const milestones = [
@@ -13,46 +15,42 @@ const About = () => {
   ];
 
   const values = [
-    {
-      icon: Trophy,
-      title: 'Excelência',
-      description: 'Buscamos sempre o mais alto padrão em tudo que fazemos'
-    },
-    {
-      icon: Users,
-      title: 'Comunidade',
-      description: 'Valorizamos o espírito de união e pertencimento'
-    },
-    {
-      icon: Heart,
-      title: 'Tradição',
-      description: 'Preservamos nossa história e cultura portuguesa'
-    },
-    {
-      icon: Target,
-      title: 'Inovação',
-      description: 'Modernizamos constantemente nossos serviços'
-    }
+    { icon: Trophy, title: 'Excelência', description: 'Buscamos sempre o mais alto padrão em tudo que fazemos' },
+    { icon: Users, title: 'Comunidade', description: 'Valorizamos o espírito de união e pertencimento' },
+    { icon: Heart, title: 'Tradição', description: 'Preservamos nossa história e cultura portuguesa' },
+    { icon: Target, title: 'Inovação', description: 'Modernizamos constantemente nossos serviços' }
   ];
 
+  // --- Slideshow de imagens ---
+  const images = [
+    '/quemsomos.png',
+    '/quemsomos1.jpg',
+    '/quemsomos2.jpg',
+    '/quemsomos3.jpg',
+    '/quemsomos4.jpg',
+    '/quemsomos5.jpg'
+  ];
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage(prev => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="pt-20">
+    <div className="pt-32">
+
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-green-800 to-red-800 overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{
-            backgroundImage: "url('https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"
-          }}
+          style={{ backgroundImage: "url('/frente.jpg')" }}
         />
-        
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Nossa <span className="text-yellow-400">História</span>
             </h1>
@@ -67,57 +65,47 @@ const About = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
+
+            {/* Texto */}
+            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
                 Uma tradição que atravessa gerações
               </h2>
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
-                <p>
-                  Fundado em 1923 por imigrantes portugueses, o Clube Português do Recife nasceu 
-                  com a missão de preservar as tradições lusitanas e promover a integração da 
-                  comunidade portuguesa na capital pernambucana.
-                </p>
-                <p>
-                  Ao longo de mais de 100 anos, o clube se consolidou como um dos principais 
-                  centros sociais e esportivos da região, oferecendo um espaço único onde 
-                  tradição e modernidade se encontram harmoniosamente.
-                </p>
-                <p>
-                  Hoje, somos mais que um clube - somos uma família que cultiva valores, 
-                  celebra conquistas e constrói um legado para as futuras gerações.
-                </p>
+                <p>O Clube Português do Recife é uma tradicional agremiação social, esportiva e cultural localizada na cidade do Recife, em Pernambuco, Brasil. Fundado em 1934, o clube tem uma forte ligação com a comunidade de imigrantes portugueses que se estabeleceram na região.</p>
+                <p>O Clube Português é conhecido por promover eventos culturais, festas típicas portuguesas, e atividades esportivas, sendo um ponto de encontro para descendentes de portugueses e para aqueles interessados na cultura lusitana.</p>
+                <p>Além de suas atividades culturais, o Clube Português do Recife também tem uma importante atuação no esporte, especialmente no Handebol, Hóquei e Natação. A sede do clube conta com diversas instalações, incluindo campos de futebol, salões de festa, e áreas de lazer, sendo um espaço valorizado na cidade para eventos sociais e esportivos.</p>
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.pexels.com/photos/6120214/pexels-photo-6120214.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Clube Português"
-                  className="w-full h-96 object-cover"
-                />
+            {/* Slideshow de imagens */}
+            <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full h-[450px]">
+                <AnimatePresence>
+                  <motion.img
+                    key={currentImage}
+                    src={images[currentImage]}
+                    alt="Clube Português"
+                    className="w-full h-full object-cover"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1 }}
+                  />
+                </AnimatePresence>
               </div>
+
               <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black p-6 rounded-2xl shadow-xl">
                 <div className="flex items-center space-x-3">
                   <Award className="w-8 h-8" />
                   <div>
-                    <div className="text-2xl font-bold">100+</div>
+                    <div className="text-2xl font-bold">90+</div>
                     <div className="text-sm font-medium">Anos de História</div>
                   </div>
                 </div>
               </div>
             </motion.div>
+
           </div>
         </div>
       </section>
@@ -125,13 +113,7 @@ const About = () => {
       {/* Timeline Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
+          <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Marcos da Nossa <span className="text-green-800">Trajetória</span>
             </h2>
@@ -142,28 +124,18 @@ const About = () => {
 
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-green-600 to-red-600"></div>
-            
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
-                >
+                <motion.div key={index} initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: index * 0.1 }} viewport={{ once: true }} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                   <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8'}`}>
                     <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                       <div className="text-2xl font-bold text-green-800 mb-2">{milestone.year}</div>
                       <p className="text-gray-600 leading-relaxed">{milestone.event}</p>
                     </div>
                   </div>
-                  
                   <div className="relative">
                     <div className="w-4 h-4 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full border-4 border-white shadow-lg"></div>
                   </div>
-                  
                   <div className="w-1/2"></div>
                 </motion.div>
               ))}
@@ -171,17 +143,11 @@ const About = () => {
           </div>
         </div>
       </section>
-
+ <Diretoria />
       {/* Values Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
+          <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Nossos <span className="text-red-800">Valores</span>
             </h2>
@@ -192,28 +158,20 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center group"
-              >
+              <motion.div key={index} initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }} viewport={{ once: true }} className="text-center group">
                 <div className="bg-gradient-to-r from-green-600 to-red-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-yellow-500 group-hover:to-yellow-600 transition-all duration-300 transform group-hover:scale-110">
                   <value.icon className="w-10 h-10 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-green-800 transition-colors duration-300">
                   {value.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {value.description}
-                </p>
+                <p className="text-gray-600 leading-relaxed">{value.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
     </div>
   );
 };

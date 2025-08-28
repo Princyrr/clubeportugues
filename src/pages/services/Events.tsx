@@ -86,7 +86,7 @@ const Events = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-32">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-blue-900 via-purple-900 to-red-900 overflow-hidden">
         <div className="absolute inset-0 bg-black/30" />
@@ -112,7 +112,7 @@ const Events = () => {
               Eventos culturais, shows musicais e celebrações que mantêm viva a tradição portuguesa
             </p>
             <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold px-8 py-4 rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              Ver Próximos Eventos
+              Entre em contato
             </button>
           </motion.div>
         </div>
@@ -233,7 +233,7 @@ const Events = () => {
                     <span className="text-2xl font-bold text-purple-800">{event.price}</span>
                     <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center space-x-2">
                       <Ticket className="w-4 h-4" />
-                      <span>Reservar</span>
+                      <span>Whatsapp</span>
                     </button>
                   </div>
                 </div>
@@ -260,10 +260,10 @@ const Events = () => {
             >
               <MapPin className="w-12 h-12 text-yellow-400 mx-auto mb-6" />
               <h2 className="text-4xl font-bold text-white mb-6">
-                Como Reservar
+                Para Mais Informações
               </h2>
               <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-                Reserve seu lugar nos nossos eventos especiais. Garantia de diversão e cultura portuguesa!
+                Entre em contato com a Secretária para saber mais informações. Garantia de diversão e cultura!
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -275,8 +275,8 @@ const Events = () => {
                 
                 <div className="text-center">
                   <div className="w-12 h-12 bg-yellow-400 text-black rounded-full flex items-center justify-center mx-auto mb-3 font-bold">2</div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Faça a Reserva</h3>
-                  <p className="text-gray-300">Entre em contato ou reserve online</p>
+                  <h3 className="text-lg font-semibold text-white mb-2">Ligue para nossos telefones</h3>
+                  <p className="text-gray-300">Entre em contato</p>
                 </div>
                 
                 <div className="text-center">
@@ -288,7 +288,7 @@ const Events = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="bg-yellow-500 text-black font-semibold px-8 py-4 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                  (81) 3333-4444
+                  (81) 3231-5400
                 </button>
                 <button className="border-2 border-yellow-400 text-yellow-400 font-semibold px-8 py-4 rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300">
                   eventos@clubeportugues.com.br

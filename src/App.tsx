@@ -12,6 +12,8 @@ import Barcelos from './pages/services/Barcelos';
 import Events from './pages/services/Events';
 import News from './pages/services/News';
 import NewsDetail from './pages/services/NewsDetail';
+import Diretoria from "./components/Diretoria";
+
 
 function App() {
   return (
@@ -30,6 +32,9 @@ function App() {
             <Route path="/servicos/agenda-shows" element={<Events />} />
             <Route path="/servicos/noticias" element={<News />} />
             <Route path="/servicos/noticias/:id" element={<NewsDetail />} />
+             <Route path="/diretoria" element={<Diretoria />} />
+
+
           </Routes>
         </main>
         <Footer />

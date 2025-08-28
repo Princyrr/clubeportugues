@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
@@ -25,9 +24,8 @@ const Header = () => {
       name: 'Serviços',
       path: '#',
       submenu: [
-        { name: 'Restaurante', path: '/servicos/restaurante' },
-        { name: 'Adega', path: '/servicos/adega' },
-        { name: 'Barcelos', path: '/servicos/barcelos' },
+        { name: 'Adega Restaurante', path: '/servicos/restaurante' },
+        { name: 'Bar Barcelos', path: '/servicos/barcelos' },
         { name: 'Agenda de Shows', path: '/servicos/agenda-shows' },
         { name: 'Notícias', path: '/servicos/noticias' },
       ]
@@ -38,23 +36,12 @@ const Header = () => {
 
   return (
     <motion.header
-       className={`fixed w-full top-0 z-50 transition-all duration-300`}
+      className={`fixed w-full top-0 z-50 transition-all duration-300`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Fundo com as imagens */}
-      <div className="absolute inset-0 flex justify-between items-center -z-10 overflow-hidden">
-        <img
-          src="/banner.png"
-          alt="banner esquerdo"
-          className="h-full object-cover"
-          style={{ width: "800px", height: "auto" }}
-        />
-       
-      </div>
-
-      {/* Overlay opcional para aplicar gradiente no fundo */}
+      {/* Fundo gradiente fixo (sem imagem) */}
       <div
         className={`absolute inset-0 transition-colors duration-300 ${
           scrolled
@@ -66,15 +53,21 @@ const Header = () => {
       {/* Conteúdo do header */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-32">
-          {/* Logo */}
-          <Link to="/" className="flex items-center relative z-10">
-  <img
-    src="/Logo.png"
-    alt="Clube Português do Recife"
-    className="h-20 w-auto object-contain transition-transform duration-300 hover:scale-105"
-  />
-</Link>
-
+          {/* Logo + Nome */}
+          <Link to="/" className="flex items-center relative z-10 space-x-4">
+            <img
+              src="/Logo.png"
+              alt="Clube Português do Recife"
+              className="h-20 w-auto object-contain transition-transform duration-300 hover:scale-105"
+            />
+            <span
+              className={`text-2xl font-bold tracking-wide transition-colors duration-300 ${
+                scrolled ? 'text-gray-800' : 'text-white'
+              }`}
+            >
+              Clube Português do Recife
+            </span>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8 relative z-10">

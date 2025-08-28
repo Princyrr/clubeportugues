@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Clock, MapPin, Phone, Star, Utensils, Wine, ChefHat } from 'lucide-react';
+import { Clock, Phone, Star, Utensils, Wine, ChefHat } from 'lucide-react';
 
 const Restaurant = () => {
   const [selectedCategory, setSelectedCategory] = useState('pratos-principais');
@@ -37,17 +37,15 @@ const Restaurant = () => {
   };
 
   return (
-    <div className="pt-20">
+    <div className="pt-32">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-green-800 to-red-800 overflow-hidden">
         <div className="absolute inset-0 bg-black/30" />
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{
-            backgroundImage: "url('https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"
-          }}
+          style={{ backgroundImage: "url('/adegabanner.jpg')" }}
         />
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -57,7 +55,7 @@ const Restaurant = () => {
           >
             <ChefHat className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Restaurante <span className="text-yellow-400">Português</span>
+              Adega <span className="text-yellow-400">Restaurante</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
               Sabores autênticos de Portugal no coração do Recife. Uma experiência gastronômica única.
@@ -84,7 +82,9 @@ const Restaurant = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Horário de Funcionamento</h3>
               <p className="text-gray-600">
                 Terça a Domingo<br />
-                12h às 15h | 19h às 23h<br />
+                11:30h às 16h<br />
+                Quintas e Sextas<br />
+                17h às 23h <br />
                 Segunda: Fechado
               </p>
             </motion.div>
@@ -99,9 +99,9 @@ const Restaurant = () => {
               <Phone className="w-12 h-12 text-green-800 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Reservas</h3>
               <p className="text-gray-600">
-                (81) 3333-4444<br />
+                (81) 3097-7270<br />
                 restaurante@clubeportugues.com.br<br />
-                WhatsApp: (81) 99999-8888
+                WhatsApp: (81) 98242-0816
               </p>
             </motion.div>
 
@@ -255,13 +255,14 @@ const Restaurant = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.pexels.com/photos/1803104/pexels-photo-1803104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Carta de Vinhos"
-                  className="w-full h-96 object-cover"
-                />
-              </div>
+             <div className="rounded-2xl overflow-hidden shadow-2xl">
+  <img
+    src="/adega.png"
+    alt="Carta de Vinhos"
+    className="w-full h-[600px] object-cover"
+  />
+</div>
+
             </motion.div>
           </div>
         </div>
