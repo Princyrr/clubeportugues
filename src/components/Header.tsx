@@ -17,32 +17,38 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
   const menuItems = [
     { name: 'Início', path: '/' },
     { name: 'Quem Somos', path: '/quem-somos' },
     {
       name: 'Serviços',
       path: '#',
-      submenu: [ 
+      submenu: [
         { name: 'Serviços', path: '/servicos/servicos' },
-        { name: 'Adega Restaurante', path: '/servicos/restaurante' },       
-        { name: 'Bar Barcelos', path: '/servicos/barcelos' }, 
+        { name: 'Adega Restaurante', path: '/servicos/restaurante' },
+        { name: 'Bar Barcelos', path: '/servicos/barcelos' },
         { name: 'Agenda de Shows', path: '/servicos/agenda-shows' },
         { name: 'Notícias', path: '/servicos/noticias' },
-      ]
+      ],
     },
     { name: 'Fale Conosco', path: '/fale-conosco' },
-    { name: 'Portal', path: '/portal' },
+    {
+      name: 'Portal',
+      path: 'https://portal.multiclubes.com.br/clubeportuguesrecife/login.aspx?ReturnUrl=%2fclubeportuguesrecife%2f',
+      external: true,
+    },
   ];
 
   return (
     <motion.header
-      className={`fixed w-full top-0 z-50 transition-all duration-300`}
+      className="fixed w-full top-0 z-50 transition-all duration-300"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Fundo gradiente fixo (sem imagem) */}
+      {/* Fundo gradiente fixo */}
       <div
         className={`absolute inset-0 transition-colors duration-300 ${
           scrolled
@@ -51,16 +57,26 @@ const Header = () => {
         }`}
       />
 
-      {/* Conteúdo do header */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-32">
           {/* Logo + Nome */}
-          <Link to="/" className="flex items-center relative z-10 space-x-4">
-            <img
-              src="/Logo.png"
-              alt="Clube Português do Recife"
-              className="h-20 w-auto object-contain transition-transform duration-300 hover:scale-105"
-            />
+          <Link
+            to="/"
+            className="flex items-center relative z-10 space-x-4"
+            onClick={scrollToTop}
+          >
+           <img
+  src="/Logo.png"
+  alt="Clube Português do Recife"
+  className="
+    h-12 w-auto object-contain       /* padrão no celular */
+    sm:h-14                         /* tablets pequenos */
+    md:h-16                         /* tablets médios */
+    lg:h-20                         /* desktops */
+    transition-transform duration-300 hover:scale-105
+  "
+/>
+
             <span
               className={`text-2xl font-bold tracking-wide transition-colors duration-300 ${
                 scrolled ? 'text-gray-800' : 'text-white'
@@ -92,7 +108,6 @@ const Header = () => {
                         scrolled ? 'text-gray-800' : 'text-white'
                       } ${isServicesOpen ? 'rotate-180' : ''}`}
                     />
-
                     <AnimatePresence>
                       {isServicesOpen && (
                         <motion.div
@@ -107,7 +122,10 @@ const Header = () => {
                               key={subItem.name}
                               to={subItem.path}
                               className="block px-4 py-3 text-gray-800 hover:bg-green-50 hover:text-green-800 transition-colors duration-200 font-medium"
-                              onClick={() => setIsServicesOpen(false)}
+                              onClick={() => {
+                                setIsServicesOpen(false);
+                                scrollToTop();
+                              }}
                             >
                               {subItem.name}
                             </Link>
@@ -116,12 +134,27 @@ const Header = () => {
                       )}
                     </AnimatePresence>
                   </div>
+                ) : item.external ? (
+                  <a
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`font-medium transition-colors duration-300 hover:text-yellow-300 ${
+                      scrolled ? 'text-gray-800' : 'text-white'
+                    }`}
+                  >
+                    {item.name}
+                  </a>
                 ) : (
                   <Link
                     to={item.path}
                     className={`font-medium transition-colors duration-300 hover:text-yellow-300 ${
                       scrolled ? 'text-gray-800' : 'text-white'
                     } ${location.pathname === item.path ? 'text-yellow-400' : ''}`}
+                    onClick={() => {
+                      setIsMenuOpen(false);
+                      scrollToTop();
+                    }}
                   >
                     {item.name}
                   </Link>
@@ -133,9 +166,7 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             className={`lg:hidden p-2 rounded-md transition-colors duration-300 relative z-10 ${
-              scrolled
-                ? 'text-gray-800 hover:bg-gray-100'
-                : 'text-white hover:bg-white/10'
+              scrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-white hover:bg-white/10'
             }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -185,6 +216,7 @@ const Header = () => {
                                   onClick={() => {
                                     setIsMenuOpen(false);
                                     setIsServicesOpen(false);
+                                    scrollToTop();
                                   }}
                                 >
                                   {subItem.name}
@@ -194,15 +226,26 @@ const Header = () => {
                           )}
                         </AnimatePresence>
                       </div>
+                    ) : item.external ? (
+                      <a
+                        href={item.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-3 text-gray-800 hover:bg-green-50 hover:text-green-800 transition-colors duration-200 font-medium"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.name}
+                      </a>
                     ) : (
                       <Link
                         to={item.path}
                         className={`block px-4 py-3 text-gray-800 hover:bg-green-50 hover:text-green-800 transition-colors duration-200 font-medium ${
-                          location.pathname === item.path
-                            ? 'bg-green-50 text-green-800'
-                            : ''
+                          location.pathname === item.path ? 'bg-green-50 text-green-800' : ''
                         }`}
-                        onClick={() => setIsMenuOpen(false)}
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          scrollToTop();
+                        }}
                       >
                         {item.name}
                       </Link>
@@ -219,3 +262,4 @@ const Header = () => {
 };
 
 export default Header;
+

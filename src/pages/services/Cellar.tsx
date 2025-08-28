@@ -2,126 +2,57 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Award, Users, Clock } from 'lucide-react';
 
+// Importando todas as imagens
+import natacao from '../../assets/natacao.jpg';
+import natacao1 from '../../assets/natacao1.jpeg';
+import natacao2 from '../../assets/natacao2.jpg';
+import natacao3 from '../../assets/natacao3.jpg';
+import natacao4 from '../../assets/natacao4.jpeg';
+import hoquei from '../../assets/hoquei.png';
+import handebol from '../../assets/handeboll.png';
+import futebol from '../../assets/futebol.jpg';
+import academia from '../../assets/academia.jpg';
+import boxe from '../../assets/boxe.jpg';
+import muai from '../../assets/muai.png';
+import ballet from '../../assets/ballet.jpg';
+import salaodebeleza from '../../assets/salaodebeleza.jpg';
+import tenis from '../../assets/tenis.jpg';
+import teniskids from '../../assets/teniskids.jpg';
+import tenis2 from '../../assets/tenis2.jpg';
+import futevolei from '../../assets/futevolei.jpg';
+import tai from '../../assets/tai.jpg';
+import kung from '../../assets/kung.jpg';
+import sinuca from '../../assets/sinuca.jpg';
+import heroBg from '../../assets/historia4.jpg';
+
 const Cellar = () => {
   const activities = [
-    {
-      name: "Escolinha de Natação (Prof.ª Carla)",
-      image: import.meta.env.BASE_URL + "natacao.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Escolinha de Natação (Prof.ª Keycy)",
-      image: import.meta.env.BASE_URL + "natacao1.jpeg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Escolinha de Natação e Hidroginástica (Prof. Fernando)",
-      image: import.meta.env.BASE_URL + "natacao2.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Natação e Hidroginástica (Prof.ª Regina)",
-      image: import.meta.env.BASE_URL + "natacao3.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Natação Master (Prof. Domingos)",
-      image: import.meta.env.BASE_URL + "natacao4.jpeg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Escolinha de Hóquei",
-      image: import.meta.env.BASE_URL + "hoquei.png",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Escolinha de Handebol",
-      image: import.meta.env.BASE_URL + "handeboll.png",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Escolinha Society (Prof. Lúcio Surubim)",
-      image: import.meta.env.BASE_URL + "futebol.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Academia de RW",
-      image: import.meta.env.BASE_URL + "academia.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Boxe",
-      image: import.meta.env.BASE_URL + "boxe.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Muay Thai",
-      image: import.meta.env.BASE_URL + "muai.png",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Balé (Prof.ª Amanda Jacó)",
-      image: import.meta.env.BASE_URL + "ballet.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Espaço de Beleza Camem Alves",
-      image: import.meta.env.BASE_URL + "salaodebeleza.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Tênis- (Prof.ª Jéssica)",
-      image: import.meta.env.BASE_URL + "tenis.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Tênis Kids",
-      image: import.meta.env.BASE_URL + "teniskids.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Tênis- (Prof. Valdir)",
-      image: import.meta.env.BASE_URL + "tenis2.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Futevôlei",
-      image: import.meta.env.BASE_URL + "futevolei.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Tai Chi Chuan - (Prof. Júlio Kushida)",
-      image: import.meta.env.BASE_URL + "tai.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-    {
-      name: "Kung fu ( Prof. Júlio Kushida)",
-      image: import.meta.env.BASE_URL + "kung.jpg",
-      contact: "(XX) XXXX-XXXX"
-    },
-     {
-      name: "Sinuca ISSA - (Ítaro Santos Snooker Academy)",
-      image: import.meta.env.BASE_URL + "sinuca.jpg",
-      contact: "(XX) XXXX-XXXX"
-    }
+    { title: "Escolinha de Natação", teacher: "Prof.ª Carla", image: natacao, contact: "(81) 99999-1111" },
+    { title: "Escolinha de Natação", teacher: "Prof.ª Keycy", image: natacao1, contact: "(81) 99999-2222" },
+    { title: "Natação e Hidroginástica", teacher: "Prof. Fernando", image: natacao2, contact: "(81) 99999-3333" },
+    { title: "Natação e Hidroginástica", teacher: "Prof.ª Regina", image: natacao3, contact: "(81) 99999-4444" },
+    { title: "Natação Master", teacher: "Prof. Domingos", image: natacao4, contact: "(81) 99999-5555" },
+    { title: "Escolinha de Hóquei", teacher: "Equipe Técnica", image: hoquei, contact: "(81) 99999-6666" },
+    { title: "Escolinha de Handebol", teacher: "Equipe Técnica", image: handebol, contact: "(81) 99999-7777" },
+    { title: "Escolinha Society", teacher: "Prof. Lúcio Surubim", image: futebol, contact: "(81) 99999-8888" },
+    { title: "Academia RW", teacher: "Equipe RW", image: academia, contact: "(81) 99999-9999" },
+    { title: "Boxe", teacher: "Instrutor Especializado", image: boxe, contact: "(81) 98888-1111" },
+    { title: "Muay Thai", teacher: "Instrutor Especializado", image: muai, contact: "(81) 98888-2222" },
+    { title: "Ballet", teacher: "Prof.ª Amanda Jacó", image: ballet, contact: "(81) 98888-3333" },
+    { title: "Espaço de Beleza", teacher: "Camem Alves", image: salaodebeleza, contact: "(81) 98888-4444" },
+    { title: "Tênis", teacher: "Prof.ª Jéssica", image: tenis, contact: "(81) 98888-5555" },
+    { title: "Tênis Kids", teacher: "Equipe Infantil", image: teniskids, contact: "(81) 98888-6666" },
+    { title: "Tênis", teacher: "Prof. Valdir", image: tenis2, contact: "(81) 98888-7777" },
+    { title: "Futevôlei", teacher: "Equipe Técnica", image: futevolei, contact: "(81) 98888-8888" },
+    { title: "Tai Chi Chuan", teacher: "Prof. Júlio Kushida", image: tai, contact: "(81) 98888-9999" },
+    { title: "Kung Fu", teacher: "Prof. Júlio Kushida", image: kung, contact: "(81) 97777-1111" },
+    { title: "Sinuca ISSA", teacher: "Ítaro Santos", image: sinuca, contact: "(81) 97777-2222" },
   ];
 
   const features = [
-    {
-      icon: Award,
-      title: 'Instrutores Qualificados',
-      description: 'Professores experientes em cada modalidade esportiva'
-    },
-    {
-      icon: Users,
-      title: 'Estrutura Completa',
-      description: 'Salas, quadras e piscina com equipamentos modernos'
-    },
-    {
-      icon: Clock,
-      title: 'Horários Flexíveis',
-      description: 'Atividades disponíveis em vários horários durante a semana'
-    }
+    { icon: Award, title: 'Instrutores Qualificados', description: 'Professores experientes em cada modalidade esportiva' },
+    { icon: Users, title: 'Estrutura Completa', description: 'Salas, quadras e piscina com equipamentos modernos' },
+    { icon: Clock, title: 'Horários Flexíveis', description: 'Atividades disponíveis em vários horários durante a semana' }
   ];
 
   return (
@@ -131,7 +62,7 @@ const Cellar = () => {
         <div className="absolute inset-0 bg-black/40" />
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: `url(${import.meta.env.BASE_URL + '/b095c6207fe747c3083334be9dd20fbf.jpeg'})` }}
+          style={{ backgroundImage: `url(${heroBg})` }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -147,9 +78,6 @@ const Cellar = () => {
             <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
               Todas as atividades e modalidades do clube em um só lugar. Confira os contatos e detalhes de cada aula.
             </p>
-            <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold px-8 py-4 rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              Entre em Contato
-            </button>
           </motion.div>
         </div>
       </section>
@@ -185,13 +113,14 @@ const Cellar = () => {
                 <div className="h-48 overflow-hidden">
                   <img
                     src={activity.image}
-                    alt={activity.name}
+                    alt={activity.title}
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{activity.name}</h3>
-                  <p className="text-gray-700 font-semibold">Contato: {activity.contact}</p>
+                <div className="p-6 text-center">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{activity.title}</h3>
+                  <p className="text-lg text-gray-700 mb-1">{activity.teacher}</p>
+                  <p className="text-gray-600 font-semibold">📞 {activity.contact}</p>
                 </div>
               </motion.div>
             ))}
