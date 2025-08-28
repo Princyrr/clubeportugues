@@ -27,7 +27,7 @@ function App() {
             <Route path="/fale-conosco" element={<Contact />} />
             <Route path="/portal" element={<Portal />} />
             <Route path="/servicos/restaurante" element={<Restaurant />} />
-            <Route path="/servicos/adega" element={<Cellar />} />
+            <Route path="/servicos/servicos" element={<Cellar />} />
             <Route path="/servicos/barcelos" element={<Barcelos />} />
             <Route path="/servicos/agenda-shows" element={<Events />} />
             <Route path="/servicos/noticias" element={<News />} />
