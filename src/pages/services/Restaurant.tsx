@@ -256,11 +256,12 @@ const Restaurant = () => {
               className="relative"
             >
              <div className="rounded-2xl overflow-hidden shadow-2xl">
-  <img
-    src="/vinho.jpg"
-    alt="Carta de Vinhos"
-    className="w-full h-[600px] object-cover"
-  />
+<img
+  src="/vinho.jpg"
+  alt="Carta de Vinhos"
+  className="w-full h-80 md:h-[600px] object-cover rounded-2xl"
+/>
+
 </div>
 
             </motion.div>

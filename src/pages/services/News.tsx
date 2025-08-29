@@ -26,7 +26,7 @@ const News = () => {
   const newsArticles = [
     {
       id: 1,
-      title: 'Eleição para o novo Presidente e o Vice Precidente',
+      title: 'Novo Presidente e o Vice Precidente',
       excerpt: 'No dia 25 de agosto de 2025, o Clube Português do Recife realizou a eleição que definiu seu novo Presidente e Vice-Presidente.',
       content: 'A nova temporada de shows de Fado no Clube Português do Recife promete emocionar...',
       author: 'Priscila',
@@ -49,7 +49,7 @@ const News = () => {
     {
       id: 3,
       title: 'Novo chef português renova cardápio do restaurante',
-      excerpt: 'Chef António Rodrigues traz novidades da culinária tradicional portuguesa.',
+      excerpt: 'O Chef traz novidades da culinária tradicional portuguesa.',
       content: 'O restaurante do clube recebe um novo chef, diretamente de Lisboa...',
       author: 'Ana Costa',
       date: '2025-01-10',
@@ -81,12 +81,12 @@ const News = () => {
     },
     {
       id: 6,
-      title: 'Natação: atletas do clube se destacam em competição nacional',
-      excerpt: 'Jovens promessas da natação conquistam medalhas em campeonato brasileiro.',
+      title: 'Gratidão e reconhecimento',
+      excerpt: 'Estamos nos aproximando de um novo ciclo no Clube Português do Recife, mas não poderíamos deixar de registrar nossa profunda homenagem...',
       content: 'A equipe de natação do clube teve uma performance excepcional...',
-      author: 'Sofia Fernandes',
-      date: '2025-01-03',
-      category: 'esportes',
+      author: 'Priscila',
+      date: '2025-08-30',
+      category: 'evento',
       image: noticia6,
       featured: false
     }
@@ -235,22 +235,22 @@ const News = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {regularArticles.map((article, index) => (
                 <motion.article
-                  key={article.id}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-                >
-                  <div className="h-48 overflow-hidden">
-                    <img
-                      src={article.image}
-                      alt={article.title}
-                      className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-                  
-                  <div className="p-6">
+  key={article.id}
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: index * 0.1 }}
+  viewport={{ once: true }}
+  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+>
+  <div className="h-72 overflow-hidden"> {/* <- aqui aumentei */}
+    <img
+      src={article.image}
+      alt={article.title}
+      className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+    />
+  </div>
+  
+  <div className="p-6">
                     <div className="flex items-center space-x-4 mb-3">
                       <div className="flex items-center space-x-1">
                         <Tag className="w-4 h-4 text-green-600" />

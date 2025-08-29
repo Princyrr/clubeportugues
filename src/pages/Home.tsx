@@ -7,7 +7,7 @@ import { ArrowRight, Trophy, Users, Calendar, Utensils } from 'lucide-react';
 import noticia1 from '../assets/noticia1.jpg';
 import noticia2 from '../assets/noticia2.jpg';
 import noticia3 from '../assets/noticia5.png';
-import noticia4 from '../assets/noticia4.png';
+import noticia4 from '../assets/noticia6.png';
 import frente from '../assets/frente.jpg';
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
   const noticias = [
     {
       img: noticia1,
-      title: 'Eleições',
+      title: 'Eleitos Para o Biênio 2025-2027',
       description: 'No dia 25 de agosto de 2025, o Clube Português do Recife realizou a eleição que definiu seu novo Presidente e Vice-Presidente.',
     },
     {
@@ -56,8 +56,8 @@ const Home = () => {
     },
     {
       img: noticia4,
-      title: 'Agenda Cultural',
-      description: 'Shows, peças teatrais e festivais movimentaram o calendário do clube.',
+      title: 'Gratidão e reconhecimento',
+      description: 'Durante este mandato, os senhores deixaram uma marca de seriedade, conquistas e união...',
     }
   ];
 
@@ -124,30 +124,34 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {noticias.map((noticia, index) => (
-              <motion.div
-                key={index}
-                className="bg-white rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full min-h-[400px]"
-              >
-                <img
-                  src={noticia.img}
-                  alt={noticia.title}
-                  className="w-full h-52 object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{noticia.title}</h3>
-                  <p className="text-gray-700 flex-grow mb-6">{noticia.description}</p>
-                  <Link
-                    to="/servicos/noticias"
-                    className="mt-auto inline-block px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-all duration-300 text-center"
-                  >
-                    Saiba Mais
-                  </Link>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+  {noticias.map((noticia, index) => (
+    <motion.div
+  key={index}
+  whileHover={{ scale: 1.03, y: -5 }}
+  transition={{ type: "spring", stiffness: 200, damping: 15 }}
+  className="bg-white rounded-3xl shadow-md hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full min-h-[400px] group overflow-hidden"
+>
+  <img
+    src={noticia.img}
+    alt={noticia.title}
+    className="w-full h-60 object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
+  />
+  <div className="p-6 flex flex-col flex-1">
+    <h3 className="text-2xl font-bold text-gray-900 mb-4">{noticia.title}</h3>
+    <p className="text-gray-700 flex-grow mb-6">{noticia.description}</p>
+    <Link
+      to="/servicos/noticias"
+      className="mt-auto inline-block px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-all duration-300 text-center"
+    >
+      Saiba Mais
+    </Link>
+  </div>
+</motion.div>
+
+  ))}
+</div>
+
         </div>
       </section>
 

@@ -14,13 +14,34 @@ import noticia6 from '../../assets/noticia6.png';
 const newsArticles = [
   {
     id: 1,
-    title: 'Eleição para o novo Presidente e Vice-Presidente',
+    title: 'Novo Presidente e Vice-Presidente',
     content: `
-       <p style="text-align: justify;">
-      A eleição para o novo Presidente e Vice-Presidente do Clube Português do Recife aconteceu no dia 25/08/2025. 
-      O processo foi transparente e contou com a participação ativa dos associados, garantindo legitimidade à nova diretoria. 
-      O evento ainda contou com apresentações de grandes nomes do fado, celebrando a cultura portuguesa e reforçando a tradição do clube.
-    </p>
+      <p style="text-align: justify;">
+  A eleição para o novo Presidente e Vice-Presidente do Clube Português do Recife aconteceu no dia 25/08/2025. 
+  O processo foi transparente e contou com a participação ativa dos associados, garantindo legitimidade à nova diretoria. 
+  O evento ainda contou com apresentações de grandes nomes do fado, celebrando a cultura portuguesa e reforçando a tradição do clube.
+A <strong>Chapa 1</strong> foi eleita para conduzir o futuro do <strong>Clube Português do Recife</strong>!<br></p>
+
+
+<p style="text-align: justify;">
+
+  Com grande alegria anunciamos a vitória e reafirmamos nosso compromisso com a 
+  <strong>emoção, gratidão e união</strong> que sempre marcaram a trajetória desta casa. Os sócios proprietários escolheram, democraticamente, a continuidade da tradição e o fortalecimento das nossas raízes portuguesas, 
+  que seguem vivas em cada conquista e em cada passo dado juntos. </p>
+
+<br><br>
+
+<p style="text-align: justify;">
+  📅 <strong>Biênio 01/09/2025 a 31/08/2027</strong><br>
+  👤 <strong>Presidente eleito:</strong> Daniel Ferreira Rodrigues<br>
+  👤 <strong>Vice-presidente eleito:</strong> Celso Stamford Gaspar<br>
+</p><br><br>
+
+<p style="text-align: justify;">
+  O futuro já começou, e ele é construído por todos nós! Unidos, vamos escrever mais um capítulo de orgulho, história e pertencimento 
+  no Clube Português do Recife. ✨
+</p>
+
     `,
     author: 'Priscila',
     date: '2025-08-28',
@@ -83,18 +104,34 @@ const newsArticles = [
 ,
   {
   id: 6,
-  title: 'Eleição para o novo Presidente e Vice-Presidente',
+  title: '✨ Gratidão e reconhecimento ✨',
   content: `
-    <p style="text-align: justify;">
-      A eleição para o novo Presidente e Vice-Presidente do Clube Português do Recife aconteceu no dia 25/08/2025. 
-      O processo foi transparente e contou com a participação ativa dos associados, garantindo legitimidade à nova diretoria. 
-      O evento ainda contou com apresentações de grandes nomes do fado, celebrando a cultura portuguesa e reforçando a tradição do clube.
-    </p>
+   
+<p style="text-align: justify;">
+  Estamos nos aproximando de um novo ciclo no <strong>Clube Português do Recife</strong>, mas não poderíamos deixar de registrar nossa profunda homenagem à atual diretoria que, com dedicação e compromisso, conduziu nossa instituição até aqui.
+</p>
+
+<p style="text-align: justify;">
+  Ao Presidente <strong>João Jorge Barbosa Marinho</strong> e ao Vice-Presidente <strong>Fernando Medicis Pinto</strong>, o nosso muito obrigado por todo o empenho, pela responsabilidade com que administraram o clube e pela forma como fortaleceram a tradição portuguesa que nos une há gerações.
+</p>
+
+<p style="text-align: justify;">
+  Durante este mandato, os senhores deixaram uma marca de seriedade, conquistas e união, sempre com o olhar voltado para o bem-estar dos sócios e para a preservação da história que orgulha a todos nós.
+</p>
+
+<p style="text-align: justify;">
+  Que esta jornada que agora se encerra seja lembrada como um período de avanços e realizações, e que os próximos desafios sejam igualmente vitoriosos em suas trajetórias pessoais.
+</p>
+
+<p style="text-align: justify;">
+  💛 O Clube Português do Recife agradece imensamente por este capítulo de dedicação e liderança.
+</p>
+
   `,
   author: 'Diretoria do Clube',
-  date: '2025-08-25',
+  date: '2025-08-30',
   category: 'eventos',
-  image: noticia6, // certifique-se de que esta variável está importada do assets
+  image: noticia6, 
   readTime: '4 min'
 }
 

@@ -79,32 +79,41 @@ const About = () => {
             </motion.div>
 
             {/* Slideshow de imagens */}
-            <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full h-[450px]">
-                <AnimatePresence>
-                  <motion.img
-                    key={currentImage}
-                    src={images[currentImage]}
-                    alt="Clube Português"
-                    className="w-full h-full object-cover"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 1 }}
-                  />
-                </AnimatePresence>
-              </div>
+           
+<motion.div
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="relative"
+>
+  <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full h-[480px]">
+    <AnimatePresence>
+      <motion.img
+        key={currentImage}
+        src={images[currentImage]}
+        alt="Clube Português"
+        className="w-full h-full object-cover"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      />
+    </AnimatePresence>
+  </div>
 
-              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black p-6 rounded-2xl shadow-xl">
-                <div className="flex items-center space-x-3">
-                  <Award className="w-8 h-8" />
-                  <div>
-                    <div className="text-2xl font-bold">90+</div>
-                    <div className="text-sm font-medium">Anos de História</div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+  <div className="absolute bottom-6 right-4 md:bottom-0 md:right-6 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black p-4 md:p-6 rounded-2xl shadow-xl">
+  <div className="flex items-center space-x-3">
+    <Award className="w-6 h-6 md:w-8 md:h-8" />
+    <div>
+      <div className="text-xl md:text-2xl font-bold">90+</div>
+      <div className="text-xs md:text-sm font-medium">Anos de História</div>
+    </div>
+  </div>
+</div>
+
+</motion.div>
+
 
           </div>
         </div>
