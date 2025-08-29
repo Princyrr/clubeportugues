@@ -1,64 +1,130 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Calendar, User, ArrowLeft, Share2, Tag } from 'lucide-react';
+import { Calendar, User, ArrowLeft, Tag } from 'lucide-react';
+
+import noticia1 from '../../assets/noticia1.jpg';
+import noticia2 from '../../assets/noticia2.jpg';
+import noticia3 from '../../assets/noticia3.jpg';
+import noticia4 from '../../assets/noticia4.png';
+import noticia5 from '../../assets/noticia5.png';
+import noticia6 from '../../assets/noticia6.png';
+
+// Array de artigos
+const newsArticles = [
+  {
+    id: 1,
+    title: 'Eleição para o novo Presidente e Vice-Presidente',
+    content: `
+       <p style="text-align: justify;">
+      A eleição para o novo Presidente e Vice-Presidente do Clube Português do Recife aconteceu no dia 25/08/2025. 
+      O processo foi transparente e contou com a participação ativa dos associados, garantindo legitimidade à nova diretoria. 
+      O evento ainda contou com apresentações de grandes nomes do fado, celebrando a cultura portuguesa e reforçando a tradição do clube.
+    </p>
+    `,
+    author: 'Priscila',
+    date: '2025-08-28',
+    category: 'eventos',
+    image: noticia1,
+    readTime: '2 min'
+  },
+  {
+    id: 2,
+    title: 'Restaurante Adega',
+    content: `
+      <p>É localizado dentro do Clube Português do Recife, é um verdadeiro ícone da culinária portuguesa na cidade.</p>
+      <p>Com mais de 40 anos de tradição, oferece aos seus visitantes uma experiência gastronômica autêntica, aliada a um ambiente acolhedor e culturalmente rico.</p>
+      <p>O restaurante é conhecido por seu cardápio que celebra os sabores de Portugal, com destaque para pratos como o bacalhau à Lagareiro, camarões no bafo e bolinho de bacalhau.</p>
+    `,
+    author: 'Priscila',
+    date: '2025-08-28',
+    category: 'Gastronomia',
+    image: noticia2,
+    readTime: '3 min'
+  },
+  {
+    id: 3,
+    title: 'Novo chef português renova cardápio do restaurante',
+    content: `
+      <p>O restaurante do clube recebe um novo chef, diretamente de Lisboa, trazendo sabores autênticos da culinária portuguesa...</p>
+    `,
+    author: 'Ana Costa',
+    date: '2025-01-10',
+    category: 'gastronomia',
+    image: noticia3,
+    readTime: '4 min'
+  },
+  {
+    id: 4,
+    title: 'Festival de Cultura Portuguesa movimenta o clube',
+    content: `
+      <p>O Festival de Cultura Portuguesa foi um sucesso absoluto, com apresentações de música, dança e gastronomia típica...</p>
+    `,
+    author: 'Pedro Oliveira',
+    date: '2025-01-08',
+    category: 'cultura',
+    image: noticia4,
+    readTime: '6 min'
+  },
+  {
+  id: 5,
+  title: 'Clube Português é campeão Brasileiro Jr. de Handebol',
+  content: `
+    <p style="text-align: justify;">
+      O Clube Português brilhou no Campeonato Brasileiro Júnior de Handebol Feminino 2025, garantindo o título ao vencer o Esporte Clube Pinheiros por 27 a 25, em uma emocionante partida realizada no Poliesportivo Henrique Villaboim. A equipe pernambucana terminou em primeiro lugar, seguida pelo Pinheiros em segundo e FME/Criciúma em terceiro, com AD Centro Olímpico, Abluhand, Unicesumar/Araraquara, São José e Cato/Cahan completando a classificação, enquanto ATHB/Hand Torres, FME/Balneário Camboriú e Atlético Rio Negro ocuparam as últimas posições.
+    </p>
+  `,
+  author: 'Carlos Mendes',
+  date: '2025-01-05',
+  category: 'esportes',
+  image: noticia5,
+  readTime: '2 min'
+}
+,
+  {
+  id: 6,
+  title: 'Eleição para o novo Presidente e Vice-Presidente',
+  content: `
+    <p style="text-align: justify;">
+      A eleição para o novo Presidente e Vice-Presidente do Clube Português do Recife aconteceu no dia 25/08/2025. 
+      O processo foi transparente e contou com a participação ativa dos associados, garantindo legitimidade à nova diretoria. 
+      O evento ainda contou com apresentações de grandes nomes do fado, celebrando a cultura portuguesa e reforçando a tradição do clube.
+    </p>
+  `,
+  author: 'Diretoria do Clube',
+  date: '2025-08-25',
+  category: 'eventos',
+  image: noticia6, // certifique-se de que esta variável está importada do assets
+  readTime: '4 min'
+}
+
+];
 
 const NewsDetail = () => {
   const { id } = useParams();
+  const article = newsArticles.find(a => a.id === parseInt(id ?? "0"));
 
-  // In a real app, you'd fetch this data based on the ID
-  const article = {
-    id: 1,
-    title: 'Nova temporada de shows de Fado começa em março',
-    content: `
-      <p>A nova temporada de shows de Fado no Clube Português do Recife promete emocionar todos os amantes da música tradicional portuguesa. Com início previsto para março, a programação conta com grandes nomes do fado contemporâneo e clássico.</p>
-      
-      <p>O evento de abertura contará com a participação especial da fadista Maria Fernanda, diretamente de Lisboa, que interpretará clássicos como "Lágrima" e "Gaivota", além de apresentar composições próprias de seu mais recente álbum.</p>
-      
-      <h3>Programação Completa</h3>
-      
-      <p>Durante os três meses de temporada, o clube receberá diferentes artistas a cada quinzena, oferecendo uma variedade única de estilos e interpretações do fado. Entre os destaques confirmados estão:</p>
-      
-      <ul>
-        <li><strong>Maria Fernanda</strong> - 15 de março</li>
-        <li><strong>João Braga</strong> - 29 de março</li>
-        <li><strong>Ana Moura Jr.</strong> - 12 de abril</li>
-        <li><strong>Carlos Santana (fadista)</strong> - 26 de abril</li>
-      </ul>
-      
-      <p>Cada apresentação terá início às 20h30, no salão principal do clube, com capacidade limitada para garantir uma experiência íntima e autêntica. O ambiente será preparado especialmente para criar a atmosfera tradicional das casas de fado portuguesas.</p>
-      
-      <h3>Ingressos e Reservas</h3>
-      
-      <p>Os ingressos já estão disponíveis na secretaria do clube e através do telefone (81) 3333-4444. Sócios do clube têm desconto especial de 30% em todos os shows da temporada.</p>
-      
-      <p>Para proporcionar a melhor experiência possível, será servido um menu especial com petiscos portugueses e uma seleção de vinhos da nossa adega, harmonizados especialmente para cada apresentação.</p>
-      
-      <p>Esta temporada marca mais um importante evento cultural do Clube Português do Recife, reafirmando nosso compromisso em manter vivas as tradições lusitanas e oferecer cultura de qualidade para nossos associados e visitantes.</p>
-    `,
-    author: 'Maria Santos',
-    date: '2025-01-15',
-    category: 'eventos',
-    image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    readTime: '5 min'
-  };
+  if (!article) {
+    return (
+      <div className="pt-32 text-center">
+        <h1 className="text-2xl font-bold text-red-600">Notícia não encontrada</h1>
+        <Link
+          to="/servicos/noticias"
+          className="mt-6 inline-block bg-gradient-to-r from-green-600 to-red-600 text-white px-6 py-3 rounded-lg"
+        >
+          Voltar às Notícias
+        </Link>
+      </div>
+    );
+  }
 
-  const relatedArticles = [
-    {
-      id: 4,
-      title: 'Festival de Cultura Portuguesa movimenta o clube',
-      image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      id: 3,
-      title: 'Novo chef português renova cardápio do restaurante',
-      image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
-  ];
+  const relatedArticles = newsArticles
+    .filter(a => a.category === article.category && a.id !== article.id)
+    .slice(0, 2);
 
   return (
     <div className="pt-32">
-      {/* Back Button */}
+      {/* Botão Voltar */}
       <section className="py-6 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
@@ -71,7 +137,7 @@ const NewsDetail = () => {
         </div>
       </section>
 
-      {/* Article Header */}
+      {/* Conteúdo da Notícia */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.article
@@ -79,7 +145,7 @@ const NewsDetail = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            {/* Article Meta */}
+            {/* Meta */}
             <div className="flex flex-wrap items-center gap-4 mb-6">
               <div className="flex items-center space-x-1">
                 <Tag className="w-4 h-4 text-green-600" />
@@ -87,7 +153,6 @@ const NewsDetail = () => {
                   {article.category}
                 </span>
               </div>
-              
               <div className="flex items-center text-gray-500 text-sm">
                 <Calendar className="w-4 h-4 mr-1" />
                 {new Date(article.date).toLocaleDateString('pt-BR', {
@@ -96,125 +161,83 @@ const NewsDetail = () => {
                   day: 'numeric'
                 })}
               </div>
-              
               <div className="flex items-center text-gray-500 text-sm">
                 <User className="w-4 h-4 mr-1" />
                 {article.author}
               </div>
-              
               <span className="text-gray-500 text-sm">{article.readTime} de leitura</span>
             </div>
 
-            {/* Article Title */}
+            {/* Título */}
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               {article.title}
             </h1>
 
-            {/* Share Button */}
-            <div className="flex items-center justify-between mb-8">
-              <div className="flex items-center space-x-4">
-                <button className="flex items-center space-x-2 text-gray-600 hover:text-green-600 transition-colors duration-300">
-                  <Share2 className="w-5 h-5" />
-                  <span>Compartilhar</span>
-                </button>
-              </div>
-            </div>
-
-            {/* Featured Image */}
+            {/* Imagem */}
             <div className="mb-8 rounded-2xl overflow-hidden shadow-xl">
               <img
                 src={article.image}
                 alt={article.title}
-                className="w-full h-64 md:h-96 object-cover"
+                className="w-full h-96 md:h-[600px] object-cover"
               />
             </div>
 
-            {/* Article Content */}
-            <div 
-              className="prose prose-lg max-w-none prose-green prose-headings:text-gray-900 prose-p:text-gray-700 prose-p:leading-relaxed prose-strong:text-gray-900 prose-ul:text-gray-700"
+            {/* Conteúdo */}
+            <div
+              className="prose prose-lg max-w-none prose-green prose-headings:text-gray-900 prose-p:text-gray-700"
               dangerouslySetInnerHTML={{ __html: article.content }}
             />
-
-            {/* Article Footer */}
-            <div className="mt-12 pt-8 border-t border-gray-200">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-red-600 rounded-full flex items-center justify-center">
-                    <span className="text-white font-semibold text-lg">
-                      {article.author.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">{article.author}</h4>
-                    <p className="text-gray-600 text-sm">Redação Clube Português</p>
-                  </div>
-                </div>
-                
-                <button className="flex items-center space-x-2 text-gray-600 hover:text-green-600 transition-colors duration-300">
-                  <Share2 className="w-5 h-5" />
-                  <span>Compartilhar</span>
-                </button>
-              </div>
-            </div>
           </motion.article>
         </div>
       </section>
 
-      {/* Related Articles */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Artigos Relacionados
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {relatedArticles.map((relatedArticle, index) => (
-                <motion.div
-                  key={relatedArticle.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <Link
-                    to={`/servicos/noticias/${relatedArticle.id}`}
-                    className="block bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      {/* Relacionados */}
+      {relatedArticles.length > 0 && (
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                Artigos Relacionados
+              </h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {relatedArticles.map((relatedArticle, index) => (
+                  <motion.div
+                    key={relatedArticle.id}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
                   >
-                    <div className="h-48 overflow-hidden">
-                      <img
-                        src={relatedArticle.image}
-                        alt={relatedArticle.title}
-                        className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-gray-900 hover:text-green-600 transition-colors duration-300">
-                        {relatedArticle.title}
-                      </h3>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-8">
-              <Link
-                to="/servicos/noticias"
-                className="inline-flex items-center bg-gradient-to-r from-green-600 to-red-600 text-white px-8 py-4 rounded-lg hover:from-green-700 hover:to-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                Ver Todas as Notícias
-                <ArrowLeft className="ml-2 w-5 h-5 rotate-180" />
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+                    <Link
+                      to={`/servicos/noticias/${relatedArticle.id}`}
+                      className="block bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                    >
+                      <div className="h-48 overflow-hidden">
+                        <img
+                          src={relatedArticle.image}
+                          alt={relatedArticle.title}
+                          className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-bold text-gray-900 hover:text-green-600 transition-colors duration-300">
+                          {relatedArticle.title}
+                        </h3>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      )}
     </div>
   );
 };

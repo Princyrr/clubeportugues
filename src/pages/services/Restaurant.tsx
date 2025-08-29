@@ -43,7 +43,7 @@ const Restaurant = () => {
         <div className="absolute inset-0 bg-black/30" />
         <div
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: "url('/adegabanner.jpg')" }}
+          style={{ backgroundImage: "url('/noticia2.jpg')" }}
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -257,7 +257,7 @@ const Restaurant = () => {
             >
              <div className="rounded-2xl overflow-hidden shadow-2xl">
   <img
-    src="/adega.png"
+    src="/vinho.jpg"
     alt="Carta de Vinhos"
     className="w-full h-[600px] object-cover"
   />

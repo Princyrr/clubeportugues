@@ -3,6 +3,14 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight, Search, Tag } from 'lucide-react';
 
+// Importar todas as imagens locais
+import noticia1 from '../../assets/noticia1.jpg';
+import noticia2 from '../../assets/noticia2.jpg';
+import noticia3 from '../../assets/noticia3.jpg';
+import noticia4 from '../../assets/noticia4.png';
+import noticia5 from '../../assets/noticia5.png';
+import noticia6 from '../../assets/noticia6.png';
+
 const News = () => {
   const [selectedCategory, setSelectedCategory] = useState('todas');
   const [searchTerm, setSearchTerm] = useState('');
@@ -18,24 +26,24 @@ const News = () => {
   const newsArticles = [
     {
       id: 1,
-      title: 'Nova temporada de shows de Fado começa em março',
-      excerpt: 'Grandes nomes do fado português se apresentarão no clube durante toda a temporada de outono.',
+      title: 'Eleição para o novo Presidente e o Vice Precidente',
+      excerpt: 'No dia 25 de agosto de 2025, o Clube Português do Recife realizou a eleição que definiu seu novo Presidente e Vice-Presidente.',
       content: 'A nova temporada de shows de Fado no Clube Português do Recife promete emocionar...',
-      author: 'Maria Santos',
-      date: '2025-01-15',
+      author: 'Priscila',
+      date: '2025-08-29',
       category: 'eventos',
-      image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: noticia1,
       featured: true
     },
     {
       id: 2,
-      title: 'Equipe de futebol conquista título estadual',
-      excerpt: 'Após uma campanha brilhante, nosso time de futebol trouxe mais um troféu para casa.',
+      title: 'Adega Restaurante',
+      excerpt: 'localizado dentro do Clube Português do Recife, é um verdadeiro ícone da culinária portuguesa na cidade.',
       content: 'Em uma final emocionante, a equipe de futebol do Clube Português...',
-      author: 'João Silva',
-      date: '2025-01-12',
-      category: 'esportes',
-      image: 'https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg?auto=compress&cs=tinysrgb&w=800',
+      author: 'Priscila',
+      date: '2025-08-28',
+      category: 'gastronomia',
+      image: noticia2,
       featured: false
     },
     {
@@ -46,7 +54,7 @@ const News = () => {
       author: 'Ana Costa',
       date: '2025-01-10',
       category: 'gastronomia',
-      image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: noticia3,
       featured: false
     },
     {
@@ -57,18 +65,18 @@ const News = () => {
       author: 'Pedro Oliveira',
       date: '2025-01-08',
       category: 'cultura',
-      image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: noticia4,
       featured: false
     },
     {
       id: 5,
-      title: 'Adega recebe novos rótulos portugueses exclusivos',
-      excerpt: 'Seleção especial de vinhos diretamente das melhores vinícolas do Douro e Alentejo.',
+      title: 'Handebol',
+      excerpt: 'O Clube Português conquistou o título do Campeonato Brasileiro Júnior de Handebol Feminino 2025. No domingo (22), a equipe pernambucana superou o Esporte Clube Pinheiros por 27 a 25, em uma partida disputada no Poliesportivo Henrique Villaboim, que sediou a competição.',
       content: 'Nossa adega foi renovada com uma seleção exclusiva...',
       author: 'Carlos Mendes',
       date: '2025-01-05',
-      category: 'gastronomia',
-      image: 'https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg?auto=compress&cs=tinysrgb&w=800',
+      category: 'esporte',
+      image: noticia5,
       featured: false
     },
     {
@@ -79,7 +87,7 @@ const News = () => {
       author: 'Sofia Fernandes',
       date: '2025-01-03',
       category: 'esportes',
-      image: 'https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: noticia6,
       featured: false
     }
   ];
@@ -87,7 +95,7 @@ const News = () => {
   const filteredNews = newsArticles.filter(article => {
     const matchesCategory = selectedCategory === 'todas' || article.category === selectedCategory;
     const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         article.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+                          article.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
@@ -121,7 +129,6 @@ const News = () => {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
-            {/* Search Bar */}
             <div className="relative flex-1 max-w-lg">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
               <input
@@ -133,7 +140,6 @@ const News = () => {
               />
             </div>
 
-            {/* Category Filters */}
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
                 <button

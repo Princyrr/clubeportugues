@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">contato@clubeportuguesrecife.com.br</span>
+                <span className="text-gray-300">clube@clubeportuguesdorecife.com.br</span>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ const Footer = () => {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2025 Clube Português do Recife. Desenvolvido por Pricila Ramonna com Todos os direitos reservados.
+            © 2025 Clube Português do Recife. Desenvolvido por Pricila Ramonna.
           </p>
         </div>
       </div>

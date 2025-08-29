@@ -99,7 +99,7 @@ const About = () => {
                 <div className="flex items-center space-x-3">
                   <Award className="w-8 h-8" />
                   <div>
-                    <div className="text-2xl font-bold">95+</div>
+                    <div className="text-2xl font-bold">90+</div>
                     <div className="text-sm font-medium">Anos de História</div>
                   </div>
                 </div>

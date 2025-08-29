@@ -3,12 +3,19 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Trophy, Users, Calendar, Utensils } from 'lucide-react';
 
+// Importando imagens do assets
+import noticia1 from '../assets/noticia1.jpg';
+import noticia2 from '../assets/noticia2.jpg';
+import noticia3 from '../assets/noticia5.png';
+import noticia4 from '../assets/noticia4.png';
+import frente from '../assets/frente.jpg';
+
 const Home = () => {
   const features = [
     {
       icon: Trophy,
       title: 'Tradição Esportiva',
-      description: 'Mais de 100 anos de história no esporte pernambucano',
+      description: 'Mais de 90 anos de história no esporte pernambucano',
       link: '/quem-somos'
     },
     {
@@ -33,22 +40,22 @@ const Home = () => {
 
   const noticias = [
     {
-      img: '/noticia1.png',
-      title: 'Grande Evento no Clube',
-      description: 'O Clube Português do Recife recebeu mais de 2 mil pessoas em um evento inesquecível.',
+      img: noticia1,
+      title: 'Eleições',
+      description: 'No dia 25 de agosto de 2025, o Clube Português do Recife realizou a eleição que definiu seu novo Presidente e Vice-Presidente.',
     },
     {
-      img: '/noticia2.png',
-      title: 'Novo Restaurante Inaugurado',
-      description: 'Nossa nova área gastronômica foi aberta com pratos típicos e muito sabor.',
+      img: noticia2,
+      title: 'Adega Restaurante',
+      description: 'No Adega Restaurante você encontra o equilíbrio perfeito entre tradição, sabor e um ambiente acolhedor.',
     },
     {
-      img: '/noticia3.png',
-      title: 'Esporte em Alta',
+      img: noticia3,
+      title: 'Handebol Feminino',
       description: 'Atletas do clube conquistaram títulos importantes em competições nacionais.',
     },
     {
-      img: '/noticia4.png',
+      img: noticia4,
       title: 'Agenda Cultural',
       description: 'Shows, peças teatrais e festivais movimentaram o calendário do clube.',
     }
@@ -61,7 +68,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/30" />
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-          style={{ backgroundImage: "url('/frente.jpg')" }}
+          style={{ backgroundImage: `url(${frente})` }}
         />
         
         <div className="relative z-10 h-full flex items-center">
@@ -77,7 +84,7 @@ const Home = () => {
                 <span className="text-yellow-400 block">do Recife</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
-                Há 95 anos promovendo tradição, cultura e esporte. Venha fazer parte da nossa história.
+                Há 90 anos promovendo tradição, cultura e esporte. Venha fazer parte da nossa história.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -120,29 +127,25 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {noticias.map((noticia, index) => (
               <motion.div
-  key={index}
-  className="bg-white rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full min-h-[400px]"
-
->
-  <img
-  src={noticia.img}
-  alt={noticia.title}
-  className="w-full h-52 object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
-/>
-
- <div className="p-6 flex flex-col flex-1">
-  <h3 className="text-2xl font-bold text-gray-900 mb-4">{noticia.title}</h3>
-  <p className="text-gray-700 flex-grow mb-6">{noticia.description}</p>
-  <Link
-    to="/servicos/noticias"
-    className="mt-auto inline-block px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-all duration-300 text-center"
-  >
-    Saiba Mais
-  </Link>
-</div>
-
-</motion.div>
-
+                key={index}
+                className="bg-white rounded-3xl shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full min-h-[400px]"
+              >
+                <img
+                  src={noticia.img}
+                  alt={noticia.title}
+                  className="w-full h-52 object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{noticia.title}</h3>
+                  <p className="text-gray-700 flex-grow mb-6">{noticia.description}</p>
+                  <Link
+                    to="/servicos/noticias"
+                    className="mt-auto inline-block px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-all duration-300 text-center"
+                  >
+                    Saiba Mais
+                  </Link>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

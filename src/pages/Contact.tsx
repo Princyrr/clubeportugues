@@ -95,8 +95,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <p className="text-gray-600">
-                      contato@clubeportuguesrecife.com.br<br />
-                      secretaria@clubeportuguesrecife.com.br
+                     clube@clubeportuguesdorecife.com.br<br />
+                      
                     </p>
                   </div>
                 </div>
