@@ -89,14 +89,16 @@ A <strong>Chapa 1</strong> foi eleita para conduzir o futuro do <strong>Clube Po
   },
   {
   id: 5,
-  title: 'Clube Português é campeão Brasileiro Jr. de Handebol',
+  title: 'Convocadas para a Seleção Brasileira de Natação',
   content: `
     <p style="text-align: justify;">
-      O Clube Português brilhou no Campeonato Brasileiro Júnior de Handebol Feminino 2025, garantindo o título ao vencer o Esporte Clube Pinheiros por 27 a 25, em uma emocionante partida realizada no Poliesportivo Henrique Villaboim. A equipe pernambucana terminou em primeiro lugar, seguida pelo Pinheiros em segundo e FME/Criciúma em terceiro, com AD Centro Olímpico, Abluhand, Unicesumar/Araraquara, São José e Cato/Cahan completando a classificação, enquanto ATHB/Hand Torres, FME/Balneário Camboriú e Atlético Rio Negro ocuparam as últimas posições.
-    </p>
+  O Clube Português tem a honra de anunciar que as atletas <strong>Adrielly Alana</strong> e <strong>Ana Clara Lyra</strong> foram convocadas para integrar a <strong>Seleção Brasileira de Natação</strong>, um marco de grande orgulho para nossa instituição. 
+  Parabenizamos a nossa diretoria de esportes, <strong>Dr. Felipe Rego Barros</strong> e <strong>Dr. Inácio de Barros Melo</strong>, pelo trabalho e dedicação, assim como a nossa técnica de natação <strong>Keycy Cathyane dos Anjos Florâncio</strong>, cuja competência e empenho foram fundamentais para esta conquista.
+</p>
+
   `,
-  author: 'Carlos Mendes',
-  date: '2025-01-05',
+  author: 'Priscila',
+  date: '2025-08-31',
   category: 'esportes',
   image: noticia5,
   readTime: '2 min'

@@ -60,9 +60,17 @@ const Restaurant = () => {
             <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
               Sabores autênticos de Portugal no coração do Recife. Uma experiência gastronômica única.
             </p>
-            <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold px-8 py-4 rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              Fazer Reserva
-            </button>
+            <button
+  onClick={() => {
+    const phoneNumber = "5581982420816"; // Código do Brasil + número sem espaços
+    const message = encodeURIComponent("Olá, gostaria de fazer uma reserva no Restaurante Adega.");
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+  }}
+  className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold px-8 py-4 rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
+>
+  Fazer Reserva
+</button>
+
           </motion.div>
         </div>
       </section>
@@ -99,7 +107,7 @@ const Restaurant = () => {
               <Phone className="w-12 h-12 text-green-800 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Reservas</h3>
               <p className="text-gray-600">
-                (81) 3097-7270<br />
+                
                 restaurante@clubeportugues.com.br<br />
                 WhatsApp: (81) 98242-0816
               </p>

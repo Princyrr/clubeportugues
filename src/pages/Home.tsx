@@ -51,8 +51,8 @@ const Home = () => {
     },
     {
       img: noticia3,
-      title: 'Handebol Feminino',
-      description: 'Atletas do clube conquistaram títulos importantes em competições nacionais.',
+      title: 'Natação',
+      description: 'Adrielly Alana e Ana Clara Lyra foram convocadas para a Seleção Brasileira de Natação.',
     },
     {
       img: noticia4,
@@ -133,10 +133,11 @@ const Home = () => {
   className="bg-white rounded-3xl shadow-md hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full min-h-[400px] group overflow-hidden"
 >
   <img
-    src={noticia.img}
-    alt={noticia.title}
-    className="w-full h-60 object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
-  />
+  src={noticia.img}
+  alt={noticia.title}
+  className="w-full h-80 sm:h-60 object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
+/>
+
   <div className="p-6 flex flex-col flex-1">
     <h3 className="text-2xl font-bold text-gray-900 mb-4">{noticia.title}</h3>
     <p className="text-gray-700 flex-grow mb-6">{noticia.description}</p>

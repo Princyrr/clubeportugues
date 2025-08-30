@@ -70,11 +70,11 @@ const News = () => {
     },
     {
       id: 5,
-      title: 'Handebol',
-      excerpt: 'O Clube Português conquistou o título do Campeonato Brasileiro Júnior de Handebol Feminino 2025. No domingo (22), a equipe pernambucana superou o Esporte Clube Pinheiros por 27 a 25, em uma partida disputada no Poliesportivo Henrique Villaboim, que sediou a competição.',
+      title: 'Convocação para Seleção Brasileira',
+      excerpt: 'Adrielly Alana e Ana Clara Lyra foram convocadas para a Seleção Brasileira de Natação.',
       content: 'Nossa adega foi renovada com uma seleção exclusiva...',
-      author: 'Carlos Mendes',
-      date: '2025-01-05',
+      author: 'Priscila',
+      date: '2025-08-31',
       category: 'esporte',
       image: noticia5,
       featured: false
@@ -92,15 +92,36 @@ const News = () => {
     }
   ];
 
-  const filteredNews = newsArticles.filter(article => {
+  // Ordena sempre do maior id para o menor
+  const sortedNews = [...newsArticles].sort((a, b) => b.id - a.id);
+
+  // Aplica filtros
+  const filteredNews = sortedNews.filter(article => {
     const matchesCategory = selectedCategory === 'todas' || article.category === selectedCategory;
-    const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                          article.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch =
+      article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      article.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
-  const featuredArticle = newsArticles.find(article => article.featured);
-  const regularArticles = filteredNews.filter(article => !article.featured);
+  // Destaque
+  const featuredArticle = sortedNews.find(article => article.featured);
+
+  // Divide em recentes e antigas
+  const oneMonthAgo = new Date();
+  oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+
+  const recentArticles = filteredNews.filter(article => new Date(article.date) >= oneMonthAgo && !article.featured);
+
+
+// Notícias antigas (mais de 30 dias atrás)
+const oldNews = sortedNews.filter(article => {
+  const articleDate = new Date(article.date);
+  const thirtyDaysAgo = new Date();
+  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+  return articleDate < thirtyDaysAgo;
+});
+
 
   return (
     <div className="pt-32">
@@ -218,10 +239,10 @@ const News = () => {
         </section>
       )}
 
-      {/* News Grid */}
+      {/* Recent News Grid */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {regularArticles.length === 0 ? (
+          {recentArticles.length === 0 ? (
             <div className="text-center py-12">
               <Calendar className="w-16 h-16 text-gray-400 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-600 mb-2">
@@ -233,24 +254,24 @@ const News = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {regularArticles.map((article, index) => (
+              {recentArticles.map((article, index) => (
                 <motion.article
-  key={article.id}
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5, delay: index * 0.1 }}
-  viewport={{ once: true }}
-  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
->
-  <div className="h-72 overflow-hidden"> {/* <- aqui aumentei */}
-    <img
-      src={article.image}
-      alt={article.title}
-      className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-    />
-  </div>
+                  key={article.id}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                >
+                  <div className="h-72 overflow-hidden">
+                    <img
+                      src={article.image}
+                      alt={article.title}
+                      className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
   
-  <div className="p-6">
+                  <div className="p-6">
                     <div className="flex items-center space-x-4 mb-3">
                       <div className="flex items-center space-x-1">
                         <Tag className="w-4 h-4 text-green-600" />
@@ -293,6 +314,61 @@ const News = () => {
           )}
         </div>
       </section>
+
+      
+{/* Old News List */}
+<section className="py-12 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-2xl font-bold text-gray-900 mb-8">
+      Notícias Anteriores
+    </h2>
+
+    <div className="space-y-6">
+      {oldNews.map((article) => (
+        <motion.div
+          key={article.id}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="flex items-start gap-4 bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition"
+        >
+          {/* Thumbnail */}
+          <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+            <img
+              src={article.image}
+              alt={article.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="flex-1">
+            <h3 className="text-lg font-semibold text-gray-900 line-clamp-1">
+              {article.title}
+            </h3>
+            <p className="text-gray-600 text-sm line-clamp-2 mb-2">
+              {article.excerpt}
+            </p>
+
+            <div className="flex items-center justify-between text-sm text-gray-500">
+              <span>
+                {new Date(article.date).toLocaleDateString('pt-BR')}
+              </span>
+              <Link
+                to={`/servicos/noticias/${article.id}`}
+                className="text-green-600 hover:text-green-800 font-medium flex items-center"
+              >
+                Ler Mais
+                <ArrowRight className="ml-1 w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Newsletter Section */}
       <section className="py-20 bg-gradient-to-r from-green-800 to-red-800">

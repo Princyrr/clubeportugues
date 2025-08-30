@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, Music, Users, Star, Ticket } from 'lucide-react';
 
+// Importando as imagens locais
+import evento1 from '../../assets/evento1.jpg';
+import evento2 from '../../assets/evento2.jpg';
+import evento3 from '../../assets/evento3.jpg';
+
 const Events = () => {
   const [selectedMonth, setSelectedMonth] = useState('janeiro');
 
@@ -18,7 +23,7 @@ const Events = () => {
         artist: 'Maria Fernanda',
         time: '20h30',
         price: 'R$ 45,00',
-        image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: evento1
       },
       {
         date: '22 Jan',
@@ -26,7 +31,7 @@ const Events = () => {
         artist: 'Chef António Silva',
         time: '19h00',
         price: 'R$ 35,00',
-        image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: evento2
       },
       {
         date: '29 Jan',
@@ -34,7 +39,7 @@ const Events = () => {
         artist: 'Orquestra Lusitana',
         time: '21h00',
         price: 'R$ 50,00',
-        image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: evento3
       }
     ],
     fevereiro: [
@@ -44,7 +49,7 @@ const Events = () => {
         artist: 'Rancho Folclórico',
         time: '20h00',
         price: 'R$ 40,00',
-        image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: evento1
       },
       {
         date: '12 Fev',
@@ -52,7 +57,7 @@ const Events = () => {
         artist: 'Duo Romântico',
         time: '19h30',
         price: 'R$ 55,00',
-        image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: evento2
       }
     ],
     março: [
@@ -62,7 +67,7 @@ const Events = () => {
         artist: 'Coral Feminino',
         time: '18h00',
         price: 'Gratuito',
-        image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: evento3
       }
     ]
   };
@@ -85,6 +90,10 @@ const Events = () => {
     }
   ];
 
+  // contato da instituição
+  const whatsappNumber = '5581982524617'; // coloque o número sem caracteres especiais
+  const emailAddress = 'clube@clubeportuguesdorecife.com.br';
+
   return (
     <div className="pt-32">
       {/* Hero Section */}
@@ -93,7 +102,7 @@ const Events = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
-            backgroundImage: "url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"
+            backgroundImage: `url(${evento1})`
           }}
         />
         
@@ -111,9 +120,14 @@ const Events = () => {
             <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
               Eventos culturais, shows musicais e celebrações que mantêm viva a tradição portuguesa
             </p>
-            <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold px-8 py-4 rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <a
+              href={`https://wa.me/${whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold px-8 py-4 rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
+            >
               Entre em contato
-            </button>
+            </a>
           </motion.div>
         </div>
       </section>
@@ -208,7 +222,7 @@ const Events = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="h-48 overflow-hidden">
+                <div className="h-56 md:h-72 overflow-hidden">
                   <img
                     src={event.image}
                     alt={event.title}
@@ -231,10 +245,15 @@ const Events = () => {
                   
                   <div className="flex items-center justify-between">
                     <span className="text-2xl font-bold text-purple-800">{event.price}</span>
-                    <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center space-x-2">
+                    <a
+                      href={`https://wa.me/${whatsappNumber}?text=Olá, gostaria de informações sobre o evento: ${event.title}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center space-x-2"
+                    >
                       <Ticket className="w-4 h-4" />
                       <span>Whatsapp</span>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </motion.div>
@@ -275,8 +294,8 @@ const Events = () => {
                 
                 <div className="text-center">
                   <div className="w-12 h-12 bg-yellow-400 text-black rounded-full flex items-center justify-center mx-auto mb-3 font-bold">2</div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Ligue para nossos telefones</h3>
-                  <p className="text-gray-300">Entre em contato</p>
+                  <h3 className="text-lg font-semibold text-white mb-2">Clique no Contato</h3>
+                  <p className="text-gray-300">Use Whatsapp ou E-mail</p>
                 </div>
                 
                 <div className="text-center">
@@ -287,12 +306,22 @@ const Events = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-yellow-500 text-black font-semibold px-8 py-4 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                  (81) 3231-5400
-                </button>
-                <button className="border-2 border-yellow-400 text-yellow-400 font-semibold px-8 py-4 rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300">
-                  eventos@clubeportugues.com.br
-                </button>
+               <a
+  href={`https://wa.me/${whatsappNumber}?text=Olá, gostaria de mais informações sobre um evento!`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-yellow-500 text-black font-semibold px-8 py-4 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg"
+>
+  (81) 98252-4617
+</a>
+
+               <a
+  href={`mailto:${emailAddress}`}
+  className="border-2 border-yellow-400 text-yellow-400 font-semibold px-8 py-4 rounded-lg hover:bg-yellow-400 hover:text-black transition-all duration-300 break-words whitespace-normal text-center w-full sm:w-auto"
+>
+  {emailAddress}
+</a>
+
               </div>
             </motion.div>
           </div>

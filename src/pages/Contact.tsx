@@ -11,13 +11,29 @@ const Contact = () => {
     message: ''
   });
 
+  const whatsappNumber = "5581982524617"; // coloque o número do WhatsApp aqui (com DDI + DDD, só números)
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+
+    // Monta a mensagem formatada
+    const text = `
+📩 *Novo contato pelo site*:
+
+👤 Nome: ${formData.name}
+📧 Email: ${formData.email}
+📱 Telefone: ${formData.phone}
+📌 Assunto: ${formData.subject}
+📝 Mensagem: ${formData.message}
+    `;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -69,7 +85,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-gray-900 mb-1">Endereço</h3>
                     <p className="text-gray-600">
                       Avenida Conselheiro Rosa e Silva, 172<br />
-                     Graças - Recife/PE<br />
+                      Graças - Recife/PE<br />
                       CEP: 52020-220
                     </p>
                   </div>
@@ -83,7 +99,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-gray-900 mb-1">Telefones</h3>
                     <p className="text-gray-600">
                       (81)3231-5400<br />
-                      (81) 99999-8888
+                      (81) 98252-4617
                     </p>
                   </div>
                 </div>
@@ -95,8 +111,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <p className="text-gray-600">
-                     clube@clubeportuguesdorecife.com.br<br />
-                      
+                      clube@clubeportuguesdorecife.com.br
                     </p>
                   </div>
                 </div>
@@ -116,12 +131,18 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div className="mt-8 bg-gray-200 rounded-2xl h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-2" />
-                  <p className="text-gray-500">Mapa da localização</p>
-                </div>
+              {/* Google Maps Embed */}
+              <div className="mt-8 rounded-2xl overflow-hidden shadow-lg">
+                <iframe
+                  title="Localização"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.90722222222!2d-34.900000!3d-8.050000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18e000000000%3A0x0000000000000000!2sAvenida%20Conselheiro%20Rosa%20e%20Silva%2C%20172!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </motion.div>
 
@@ -234,60 +255,6 @@ const Contact = () => {
                 </button>
               </form>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <MessageSquare className="w-12 h-12 text-green-800 mx-auto mb-4" />
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Perguntas Frequentes
-            </h2>
-            <p className="text-xl text-gray-600">
-              Respostas para as dúvidas mais comuns
-            </p>
-          </motion.div>
-
-          <div className="space-y-6">
-            {[
-              {
-                question: "Como faço para me tornar sócio do clube?",
-                answer: "Para se tornar sócio, você pode entrar em contato conosco através dos telefones ou vir pessoalmente ao clube. Teremos prazer em explicar todos os benefícios e modalidades de associação."
-              },
-              {
-                question: "O restaurante está aberto para não sócios?",
-                answer: "Sim, nosso restaurante atende sócios e não sócios. Recomendamos fazer reserva antecipada, especialmente aos finais de semana e feriados."
-              },
-              {
-                question: "Posso alugar espaços para eventos?",
-                answer: "Sim, oferecemos aluguel de nossos salões e espaços para eventos sociais e empresariais. Entre em contato para conhecer nossas opções e valores."
-              },
-              {
-                question: "Quais modalidades esportivas estão disponíveis?",
-                answer: "Oferecemos diversas modalidades como futebol, natação, tênis, vôlei, basquete e muito mais. Consulte nossa programação esportiva."
-              }
-            ].map((faq, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg p-6 shadow-md"
-              >
-                <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
