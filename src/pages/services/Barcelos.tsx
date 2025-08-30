@@ -7,25 +7,25 @@ const Barcelos = () => {
     {
       category: 'Almoço Comercial',
       items: [
-        { name: 'Filé à Parmegiana', description: 'Filé de carne com molho especial, arroz e fritas', price: 'R$ 28,00' },
-        { name: 'Frango Grelhado', description: 'Peito de frango grelhado com legumes e arroz', price: 'R$ 25,00' },
-        { name: 'Bacalhau à Moda', description: 'Bacalhau ao forno com batatas e cebola', price: 'R$ 32,00' }
+        { name: 'Filé à Parmegiana', description: 'Filé de carne com molho especial, arroz e fritas', price: '' },
+        { name: 'Frango Grelhado', description: 'Peito de frango grelhado com legumes e arroz', price: '' },
+        { name: 'Bacalhau à Moda', description: 'Bacalhau ao forno com batatas e cebola', price: '' }
       ]
     },
     {
       category: 'Lanches',
       items: [
-        { name: 'Hambúrguer Artesanal', description: 'Hambúrguer bovino com queijo e molho especial', price: 'R$ 22,00' },
-        { name: 'Sanduíche de Frango', description: 'Frango desfiado, queijo e salada no pão artesanal', price: 'R$ 18,00' },
-        { name: 'Hot Dog Especial', description: 'Cachorro-quente completo com molho especial', price: 'R$ 15,00' }
+        { name: 'Hambúrguer Artesanal', description: 'Hambúrguer bovino com queijo e molho especial', price: '' },
+        { name: 'Sanduíche de Frango', description: 'Frango desfiado, queijo e salada no pão artesanal', price: '' },
+        { name: 'Hot Dog Especial', description: 'Cachorro-quente completo com molho especial', price: '' }
       ]
     },
     {
       category: 'Bebidas e Drinks',
       items: [
-        { name: 'Cerveja Gelada', description: 'Cerveja nacional ou importada', price: 'R$ 8,00' },
-        { name: 'Caipirinha', description: 'Tradicional drink brasileiro com limão e cachaça', price: 'R$ 15,00' },
-        { name: 'Refrigerante', description: 'Variedade de sabores', price: 'R$ 6,00' }
+        { name: 'Cerveja Gelada', description: 'Cerveja nacional ou importada', price: '' },
+        { name: 'Caipirinha', description: 'Tradicional drink brasileiro com limão e cachaça', price: '' },
+        { name: 'Refrigerante', description: 'Variedade de sabores', price: '' }
       ]
     }
   ];
@@ -51,7 +51,7 @@ const Barcelos = () => {
   return (
     <div className="pt-32">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-amber-600 via-orange-600 to-red-600 overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-r from-green-600 via-red-600 to-green-600 overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-40"
@@ -92,7 +92,7 @@ const Barcelos = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                A Essência do <span className="text-amber-600">Bar Barcelos</span>
+                A Essência do <span className="text-green-600">Bar Barcelos</span>
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Um bar acolhedor com tradição portuguesa, oferecendo pratos, lanches e drinks para todos os gostos.
@@ -101,11 +101,11 @@ const Barcelos = () => {
                 Nossa missão é proporcionar momentos de descontração e sabor, combinando qualidade, variedade e ambiente agradável.
               </p>
               <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-4 bg-amber-50 rounded-lg">
+                <div className="text-center p-4 bg-green-50 rounded-lg">
                   <div className="text-2xl font-bold text-amber-600 mb-1">100%</div>
                   <div className="text-sm text-gray-600">Atendimento de Qualidade</div>
                 </div>
-                <div className="text-center p-4 bg-amber-50 rounded-lg">
+                <div className="text-center p-4 bg-green-50 rounded-lg">
                   <div className="text-2xl font-bold text-amber-600 mb-1">7h</div>
                   <div className="text-sm text-gray-600">Aberto por Dia</div>
                 </div>
@@ -126,7 +126,7 @@ const Barcelos = () => {
                   className="w-full h-96 object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-amber-500 to-orange-600 text-white p-6 rounded-2xl shadow-xl">
+              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white p-6 rounded-2xl shadow-xl">
                 <Utensils className="w-8 h-8 mb-2" />
                 <div className="text-lg font-bold">Sabor e Tradição</div>
                 <div className="text-sm opacity-90">Desde 1923</div>
@@ -147,7 +147,7 @@ const Barcelos = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Nosso <span className="text-orange-600">Cardápio</span>
+              Nosso <span className="text-green-600">Cardápio</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Delícias que agradam todos os paladares: pratos, lanches e drinks refrescantes
@@ -195,7 +195,7 @@ const Barcelos = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Mais que um <span className="text-amber-600">Bar</span>
+              Mais que um <span className="text-green-600">Bar</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Um espaço de convivência, sabor e tradição
@@ -210,9 +210,9 @@ const Barcelos = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="text-center p-8 bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl"
+                className="text-center p-8 bg-gradient-to-br from-green-50 to-green-50 rounded-2xl"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <item.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{item.title}</h3>
@@ -224,7 +224,7 @@ const Barcelos = () => {
       </section>
 
       {/* Hours and Contact */}
-      <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-green-800 to-red-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
             <motion.div

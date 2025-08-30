@@ -4,11 +4,11 @@ import { Calendar, Clock, MapPin, Music, Users, Star, Ticket } from 'lucide-reac
 
 // Importando as imagens locais
 import evento1 from '../../assets/evento1.jpg';
-import evento2 from '../../assets/evento2.jpg';
-import evento3 from '../../assets/evento3.jpg';
+import evento2 from '../../assets/semevento.png';
+
 
 const Events = () => {
-  const [selectedMonth, setSelectedMonth] = useState('janeiro');
+  const [selectedMonth, setSelectedMonth] = useState('setembro');
 
   const months = [
     'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
@@ -16,58 +16,15 @@ const Events = () => {
   ];
 
   const events = {
-    janeiro: [
+    setembro: [
+   
       {
-        date: '15 Jan',
-        title: 'Noite do Fado',
-        artist: 'Maria Fernanda',
-        time: '20h30',
-        price: 'R$ 45,00',
-        image: evento1
-      },
-      {
-        date: '22 Jan',
-        title: 'Festival da Francesinha',
-        artist: 'Chef António Silva',
+        date: '01 Set',
+        title: 'Sem evento no momento',
+        artist: '--',
         time: '19h00',
-        price: 'R$ 35,00',
+        price: '----',
         image: evento2
-      },
-      {
-        date: '29 Jan',
-        title: 'Baile da Saudade',
-        artist: 'Orquestra Lusitana',
-        time: '21h00',
-        price: 'R$ 50,00',
-        image: evento3
-      }
-    ],
-    fevereiro: [
-      {
-        date: '05 Fev',
-        title: 'Carnaval Português',
-        artist: 'Rancho Folclórico',
-        time: '20h00',
-        price: 'R$ 40,00',
-        image: evento1
-      },
-      {
-        date: '12 Fev',
-        title: 'Serenata de São Valentim',
-        artist: 'Duo Romântico',
-        time: '19h30',
-        price: 'R$ 55,00',
-        image: evento2
-      }
-    ],
-    março: [
-      {
-        date: '08 Mar',
-        title: 'Homenagem às Mulheres Portuguesas',
-        artist: 'Coral Feminino',
-        time: '18h00',
-        price: 'Gratuito',
-        image: evento3
       }
     ]
   };
@@ -97,7 +54,7 @@ const Events = () => {
   return (
     <div className="pt-32">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-900 via-purple-900 to-red-900 overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-r from-green-800 via-red-800 to-green-600 overflow-hidden">
         <div className="absolute inset-0 bg-black/30" />
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -115,7 +72,7 @@ const Events = () => {
           >
             <Calendar className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Agenda de <span className="text-yellow-400">Shows</span>
+              Agenda de <span className="text-yellow-600">Shows</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
               Eventos culturais, shows musicais e celebrações que mantêm viva a tradição portuguesa
@@ -143,7 +100,7 @@ const Events = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Tipos de <span className="text-blue-800">Eventos</span>
+              Tipos de <span className="text-green-800">Eventos</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Diversas modalidades de entretenimento para todos os gostos
@@ -160,7 +117,7 @@ const Events = () => {
                 viewport={{ once: true }}
                 className="text-center p-8 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl hover:from-blue-100 hover:to-purple-100 transition-colors duration-300"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <type.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{type.title}</h3>
@@ -182,7 +139,7 @@ const Events = () => {
             className="text-center mb-12"
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Programação <span className="text-purple-800">2025</span>
+              Programação <span className="text-green-800">2025</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Confira nossa agenda completa de eventos e shows
@@ -191,13 +148,13 @@ const Events = () => {
 
           {/* Month Selector */}
           <div className="flex flex-wrap justify-center mb-12 gap-2">
-            {months.slice(0, 3).map((month) => (
+            {months.slice(8, 12).map((month) => (
               <button
                 key={month}
                 onClick={() => setSelectedMonth(month.toLowerCase())}
                 className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                   selectedMonth === month.toLowerCase()
-                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-green-600 to-red-600 text-white shadow-lg'
                     : 'bg-white text-gray-700 hover:bg-gray-100'
                 }`}
               >
@@ -231,7 +188,7 @@ const Events = () => {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-gradient-to-r from-green-600 to-red-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                       {event.date}
                     </span>
                     <div className="flex items-center text-gray-500 text-sm">
@@ -249,7 +206,7 @@ const Events = () => {
                       href={`https://wa.me/${whatsappNumber}?text=Olá, gostaria de informações sobre o evento: ${event.title}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center space-x-2"
+                      className="bg-gradient-to-r from-green-600 to-red-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center space-x-2"
                     >
                       <Ticket className="w-4 h-4" />
                       <span>Whatsapp</span>
@@ -270,7 +227,7 @@ const Events = () => {
       {/* Booking Info */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-blue-800 to-purple-800 rounded-3xl p-12 text-center">
+          <div className="bg-gradient-to-r from-green-800 to-red-800 rounded-3xl p-12 text-center">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -289,19 +246,19 @@ const Events = () => {
                 <div className="text-center">
                   <div className="w-12 h-12 bg-yellow-400 text-black rounded-full flex items-center justify-center mx-auto mb-3 font-bold">1</div>
                   <h3 className="text-lg font-semibold text-white mb-2">Escolha o Evento</h3>
-                  <p className="text-gray-300">Selecione o show ou evento de sua preferência</p>
+                  <p className="text-gray-300">Em cada evento de sua preferência tem botão do Whatsapp</p>
                 </div>
                 
                 <div className="text-center">
                   <div className="w-12 h-12 bg-yellow-400 text-black rounded-full flex items-center justify-center mx-auto mb-3 font-bold">2</div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Clique no Contato</h3>
-                  <p className="text-gray-300">Use Whatsapp ou E-mail</p>
+                  <h3 className="text-lg font-semibold text-white mb-2">Clique no Botão</h3>
+                  <p className="text-gray-300">Escolha o Whatsapp para falar diretamente com a secretaria.</p>
                 </div>
                 
                 <div className="text-center">
                   <div className="w-12 h-12 bg-yellow-400 text-black rounded-full flex items-center justify-center mx-auto mb-3 font-bold">3</div>
                   <h3 className="text-lg font-semibold text-white mb-2">Aproveite</h3>
-                  <p className="text-gray-300">Chegue um pouco antes e curta o evento</p>
+                  <p className="text-gray-300">Tire as suas dúvidas sobre o evento que você tem interesse!</p>
                 </div>
               </div>
               

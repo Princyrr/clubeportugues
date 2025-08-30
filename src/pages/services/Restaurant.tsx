@@ -14,25 +14,25 @@ const Restaurant = () => {
 
   const menuItems = {
     'entradas': [
-      { name: 'Caldo Verde', description: 'Tradicional sopa portuguesa com couve e linguiça', price: 'R$ 28,00' },
-      { name: 'Pastéis de Bacalhau', description: 'Bolinhos de bacalhau crocantes (6 unidades)', price: 'R$ 35,00' },
-      { name: 'Queijos e Enchidos', description: 'Seleção de queijos e embutidos portugueses', price: 'R$ 45,00' }
+      { name: 'Caldo Verde', description: 'Tradicional sopa portuguesa com couve e linguiça', price: '' },
+      { name: 'Pastéis de Bacalhau', description: 'Bolinhos de bacalhau crocantes (6 unidades)', price: '' },
+      { name: 'Queijos e Enchidos', description: 'Seleção de queijos e embutidos portugueses', price: '' }
     ],
     'pratos-principais': [
-      { name: 'Bacalhau à Brás', description: 'Bacalhau desfiado com batata palha e ovos', price: 'R$ 68,00' },
-      { name: 'Francesinha', description: 'Sanduíche típico do Porto com molho especial', price: 'R$ 52,00' },
-      { name: 'Costeleta de Porco Alentejana', description: 'Costeleta grelhada com amêijoas e batatas', price: 'R$ 75,00' },
-      { name: 'Polvo à Lagareiro', description: 'Polvo assado com azeite, alho e batatas', price: 'R$ 85,00' }
+      { name: 'Bacalhau à Brás', description: 'Bacalhau desfiado com batata palha e ovos', price: '' },
+      { name: 'Francesinha', description: 'Sanduíche típico do Porto com molho especial', price: '' },
+      { name: 'Costeleta de Porco Alentejana', description: 'Costeleta grelhada com amêijoas e batatas', price: '' },
+      { name: 'Polvo à Lagareiro', description: 'Polvo assado com azeite, alho e batatas', price: '' }
     ],
     'sobremesas': [
-      { name: 'Pastel de Nata', description: 'Clássico pastel de nata português (3 unidades)', price: 'R$ 18,00' },
-      { name: 'Pudim Abade de Priscos', description: 'Pudim tradicional com toucinho do céu', price: 'R$ 22,00' },
-      { name: 'Arroz Doce', description: 'Arroz doce cremoso com canela', price: 'R$ 16,00' }
+      { name: 'Pastel de Nata', description: 'Clássico pastel de nata português (3 unidades)', price: '' },
+      { name: 'Pudim Abade de Priscos', description: 'Pudim tradicional com toucinho do céu', price: '' },
+      { name: 'Arroz Doce', description: 'Arroz doce cremoso com canela', price: '' }
     ],
     'bebidas': [
-      { name: 'Vinho Verde', description: 'Garrafa de vinho verde português', price: 'R$ 45,00' },
-      { name: 'Ginjinha', description: 'Licor de ginja tradicional (dose)', price: 'R$ 12,00' },
-      { name: 'Sagres', description: 'Cerveja portuguesa (600ml)', price: 'R$ 15,00' }
+      { name: 'Vinho Verde', description: 'Garrafa de vinho verde português', price: '' },
+      { name: 'Ginjinha', description: 'Licor de ginja tradicional (dose)', price: '' },
+      { name: 'Sagres', description: 'Cerveja portuguesa (600ml)', price: '' }
     ]
   };
 

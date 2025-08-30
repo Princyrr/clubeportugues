@@ -126,7 +126,7 @@ const oldNews = sortedNews.filter(article => {
   return (
     <div className="pt-32">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-800 via-green-800 to-red-800 overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-r from-green-800 via-green-800 to-red-800 overflow-hidden">
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
