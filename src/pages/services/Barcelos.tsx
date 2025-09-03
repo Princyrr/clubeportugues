@@ -2,33 +2,59 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Clock, MapPin, Heart, Users, Utensils } from 'lucide-react';
 
+// Importar suas imagens locais
+import barcelos from '../../assets/barcelos.png';
+import barcelossalgados from '../../assets/barcelossalgados.png';
+
 const Barcelos = () => {
   const menuItems = [
-    {
-      category: 'Almoço Comercial',
-      items: [
-        { name: 'Filé à Parmegiana', description: 'Filé de carne com molho especial, arroz e fritas', price: '' },
-        { name: 'Frango Grelhado', description: 'Peito de frango grelhado com legumes e arroz', price: '' },
-        { name: 'Bacalhau à Moda', description: 'Bacalhau ao forno com batatas e cebola', price: '' }
-      ]
-    },
-    {
-      category: 'Lanches',
-      items: [
-        { name: 'Hambúrguer Artesanal', description: 'Hambúrguer bovino com queijo e molho especial', price: '' },
-        { name: 'Sanduíche de Frango', description: 'Frango desfiado, queijo e salada no pão artesanal', price: '' },
-        { name: 'Hot Dog Especial', description: 'Cachorro-quente completo com molho especial', price: '' }
-      ]
-    },
-    {
-      category: 'Bebidas e Drinks',
-      items: [
-        { name: 'Cerveja Gelada', description: 'Cerveja nacional ou importada', price: '' },
-        { name: 'Caipirinha', description: 'Tradicional drink brasileiro com limão e cachaça', price: '' },
-        { name: 'Refrigerante', description: 'Variedade de sabores', price: '' }
-      ]
-    }
-  ];
+  {
+    category: 'Almoço Comercial',
+    items: [
+      { name: 'Frango à Parmegiana', description: 'Frango empanado coberto com molho de tomate e queijo gratinado, servido com arroz e fritas', price: '' },
+      { name: 'Cupim Acebolado', description: 'Cupim macio refogado com cebolas caramelizadas, acompanhado de arroz e feijão', price: '' },
+      { name: 'Carne de Sol', description: 'Carne de sol grelhada servida com macaxeira e arroz', price: '' },
+      { name: 'Camarão à Parmegiana', description: 'Camarões gratinados com molho de tomate e queijo, acompanhados de arroz e batatas', price: '' },
+      { name: 'Feijoada', description: 'Feijão preto selecionado e uma seleção especial de carnes suínas e defumadas', price: '' }
+    ]
+  },
+  {
+    category: 'Petiscos',
+    items: [
+      { name: 'Caldinhos', description: 'Pequenas porções de caldos quentes e temperados', price: '' },
+      { name: 'Camarão ao Alho e Óleo', description: 'Camarões salteados no alho e óleo, servidos quentes', price: '' },
+      { name: 'Isca de Peixe à Milanesa', description: 'Peixes empanados e fritos até ficarem dourados e crocantes', price: '' },
+      { name: 'Bolinho de Bacalhau', description: 'Tradicionais bolinhos de bacalhau fritos, crocantes por fora e macios por dentro', price: '' },
+      { name: 'Calabresa com Fritas', description: 'Linguiça calabresa fatiada grelhada, servida com batatas fritas', price: '' },
+      { name: 'Panelinha de Gorgonzola', description: 'Queijo gorgonzola derretido servido em panelinha, acompanhado de torradas', price: '' },
+      { name: 'Frango à Passarinha', description: 'Pequenos pedaços de frango fritos e temperados, crocantes e saborosos', price: '' },
+      { name: 'Batata Fritas', description: 'Batatas cortadas e fritas até ficarem douradas e crocantes', price: '' }
+    ]
+  },
+  {
+    category: 'Lanches',
+    items: [
+      { name: 'Sanduiches', description: 'Pães recheados com carnes, queijos, vegetais e molhos especiais', price: '' },
+      { name: 'Tapiocas', description: 'Tapiocas recheadas com diversos sabores', price: '' },
+      { name: 'Coxinhas', description: ' Recheados com frango desfiado', price: '' },
+      { name: 'Enroladinho', description: 'Massa fina recheada com salsicha ou queijo', price: '' },
+      { name: 'Empadas', description: 'Pequenas tortas recheadas com frango', price: '' },
+      { name: 'Pães Recheados', description: 'Pães macios com diversos recheios', price: '' }
+    ]
+  },
+  {
+    category: 'Bebidas e Drinks',
+    items: [
+      { name: 'Heineken', description: 'Cerveja importada, refrescante e de sabor equilibrado', price: '' },
+      { name: 'Devassa', description: 'Cerveja nacional leve e saborosa', price: '' },
+      { name: 'Amistel', description: 'Cerveja de sabor suave e refrescante', price: '' },
+      { name: 'Whiskys', description: 'Seleção de whiskys nacionais e importados, servidos puros ou com gelo', price: '' },
+      { name: 'Caipirinha', description: 'Clássico drink brasileiro feito com cachaça, limão e açúcar', price: '' },
+      { name: 'Caipiroska', description: 'Versão da caipirinha feita com vodka e frutas variadas', price: '' }
+    ]
+  }
+];
+
 
   const ambiences = [
     {
@@ -56,7 +82,7 @@ const Barcelos = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-40"
           style={{
-            backgroundImage: "url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')"
+            backgroundImage: `url(${barcelos})`
           }}
         />
         
@@ -121,8 +147,8 @@ const Barcelos = () => {
             >
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/1002543/pexels-photo-1002543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Bar Barcelos"
+                  src={barcelossalgados}
+                  alt="Bar Barcelos Petiscos"
                   className="w-full h-96 object-cover"
                 />
               </div>
@@ -150,7 +176,12 @@ const Barcelos = () => {
               Nosso <span className="text-green-600">Cardápio</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Delícias que agradam todos os paladares: pratos, lanches e drinks refrescantes
+              Algunas delícias que agradam todos os paladares: pratos, petiscos, lanches e drinks refrescantes, além desses tem muitos mais no nosso bar!
+    
+            </p>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Lembrando que temos muitos mais opções, esses são apenas alguns e que são sucesso entre nossos clientes. 
+    
             </p>
           </motion.div>
 

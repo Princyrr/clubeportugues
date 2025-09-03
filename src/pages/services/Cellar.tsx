@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Star, Award, Users, Clock } from 'lucide-react';
 
@@ -24,29 +24,34 @@ import tai from '../../assets/tai.jpg';
 import kung from '../../assets/kung.jpg';
 import sinuca from '../../assets/sinuca.jpg';
 import heroBg from '../../assets/historia4.jpg';
+import colonia from '../../assets/colonia.png';
+import massagem from '../../assets/massagem.jpg';
+
 
 const Cellar = () => {
   const activities = [
-    { title: "Escolinha de Natação", teacher: "Prof.ª Carla", image: natacao, contact: "(81) 99999-1111" },
-    { title: "Escolinha de Natação", teacher: "Prof.ª Keycy", image: natacao1, contact: "(81) 99999-2222" },
-    { title: "Natação e Hidroginástica", teacher: "Prof. Fernando", image: natacao2, contact: "(81) 99999-3333" },
-    { title: "Natação e Hidroginástica", teacher: "Prof.ª Regina", image: natacao3, contact: "(81) 99999-4444" },
-    { title: "Natação Master", teacher: "Prof. Domingos", image: natacao4, contact: "(81) 99999-5555" },
-    { title: "Escolinha de Hóquei", teacher: "Equipe Técnica", image: hoquei, contact: "(81) 99999-6666" },
-    { title: "Escolinha de Handebol", teacher: "Equipe Técnica", image: handebol, contact: "(81) 99999-7777" },
-    { title: "Escolinha Society", teacher: "Prof. Lúcio Surubim", image: futebol, contact: "(81) 99999-8888" },
-    { title: "Academia RW", teacher: "Equipe RW", image: academia, contact: "(81) 99999-9999" },
-    { title: "Boxe", teacher: "Instrutor Especializado", image: boxe, contact: "(81) 98888-1111" },
-    { title: "Muay Thai", teacher: "Instrutor Especializado", image: muai, contact: "(81) 98888-2222" },
-    { title: "Ballet", teacher: "Prof.ª Amanda Jacó", image: ballet, contact: "(81) 98888-3333" },
-    { title: "Espaço de Beleza", teacher: "Camem Alves", image: salaodebeleza, contact: "(81) 98888-4444" },
-    { title: "Tênis", teacher: "Prof.ª Jéssica", image: tenis, contact: "(81) 98888-5555" },
-    { title: "Tênis Kids", teacher: "Equipe Infantil", image: teniskids, contact: "(81) 98888-6666" },
-    { title: "Tênis", teacher: "Prof. Valdir", image: tenis2, contact: "(81) 98888-7777" },
-    { title: "Futevôlei", teacher: "Equipe Técnica", image: futevolei, contact: "(81) 98888-8888" },
-    { title: "Tai Chi Chuan", teacher: "Prof. Júlio Kushida", image: tai, contact: "(81) 98888-9999" },
-    { title: "Kung Fu", teacher: "Prof. Júlio Kushida", image: kung, contact: "(81) 97777-1111" },
-    { title: "Sinuca ISSA", teacher: "Ítaro Santos", image: sinuca, contact: "(81) 97777-2222" },
+    { title: "Escolinha de Natação", teacher: "Prof.ª Carla", image: natacao, contact: "(81) 98224-9769" },
+    { title: "Escolinha de Natação", teacher: "Prof.ª Keycy", image: natacao1, contact: "(81) 98224-9769" },
+    { title: "Natação e Hidroginástica", teacher: "Prof. Fernando", image: natacao2, contact: "(81) 98224-9769" },
+    { title: "Natação e Hidroginástica", teacher: "Prof.ª Regina", image: natacao3, contact: "(81) 98224-9769" },
+    { title: "Natação", teacher: "Prof. Domingos Sávio", image: natacao4, contact: "(81) 98224-9769" },
+    { title: "Hóquei", teacher: "Equipe Técnica", image: hoquei, contact: "(81) 98892-6000" },
+    { title: "Handebol", teacher: "Marculino: Diniz / Feminino: Cristiano", image: handebol,  contact: <>Masculino: (81) 99954-3153<br />Feminino:  99628-5442</> },
+    { title: "Escolinha Society", teacher: "Prof. Lúcio Surubim", image: futebol, contact: "(81) 99609-8366" },
+    { title: "Academia RW", teacher: "Equipe RW", image: academia, contact: "(81) 3129-6160" },
+    { title: "Boxe", teacher: "Izaque", image: boxe, contact: "(81) 98361-6719 / 99625-0234 " },
+    { title: "Muay Thai e Taekwondo", teacher: "Izaque", image: muai, contact: "(81) 98361-6719 / 99625-0234" },
+    { title: "Ballet", teacher: "Prof.ª Amanda Jacó", image: ballet, contact: "(81) 99890-7155" },
+    { title: "Salão de Beleza", teacher: "Camem Alves", image: salaodebeleza, contact: "(81) 3221-6308" },
+    { title: "Tênis", teacher: "Prof.ª Jéssica", image: tenis, contact: "(81) 97100-0870" },
+    { title: "Tênis Kids", teacher: "Prof. Leandro", image: teniskids, contact: "(81) 98794-7285" },
+    { title: "Tênis Adulto", teacher: "Prof. Valdir", image: tenis2, contact: "(81) 99905-1545" },
+    { title: "Volêi de Praia", teacher: "Prof.ª Camila", image: futevolei, contact: "(81) 99814-6161" },
+    { title: "Tai Chi Chuan", teacher: "Prof. Emerson", image: tai, contact: "(81) 98608-1584" },
+    { title: "Kung Fu", teacher: "Prof. Júlio Kushida", image: kung, contact: "(81) --/--" },
+    { title: "Sinuca ISSA", teacher: "Ítaro Santos", image: sinuca, contact: "(81) 99883-0147" },
+    { title: "Colônia de Férias", teacher: "Nogueira", image: colonia, contact: "(81) 99171-2572" },
+     { title: "Massagem", teacher: "Arnaldo", image: massagem, contact: "(81) 99168-7376" },
   ];
 
   const features = [

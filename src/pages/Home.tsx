@@ -1,14 +1,18 @@
-import React from 'react'; 
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Trophy, Users, Calendar, Utensils } from 'lucide-react';
-
+import HeroCarousel from "../components/HeroCarousel";
 // Importando imagens do assets
-import noticia1 from '../assets/noticia1.jpg';
+import noticia1 from '../assets/galeria1.jpg';
 import noticia2 from '../assets/noticia2.jpg';
 import noticia3 from '../assets/noticia5.png';
 import noticia4 from '../assets/noticia6.png';
-import frente from '../assets/frente.jpg';
+
+// Banners do slideshow
+import banner1 from '../assets/banner1.png';
+import banner2 from '../assets/banner2.png';
+import banner3 from '../assets/banner3.png';
 
 const Home = () => {
   const features = [
@@ -41,8 +45,8 @@ const Home = () => {
   const noticias = [
     {
       img: noticia1,
-      title: 'Eleitos Para o Biênio 2025-2027',
-      description: 'No dia 25 de agosto de 2025, o Clube Português do Recife realizou a eleição que definiu seu novo Presidente e Vice-Presidente.',
+      title: 'Novo Presidente e Vice-Presidente',
+      description: 'A cerimônia de posse aconteceu no dia 01/09/2025, marcando o início de um novo ciclo no Clube Português do Recife.',
     },
     {
       img: noticia2,
@@ -61,17 +65,39 @@ const Home = () => {
     }
   ];
 
+  // Slideshow state
+  const banners = [banner1, banner2, banner3];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % banners.length);
+    }, 5000); // troca a cada 5 segundos
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="pt-32">
       {/* Hero Section */}
       <section className="relative h-[80vh] bg-gradient-to-r from-green-800 via-green-700 to-red-800 overflow-hidden">
-        <div className="absolute inset-0 bg-black/30" />
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-          style={{ backgroundImage: `url(${frente})` }}
-        />
-        
-        <div className="relative z-10 h-full flex items-center">
+        <div className="absolute inset-0 bg-black/30 z-10" />
+
+        {/* Slideshow */}
+        <div className="absolute inset-0">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5 }}
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${banners[currentIndex]})` }}
+            />
+          </AnimatePresence>
+        </div>
+
+        <div className="relative z-20 h-full flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -124,38 +150,35 @@ const Home = () => {
             </p>
           </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-  {noticias.map((noticia, index) => (
-    <motion.div
-  key={index}
-  whileHover={{ scale: 1.03, y: -5 }}
-  transition={{ type: "spring", stiffness: 200, damping: 15 }}
-  className="bg-white rounded-3xl shadow-md hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full min-h-[400px] group overflow-hidden"
->
-  <img
-  src={noticia.img}
-  alt={noticia.title}
-  className="w-full h-80 sm:h-60 object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
-/>
-
-  <div className="p-6 flex flex-col flex-1">
-    <h3 className="text-2xl font-bold text-gray-900 mb-4">{noticia.title}</h3>
-    <p className="text-gray-700 flex-grow mb-6">{noticia.description}</p>
-    <Link
-      to="/servicos/noticias"
-      className="mt-auto inline-block px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-all duration-300 text-center"
-    >
-      Saiba Mais
-    </Link>
-  </div>
-</motion.div>
-
-  ))}
-</div>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {noticias.map((noticia, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.03, y: -5 }}
+                transition={{ type: "spring", stiffness: 200, damping: 15 }}
+                className="bg-white rounded-3xl shadow-md hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full min-h-[400px] group overflow-hidden"
+              >
+                <img
+                  src={noticia.img}
+                  alt={noticia.title}
+                  className="w-full h-80 sm:h-60 object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{noticia.title}</h3>
+                  <p className="text-gray-700 flex-grow mb-6">{noticia.description}</p>
+                  <Link
+                    to="/servicos/noticias"
+                    className="mt-auto inline-block px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-all duration-300 text-center"
+                  >
+                    Saiba Mais
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
-
+<HeroCarousel />
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -26,18 +26,18 @@ const Diretoria = () => {
             />
             <h3 className="text-xl font-bold">Presidente</h3>
             <p className="text-gray-700">
-              JOÃO JORGE BARBOSA MARINHO
+              DANIEL FERREIRA RODRIGUES
             </p>
           </div>
           <div>
             <img
-              src="/vicepresidente.jpg"
+              src="/vicepresidente.png"
               alt="Vice-Presidente"
               className="w-64 h-72 object-cover rounded-2xl shadow-lg mx-auto mb-4"
             />
             <h3 className="text-xl font-bold">Vice-Presidente</h3>
             <p className="text-gray-700">
-              FERNANDO MEDICIS PINTO
+              CELSO STAMFORD GASPAR
             </p>
           </div>
         </div>
@@ -51,80 +51,80 @@ const Diretoria = () => {
           <div>
             <p className="font-bold">ADMINISTRATIVO:</p>
             <p className="text-gray-700">
-              Adilson Castello B. da Cunha e Ulisses José do Nascimento
+              --/--
             </p>
           </div>
 
           <div>
             <p className="font-bold">COMERCIAL:</p>
             <p className="text-gray-700">
-              Paulo de Tarso Dornelas de Andrade e Eduardo Jorge Viana de Carvalho Neves
+              --/--
             </p>
           </div>
 
           <div>
             <p className="font-bold">COMUNICAÇÃO:</p>
-            <p className="text-gray-700">Roberta Maria Tejo Caminha</p>
+            <p className="text-gray-700">--/--</p>
           </div>
 
           <div>
             <p className="font-bold">CULTURAL:</p>
             <p className="text-gray-700">
-              Fernando José Costa de Aguiar e João Virgílio Ramos André
+              --/--
             </p>
           </div>
 
           <div>
             <p className="font-bold">ENGENHARIA E PLANEJAMENTO:</p>
             <p className="text-gray-700">
-              Luiz Moura de Santana e Virginia Braga de Santana
+              --/--
             </p>
           </div>
 
           <div>
             <p className="font-bold">ESPORTES:</p>
             <p className="text-gray-700">
-              Felipe Tadeu Moreira Lima Rêgo Barros e Inácio de Barros Melo Neto
+              --/--
             </p>
           </div>
 
           <div>
             <p className="font-bold">FEMININO:</p>
             <p className="text-gray-700">
-              Maria Elizabeth Varjal Medicis Pinto e Maria Lucia Bravo Cysneiros Cavalcanti
+              --/--
             </p>
           </div>
 
           <div>
             <p className="font-bold">FINANCEIRO:</p>
-            <p className="text-gray-700">Carlos Cesar de Moura Lima</p>
+            <p className="text-gray-700">--/--</p>
           </div>
 
           <div>
             <p className="font-bold">FISCALIZAÇÃO E SEGURANÇA:</p>
-            <p className="text-gray-700">Paulo de Tarso de Carvalho</p>
+            <p className="text-gray-700">--/--</p>
           </div>
 
           <div>
             <p className="font-bold">HIGIENE E SAÚDE:</p>
-            <p className="text-gray-700">Luiz Lauria</p>
+            <p className="text-gray-700">--/--</p>
           </div>
 
           <div>
             <p className="font-bold">JURÍDICO:</p>
-            <p className="text-gray-700">Ivo Amaral Junior</p>
+            <p className="text-gray-700">--/--</p>
           </div>
 
           <div>
             <p className="font-bold">PATRIMÔNIO E MANUTENÇÃO:</p>
             <p className="text-gray-700">
-              Afonso Henrique de Sá Pereira de Albuquerque e Italo Fernando Vasconcelos Sivini
+              --/--
             </p>
           </div>
 
           <div>
             <p className="font-bold">SOCIAL:</p>
-            <p className="text-gray-700">Rose Beltrão de Sousa</p>
+            <p className="text-gray-700">--/--</p>
           </div>
         </div>
 

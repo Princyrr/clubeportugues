@@ -123,9 +123,9 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Horário de Funcionamento</h3>
                     <p className="text-gray-600">
-                      Segunda a Sexta: 8h às 20h<br />
-                      Sábado e Domingo: 8h às 12h<br />
-                      Feriados: 8h às 12h
+                      Segunda a Sexta: 6h às 21h<br />
+                      Sábado e Domingo: 8h às 16h<br />
+                      Feriados: 8h às 16h
                     </p>
                   </div>
                 </div>

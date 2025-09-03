@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Phone, Star, Utensils, Wine, ChefHat } from 'lucide-react';
+
+import noticia2 from '../../assets/adega1.jpg';
+import vinhoImg from '../../assets/adega2.jpg';
+
 
 const Restaurant = () => {
   const [selectedCategory, setSelectedCategory] = useState('pratos-principais');
@@ -14,36 +18,64 @@ const Restaurant = () => {
 
   const menuItems = {
     'entradas': [
-      { name: 'Caldo Verde', description: 'Tradicional sopa portuguesa com couve e linguiça', price: '' },
-      { name: 'Pastéis de Bacalhau', description: 'Bolinhos de bacalhau crocantes (6 unidades)', price: '' },
-      { name: 'Queijos e Enchidos', description: 'Seleção de queijos e embutidos portugueses', price: '' }
+      { name: 'Couvert Adega', description: 'Cebola, abobrinha e beringela marinados, pasta de queijo e pão caseiro', price: '' },
+  { name: 'Bolinho de Bacalhau', description: 'Bolinhos de bacalhau crocantes por fora e macios por dentro', price: '' },
+  { name: 'Caldinhos', description: 'peixe, camarão e feijão', price: '' },
+  { name: 'Carpaccio de Carne', description: 'Ao molho de mostarda, queijo parmesão, rúcula, alcaparras e torradas', price: '' },
+  { name: 'Camarão à Milanesa com Molho Rosé', description: 'Camarões empanados, fritos e servidos com molho rosé especial', price: '' },
+  { name: 'Camarão ao Alho e Óleo', description: 'Camarões salteados no alho e óleo, servidos quentes', price: '' },
+  { name: 'Tábua de Frios', description: 'Seleção de queijos, embutidos e acompanhamentos', price: '' },
+  { name: 'Isca de Peixe', description: 'Peixes empanados e fritos até ficarem dourados e crocantes', price: '' },
+ 
+  { name: 'Moela à Moda Portuguesa', description: 'Acompanha torradas', price: '' }
     ],
     'pratos-principais': [
-      { name: 'Bacalhau à Brás', description: 'Bacalhau desfiado com batata palha e ovos', price: '' },
-      { name: 'Francesinha', description: 'Sanduíche típico do Porto com molho especial', price: '' },
-      { name: 'Costeleta de Porco Alentejana', description: 'Costeleta grelhada com amêijoas e batatas', price: '' },
-      { name: 'Polvo à Lagareiro', description: 'Polvo assado com azeite, alho e batatas', price: '' }
+     { name: 'Filé ao Molho Madeira', description: 'Filé mignon grelhado servido com molho madeira especial', price: '' },
+  { name: 'Steak au Poivre Alto Grelhado', description: 'Ao molho madeira pimentado servido com arroz e legumes', price: '' },
+  { name: 'Filé aos Quatro Queijos', description: 'Servido com Fettuccine ao molho pesto', price: '' },
+  { name: 'Diplomata', description: 'Filé envolvido no bacon, servido com arroz piamontez e fritas', price: '' },
+  { name: 'Chateaubriand', description: 'Filé alto regado ao molho chatobriand com arroz à grega e purê', price: '' },
+  { name: 'Paillard', description: 'Filé batido, servido com fettuccine ao molho de queijo', price: '' },
+  { name: 'Filé à Parmegiana', description: 'Filé empanado com fettuccine ao sugo e fritas', price: '' },
+  { name: 'Filé de Peito ao Catupiry', description: 'Servido com arroz branco e batata palha', price: '' },
+  { name: 'Frango à Parisiense', description: 'Fettuccine ao molho branco presunto, cubos de frango', price: '' },
+  { name: 'Frango à Cubana', description: 'Peito de frango empanado com arroz à grega, batata frita, banana empanada e ovo frito.', price: '' },
+  { name: 'Arroz de Polvo', description: 'Arroz preparado com pedaços de polvo e temperos mediterrâneos', price: '' },
+    { name: 'Sinfonia Marítima', description: 'Servida com arroz de alho', price: '' },
+  { name: 'Peixe à Belle Meunière', description: 'Filé de pescada amarela, puxado na manteiga com alcaparras, champignon e camarão, servido com purê de batatas e arroz de brócolis.', price: '' },
+  { name: 'Peixe à Moda do Chef', description: 'Pescada amarela grelhada com molho de tomate, servido com legumes ao vapor.', price: '' },
+  { name: 'Salmão com Molho de Alcaparras', description: 'Servido com arroz de brócolis.', price: '' },
+  { name: 'Salmão com Ervas Finas', description: 'servido com legumes no bafo.', price: '' }
     ],
     'sobremesas': [
-      { name: 'Pastel de Nata', description: 'Clássico pastel de nata português (3 unidades)', price: '' },
-      { name: 'Pudim Abade de Priscos', description: 'Pudim tradicional com toucinho do céu', price: '' },
-      { name: 'Arroz Doce', description: 'Arroz doce cremoso com canela', price: '' }
+      { name: 'Pudim de Leite', description: 'Pudim cremoso de leite tradicional', price: '' },
+  { name: 'Pastel de Belém', description: 'Clássico pastel de nata português com massa folhada ', price: '' },
+  { name: 'Cartola', description: 'Banana frita com queijo manteiga e açúcar, finalizada com canela', price: '' },
+  { name: 'Queijo Manteiga com Mel de Engenho', description: 'Queijo manteiga servido com mel artesanal de engenho', price: '' }
     ],
     'bebidas': [
-      { name: 'Vinho Verde', description: 'Garrafa de vinho verde português', price: '' },
-      { name: 'Ginjinha', description: 'Licor de ginja tradicional (dose)', price: '' },
-      { name: 'Sagres', description: 'Cerveja portuguesa (600ml)', price: '' }
+     { name: 'Refrigerantes', description: 'Variedade de sabores de refrigerante ', price: '' },
+  { name: 'Sucos', description: 'Sucos preparados na hora', price: '' },
+  { name: 'Energético', description: 'Bebida energética para aumentar a disposição', price: '' },
+  { name: 'Vodkas', description: 'Seleção de vodkas nacionais e importadas', price: '' },
+  { name: 'Cachaças', description: 'Cachaças artesanais e tradicionais brasileiras', price: '' },
+  { name: 'Whiskies', description: 'Whiskies nacionais e importados de alta qualidade', price: '' },
+  { name: 'Cervejas', description: 'Cervejas nacionais e importadas geladas', price: '' },
+  { name: 'Gins', description: 'Gins com botânicos selecionados', price: '' },
+  { name: 'Drinks', description: 'Coquetéis clássicos e exclusivos preparados na hora', price: '' },
+  { name: 'Vinhos', description: 'variedades é o que não falta por aqui', price: '' },
     ]
   };
 
   return (
     <div className="pt-32">
-      {/* Hero Section */}
+      
+     {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-green-800 to-red-800 overflow-hidden">
         <div className="absolute inset-0 bg-black/30" />
         <div
           className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{ backgroundImage: "url('/noticia2.jpg')" }}
+          style={{ backgroundImage: `url(${noticia2})` }}
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,16 +93,17 @@ const Restaurant = () => {
               Sabores autênticos de Portugal no coração do Recife. Uma experiência gastronômica única.
             </p>
             <button
-  onClick={() => {
-    const phoneNumber = "5581982420816"; // Código do Brasil + número sem espaços
-    const message = encodeURIComponent("Olá, gostaria de fazer uma reserva no Restaurante Adega.");
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
-  }}
-  className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold px-8 py-4 rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
->
-  Fazer Reserva
-</button>
-
+              onClick={() => {
+                const phoneNumber = "5581982420816";
+                const message = encodeURIComponent(
+                  "Olá, gostaria de fazer uma reserva no Restaurante Adega."
+                );
+                window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+              }}
+              className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold px-8 py-4 rounded-lg hover:from-yellow-400 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              Fazer Reserva
+            </button>
           </motion.div>
         </div>
       </section>
@@ -163,11 +196,12 @@ const Restaurant = () => {
           >
             <Utensils className="w-12 h-12 text-green-800 mx-auto mb-4" />
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Nosso <span className="text-red-800">Cardápio</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Pratos tradicionais portugueses preparados com amor e dedicação
-            </p>
+  Nosso <span className="text-red-800">Cardápio</span>
+</h2>
+<p className="text-xl text-gray-600 max-w-3xl mx-auto">
+  Pratos tradicionais portugueses preparados com amor e dedicação. Estas são apenas algumas das muitas opções que você encontrará em nosso cardápio completo, recheado de sabores e variedade.
+</p>
+
           </motion.div>
 
           {/* Menu Categories */}
@@ -239,40 +273,39 @@ const Restaurant = () => {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
-                  Vinhos do Porto e Douro
+                 Espumantes
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
-                  Vinhos Verdes do Minho
+                  Vinho Branco, Vinho Tinto  e Rosé
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
-                  Vinhos do Alentejo
+                  Vinhos de Portugal
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-red-600 rounded-full mr-3"></span>
-                  Seleção de vinhos brasileiros
+                  Vinhos do Chile
                 </li>
               </ul>
             </motion.div>
 
-            <motion.div
+               <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
               className="relative"
             >
-             <div className="rounded-2xl overflow-hidden shadow-2xl">
-<img
-  src="/vinho.jpg"
-  alt="Carta de Vinhos"
-  className="w-full h-80 md:h-[600px] object-cover rounded-2xl"
-/>
-
-</div>
-
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src={vinhoImg}
+                  alt="Carta de Vinhos"
+                  className="w-full h-80 md:h-[600px] object-cover rounded-2xl"
+                />
+              </div>
             </motion.div>
+            
           </div>
         </div>
       </section>

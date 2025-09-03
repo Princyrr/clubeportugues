@@ -11,6 +11,9 @@ import noticia4 from '../../assets/noticia4.png';
 import noticia5 from '../../assets/noticia5.png';
 import noticia6 from '../../assets/noticia6.png';
 
+// 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
+import galeria1 from '../../assets/galeria1.jpg';
+
 const News = () => {
   const [selectedCategory, setSelectedCategory] = useState('todas');
   const [searchTerm, setSearchTerm] = useState('');
@@ -33,7 +36,7 @@ const News = () => {
       date: '2025-08-29',
       category: 'eventos',
       image: noticia1,
-      featured: true
+      featured: false
     },
     {
       id: 2,
@@ -81,14 +84,26 @@ const News = () => {
     },
     {
       id: 6,
-      title: 'Gratidão e reconhecimento',
-      excerpt: 'Estamos nos aproximando de um novo ciclo no Clube Português do Recife, mas não poderíamos deixar de registrar nossa profunda homenagem...',
-      content: 'A equipe de natação do clube teve uma performance excepcional...',
+      title: 'Gratidão e Reconhecimento',
+      excerpt: 'Estamos nos aproximando de um novo ciclo no Clube Português do Recife, não poderíamos deixar de registrar nossa sincera gratidão.',
+      content: 'Gratidão e Reconhecimento',
       author: 'Priscila',
       date: '2025-08-30',
       category: 'evento',
       image: noticia6,
       featured: false
+    },
+    {
+      id: 7,
+      title: 'Posse do Presidente e Vice-Presidente',
+      excerpt: 'A cerimônia de posse aconteceu no dia 01/09/2025, marcando o início de um novo ciclo no Clube Português do Recife.',
+      content: 'A posse oficial do Presidente Daniel Ferreira Rodrigues e do Vice-Presidente Celso Stamford Gaspar...',
+      author: 'Priscila',
+      date: '2025-09-04',
+      category: 'eventos',
+      // 🔥 Usar apenas galeria1 como capa na listagem
+      image: galeria1,
+      featured: true
     }
   ];
 
@@ -113,15 +128,13 @@ const News = () => {
 
   const recentArticles = filteredNews.filter(article => new Date(article.date) >= oneMonthAgo && !article.featured);
 
-
-// Notícias antigas (mais de 30 dias atrás)
-const oldNews = sortedNews.filter(article => {
-  const articleDate = new Date(article.date);
-  const thirtyDaysAgo = new Date();
-  thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-  return articleDate < thirtyDaysAgo;
-});
-
+  // Notícias antigas (mais de 30 dias atrás)
+  const oldNews = sortedNews.filter(article => {
+    const articleDate = new Date(article.date);
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    return articleDate < thirtyDaysAgo;
+  });
 
   return (
     <div className="pt-32">
@@ -315,60 +328,59 @@ const oldNews = sortedNews.filter(article => {
         </div>
       </section>
 
-      
-{/* Old News List */}
-<section className="py-12 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-2xl font-bold text-gray-900 mb-8">
-      Notícias Anteriores
-    </h2>
+      {/* Old News List */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            Notícias Anteriores
+          </h2>
 
-    <div className="space-y-6">
-      {oldNews.map((article) => (
-        <motion.div
-          key={article.id}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="flex items-start gap-4 bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition"
-        >
-          {/* Thumbnail */}
-          <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg">
-            <img
-              src={article.image}
-              alt={article.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Content */}
-          <div className="flex-1">
-            <h3 className="text-lg font-semibold text-gray-900 line-clamp-1">
-              {article.title}
-            </h3>
-            <p className="text-gray-600 text-sm line-clamp-2 mb-2">
-              {article.excerpt}
-            </p>
-
-            <div className="flex items-center justify-between text-sm text-gray-500">
-              <span>
-                {new Date(article.date).toLocaleDateString('pt-BR')}
-              </span>
-              <Link
-                to={`/servicos/noticias/${article.id}`}
-                className="text-green-600 hover:text-green-800 font-medium flex items-center"
+          <div className="space-y-6">
+            {oldNews.map((article) => (
+              <motion.div
+                key={article.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="flex items-start gap-4 bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition"
               >
-                Ler Mais
-                <ArrowRight className="ml-1 w-4 h-4" />
-              </Link>
-            </div>
+                {/* Thumbnail */}
+                <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900 line-clamp-1">
+                    {article.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm line-clamp-2 mb-2">
+                    {article.excerpt}
+                  </p>
+
+                  <div className="flex items-center justify-between text-sm text-gray-500">
+                    <span>
+                      {new Date(article.date).toLocaleDateString('pt-BR')}
+                    </span>
+                    <Link
+                      to={`/servicos/noticias/${article.id}`}
+                      className="text-green-600 hover:text-green-800 font-medium flex items-center"
+                    >
+                      Ler Mais
+                      <ArrowRight className="ml-1 w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* Newsletter Section */}
       <section className="py-20 bg-gradient-to-r from-green-800 to-red-800">

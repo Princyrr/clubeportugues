@@ -1,7 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Users, Award, Heart, Target } from 'lucide-react';
 import Diretoria from "../components/Diretoria";
+
+// 🔥 importa todas as imagens do assets
+import quemsomos from "../assets/quemsomos.png";
+import quemsomos1 from "../assets/quemsomos1.jpg";
+import quemsomos2 from "../assets/quemsomos2.jpg";
+import quemsomos3 from "../assets/quemsomos3.jpg";
+import quemsomos4 from "../assets/quemsomos4.jpg";
+import quemsomos5 from "../assets/quemsomos5.jpg";
+import banner1 from "../assets/banner1.png";
+import banner2 from "../assets/banner2.png";
+import piscina from "../assets/piscina.jpg";
+
+
 
 
 const About = () => {
@@ -23,13 +36,18 @@ const About = () => {
 
   // --- Slideshow de imagens ---
   const images = [
-    '/quemsomos.png',
-    '/quemsomos1.jpg',
-    '/quemsomos2.jpg',
-    '/quemsomos3.jpg',
-    '/quemsomos4.jpg',
-    '/quemsomos5.jpg'
+    quemsomos,
+    quemsomos1,
+    quemsomos2,
+    quemsomos3,
+    quemsomos4,
+    quemsomos5,
+    banner1,
+    banner2,
+    piscina
+
   ];
+
   const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
@@ -45,10 +63,6 @@ const About = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-green-800 to-red-800 overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: "url('/frente.jpg')" }}
-        />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
@@ -79,41 +93,38 @@ const About = () => {
             </motion.div>
 
             {/* Slideshow de imagens */}
-           
-<motion.div
-  initial={{ opacity: 0, x: 50 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.8 }}
-  viewport={{ once: true }}
-  className="relative"
->
-  <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full h-[480px]">
-    <AnimatePresence>
-      <motion.img
-        key={currentImage}
-        src={images[currentImage]}
-        alt="Clube Português"
-        className="w-full h-full object-cover"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1 }}
-      />
-    </AnimatePresence>
-  </div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full h-[480px]">
+                <AnimatePresence>
+                  <motion.img
+                    key={currentImage}
+                    src={images[currentImage]}
+                    alt="Clube Português"
+                    className="w-full h-full object-cover"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1 }}
+                  />
+                </AnimatePresence>
+              </div>
 
-  <div className="absolute bottom-6 right-4 md:bottom-0 md:right-6 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black p-4 md:p-6 rounded-2xl shadow-xl">
-  <div className="flex items-center space-x-3">
-    <Award className="w-6 h-6 md:w-8 md:h-8" />
-    <div>
-      <div className="text-xl md:text-2xl font-bold">90+</div>
-      <div className="text-xs md:text-sm font-medium">Anos de História</div>
-    </div>
-  </div>
-</div>
-
-</motion.div>
-
+              <div className="absolute bottom-6 right-4 md:bottom-0 md:right-6 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black p-4 md:p-6 rounded-2xl shadow-xl">
+                <div className="flex items-center space-x-3">
+                  <Award className="w-6 h-6 md:w-8 md:h-8" />
+                  <div>
+                    <div className="text-xl md:text-2xl font-bold">90+</div>
+                    <div className="text-xs md:text-sm font-medium">Anos de História</div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
 
           </div>
         </div>
@@ -152,7 +163,9 @@ const About = () => {
           </div>
         </div>
       </section>
- <Diretoria />
+
+      <Diretoria />
+
       {/* Values Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
