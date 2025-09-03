@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight, Search, Tag } from 'lucide-react';
@@ -62,12 +62,12 @@ const News = () => {
     },
     {
       id: 4,
-      title: 'Festival de Cultura Portuguesa movimenta o clube',
-      excerpt: 'Três dias de celebração da rica cultura lusitana com música, dança e gastronomia.',
-      content: 'O Festival de Cultura Portuguesa foi um sucesso absoluto...',
-      author: 'Pedro Oliveira',
-      date: '2025-01-08',
-      category: 'cultura',
+      title: '🏆 CAMPEÃS DO BRASIL 2025!',
+      excerpt: 'O Clube Português conquista, pela sexta vez, o título de Campeão Brasileiro Júnior de Handebol Feminino!',
+      content: 'Handebol',
+      author: 'Diretoria',
+      date: '2025-06-25',
+      category: 'esportes',
       image: noticia4,
       featured: false
     },
@@ -78,7 +78,7 @@ const News = () => {
       content: 'Nossa adega foi renovada com uma seleção exclusiva...',
       author: 'Priscila',
       date: '2025-08-31',
-      category: 'esporte',
+      category: 'esportes',
       image: noticia5,
       featured: false
     },
@@ -89,7 +89,7 @@ const News = () => {
       content: 'Gratidão e Reconhecimento',
       author: 'Priscila',
       date: '2025-08-30',
-      category: 'evento',
+      category: 'eventos',
       image: noticia6,
       featured: false
     },

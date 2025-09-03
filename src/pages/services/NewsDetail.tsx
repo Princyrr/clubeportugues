@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Calendar, User, ArrowLeft, Tag } from 'lucide-react';
@@ -79,13 +79,19 @@ A <strong>Chapa 1</strong> foi eleita para conduzir o futuro do <strong>Clube Po
   },
   {
     id: 4,
-    title: 'Festival de Cultura Portuguesa movimenta o clube',
+    title: '🏆 CAMPEÃS DO BRASIL 2025!',
     content: `
-      <p>O Festival de Cultura Portuguesa foi um sucesso absoluto, com apresentações de música, dança e gastronomia típica...</p>
+       <p style="text-align: justify;"> O Clube Português conquista, pela sexta vez, o título de Campeão Brasileiro Júnior de Handebol Feminino!!!
+No domingo (22/05), nossas guerreiras venceram o Esporte Clube Pinheiros por 27x25, em uma final eletrizante no Poliesportivo Henrique Villaboim, em São Paulo.
+Com garra, talento e espírito de equipe, nosso time superou a pressão e garantiu a vitória histórica!
+
+A diretoria do Clube Português parabeniza atletas, comissão técnica e todos os envolvidos, por essa conquista grandiosa e agradece ao apoio fundamental do nosso patrocinador @fmo.edu.br
+
+Orgulho de Pernambuco!</p>
     `,
-    author: 'Pedro Oliveira',
-    date: '2025-01-08',
-    category: 'cultura',
+    author: 'Diretoria',
+    date: '2025-06-26',
+    category: 'esportes',
     image: noticia4,
     readTime: '6 min'
   },
