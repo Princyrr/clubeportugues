@@ -36,15 +36,16 @@ const About = () => {
 
   // --- Slideshow de imagens ---
   const images = [
+    banner1,
+    banner2,
+    piscina,
     quemsomos,
     quemsomos1,
     quemsomos2,
     quemsomos3,
     quemsomos4,
     quemsomos5,
-    banner1,
-    banner2,
-    piscina
+    
 
   ];
 
