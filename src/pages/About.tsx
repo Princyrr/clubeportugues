@@ -19,12 +19,13 @@ import piscina from "../assets/piscina.jpg";
 
 const About = () => {
   const milestones = [
-    { year: '1923', event: 'Fundação do Clube Português do Recife' },
-    { year: '1935', event: 'Inauguração da primeira sede própria' },
-    { year: '1950', event: 'Conquista do primeiro título estadual' },
+    { year: '1934', event: 'Fundação do Clube Português do Recife' },
+    { year: '1953', event: 'Implantação da equipe de hóquei sobre patins (pioneiro em Pernambuco)' },
+    { year: '1960', event: 'Criação da equipe de handebol, que se tornaria referência nacional' },
     { year: '1980', event: 'Reforma e modernização das instalações' },
-    { year: '2000', event: 'Abertura do novo complexo esportivo' },
-    { year: '2023', event: '100 anos de tradição e história' }
+     { year: '2014', event: 'Comemoração solene dos 80 anos na Assembleia Legislativa' },
+    { year: '2024', event: 'Reconhecimento como Patrimônio Cultural Imaterial do Recife' }
+    
   ];
 
   const values = [

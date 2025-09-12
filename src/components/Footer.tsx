@@ -22,7 +22,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-4">
-              Tradição, cultura e esporte desde 1923. O melhor clube social do Recife.
+              Tradição, cultura e esporte desde 1934. O melhor clube social do Recife.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/clubeportuguesoficial/?locale=pt_BR" className="text-white hover:text-yellow-400 transition-colors duration-300">
@@ -65,7 +65,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400 mt-1" />
                 <span className="text-gray-300">
-                  Avenida Conselheiro Rosa e Silva, 172<br />Recife - PE
+                  Avenida Conselheiro Rosa e Silva, 172 - Recife  (PE)
                 </span>
               </div>
 
@@ -88,11 +88,16 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Email */}
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300">clube@clubeportuguesdorecife.com.br</span>
-              </div>
+              
+ <div className="flex items-start space-x-3">
+  <Mail className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
+  <span className="text-gray-300 break-words max-w-full lg:max-w-[400px]">
+    portugues@clubeportuguesdorecife.com.br
+  </span>
+</div>
+
+
+
             </div>
           </div>
         </div>
@@ -100,7 +105,7 @@ const Footer = () => {
         {/* Footer bottom */}
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2025 Clube Português do Recife. Desenvolvido por Pricila Ramonna.
+            © 2025 Clube Português do Recife. Desenvolvido por Priscila Ramonna.
           </p>
         </div>
       </div>

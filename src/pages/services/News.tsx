@@ -66,7 +66,7 @@ const News = () => {
       excerpt: 'O Clube Português conquista, pela sexta vez, o título de Campeão Brasileiro Júnior de Handebol Feminino!',
       content: 'Handebol',
       author: 'Diretoria',
-      date: '2025-06-25',
+      date: '2025-06-26',
       category: 'esportes',
       image: noticia4,
       featured: false

@@ -70,7 +70,7 @@ const HeroCarousel = () => {
 
 
   return (
-    <section className="relative min-h-[90vh] bg-gradient-to-r from-green-800 via-green-700 to-red-800 flex flex-col items-center justify-center overflow-hidden px-4">
+    <section className="relative min-h-[90vh] bg-gradient-to-r from-green-800 via-green-700 to-red-800 flex flex-col items-center justify-center overflow-hidden px-4 pb-20  ">
       
       {/* Carrossel 3D */}
       <div

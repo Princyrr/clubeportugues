@@ -98,7 +98,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Telefones</h3>
                     <p className="text-gray-600">
-                      (81)3231-5400<br />
+                      (81) 3231-5400<br />
                       (81) 98252-4617
                     </p>
                   </div>
@@ -111,7 +111,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <p className="text-gray-600">
-                      clube@clubeportuguesdorecife.com.br
+                      portugues@clubeportuguesdorecife.com.br
                     </p>
                   </div>
                 </div>
