@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 
 const Diretoria = () => {
@@ -51,80 +51,93 @@ const Diretoria = () => {
           <div>
             <p className="font-bold">ADMINISTRATIVO:</p>
             <p className="text-gray-700">
-              --/--
+              WALDOMIRO MARIANO SÁ FILHO
             </p>
           </div>
 
           <div>
             <p className="font-bold">COMERCIAL:</p>
             <p className="text-gray-700">
-              --/--
+              AMERICO MARTINS BARBOSA
+             
+            </p>
+            <p className="text-gray-700">
+             
+              BENTO DOMINGOS DOS SANTOS ROMEIRA DE SÁ
             </p>
           </div>
 
           <div>
             <p className="font-bold">COMUNICAÇÃO:</p>
-            <p className="text-gray-700">--/--</p>
+            <p className="text-gray-700">CÉLIA STAMFORD GASPAR AMARAL</p>
+            <p className="text-gray-700">ROBERTA MARIA TEJO CAMINHA</p>
           </div>
 
           <div>
             <p className="font-bold">CULTURAL:</p>
             <p className="text-gray-700">
-              --/--
+              SILVIO AMORIM
             </p>
           </div>
 
           <div>
             <p className="font-bold">ENGENHARIA E PLANEJAMENTO:</p>
             <p className="text-gray-700">
-              --/--
+             LUIZ MOURA DE SANTANA
             </p>
           </div>
 
           <div>
             <p className="font-bold">ESPORTES:</p>
             <p className="text-gray-700">
-              --/--
+              INÁCIO DE BARROS MELO NETO
+            </p>
+            <p className="text-gray-700">
+              FELIPE TADEU MOREIRA LIMA RÊGO BARROS
             </p>
           </div>
 
           <div>
             <p className="font-bold">FEMININO:</p>
             <p className="text-gray-700">
-              --/--
+              ELIANE DE LEMOS RODRIGUES
+            </p>
+            <p className="text-gray-700">
+              RUBIA PRISCILA PARISIO GASPAR
             </p>
           </div>
 
           <div>
             <p className="font-bold">FINANCEIRO:</p>
-            <p className="text-gray-700">--/--</p>
+            <p className="text-gray-700">ATENIENSE ALVES MACHADO JUNIOR</p>
+            <p className="text-gray-700">BENTO DOMINGOS TAVARES ROMEIRA</p>
           </div>
 
           <div>
-            <p className="font-bold">FISCALIZAÇÃO E SEGURANÇA:</p>
-            <p className="text-gray-700">--/--</p>
+            <p className="font-bold">SEGURANÇA:</p>
+            <p className="text-gray-700">ERICK MARCÍLIO APRIGIO DA SILVA</p>
           </div>
 
-          <div>
-            <p className="font-bold">HIGIENE E SAÚDE:</p>
-            <p className="text-gray-700">--/--</p>
-          </div>
-
+          
           <div>
             <p className="font-bold">JURÍDICO:</p>
-            <p className="text-gray-700">--/--</p>
+            <p className="text-gray-700">ALESSANDRO LUIS COUTO RODRIGUES</p>
           </div>
 
           <div>
             <p className="font-bold">PATRIMÔNIO E MANUTENÇÃO:</p>
             <p className="text-gray-700">
-              --/--
+             DANIEL DE LEMOS RODRIGUES
+            </p>
+            <p className="text-gray-700">
+             PAULINO JOSÉ DOS SANTOS ROMEIRA DE SÁ FERREIRA
             </p>
           </div>
 
           <div>
             <p className="font-bold">SOCIAL:</p>
-            <p className="text-gray-700">--/--</p>
+            <p className="text-gray-700">PAULO DE TARSO DORNELAS DE ANDRADE</p>
+            <p className="text-gray-700">MARIA LÚCIA BRAVO CISNEIRO CAVALCANTI</p>
           </div>
         </div>
 
