@@ -50,8 +50,8 @@ const Home = () => {
     },
     {
       img: noticia2,
-      title: 'Adega Restaurante',
-      description: 'No Adega Restaurante você encontra o equilíbrio perfeito entre tradição, sabor e um ambiente acolhedor.',
+      title: 'Técnica Convocada',
+      description: 'Treinadora do Clube Português do Recife, Keycy Florêncio, foi convocada para integrar a Seleção Brasileira de Natação.',
     },
     {
       img: noticia3,

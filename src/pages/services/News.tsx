@@ -38,17 +38,18 @@ const News = () => {
       image: noticia1,
       featured: false
     },
-    {
-      id: 2,
-      title: 'Adega Restaurante',
-      excerpt: 'localizado dentro do Clube Português do Recife, é um verdadeiro ícone da culinária portuguesa na cidade.',
-      content: 'Em uma final emocionante, a equipe de futebol do Clube Português...',
-      author: 'Priscila',
-      date: '2025-08-28',
-      category: 'gastronomia',
-      image: noticia2,
-      featured: false
-    },
+   {
+  id: 2,
+  title: 'Técnica Convocada',
+  excerpt: 'Com muito orgulho, o Clube Português do Recife anuncia a convocação da treinadora Keycy Florêncio para integrar a Seleção Brasileira de Natação.',
+  content: 'É SELEÇÃO BRASILEIRA! 🇧🇷 Entre os dias 10 e 16 de novembro de 2025, na Bolívia, acontecerá a Copa Pacífico de Natação e nossa treinadora Keycy Florêncio representará o Clube Português do Recife na Seleção Brasileira. Orgulho CPR! ❤️💚',
+  author: 'Priscila',
+  date: '2025-09-24',
+  category: 'esporte',
+  image: noticia2,
+  featured: true
+},
+
     {
       id: 3,
       title: 'Novo chef português renova cardápio do restaurante',
@@ -103,7 +104,7 @@ const News = () => {
       category: 'eventos',
       // 🔥 Usar apenas galeria1 como capa na listagem
       image: galeria1,
-      featured: true
+      featured: false
     }
   ];
 
@@ -205,7 +206,7 @@ const News = () => {
               className="bg-white rounded-2xl shadow-xl overflow-hidden"
             >
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="h-64 lg:h-full">
+                <div className="h-96 lg:h-full">
                   <img
                     src={featuredArticle.image}
                     alt={featuredArticle.title}
@@ -276,7 +277,7 @@ const News = () => {
                   viewport={{ once: true }}
                   className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="h-72 overflow-hidden">
+                  <div className="h-96 overflow-hidden">
                     <img
                       src={article.image}
                       alt={article.title}

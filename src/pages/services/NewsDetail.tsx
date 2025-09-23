@@ -51,20 +51,52 @@ A <strong>Chapa 1</strong> foi eleita para conduzir o futuro do <strong>Clube Po
     image: noticia1,
     readTime: '2 min'
   },
-  {
-    id: 2,
-    title: 'Restaurante Adega',
-    content: `
-      <p>É localizado dentro do Clube Português do Recife, é um verdadeiro ícone da culinária portuguesa na cidade.</p>
-      <p>Com mais de 40 anos de tradição, oferece aos seus visitantes uma experiência gastronômica autêntica, aliada a um ambiente acolhedor e culturalmente rico.</p>
-      <p>O restaurante é conhecido por seu cardápio que celebra os sabores de Portugal, com destaque para pratos como o bacalhau à Lagareiro, camarões no bafo e bolinho de bacalhau.</p>
-    `,
-    author: 'Priscila',
-    date: '2025-08-28',
-    category: 'Gastronomia',
-    image: noticia2,
-    readTime: '3 min'
-  },
+ {
+  id: 2,
+  title: 'Técnica Convocada para a Seleção Brasileira',
+  content: `
+    <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+      <h2 style="color:#006400; text-align:center;">🇧🇷 É SELEÇÃO BRASILEIRA! 🇧🇷</h2>
+
+      <p style="text-align: justify;">
+        O <strong>Clube Português do Recife</strong> tem a imensa alegria de anunciar que a 
+        <strong>treinadora Keycy Florêncio</strong> foi oficialmente convocada para integrar a 
+        <strong>Seleção Brasileira de Natação</strong>.  
+      </p>
+
+      <p style="text-align: justify;">
+        Esse é mais um marco histórico não apenas para nossa instituição, mas também para todo o esporte pernambucano, 
+        reforçando o talento, a dedicação e a excelência de Keycy em sua trajetória profissional.  
+      </p>
+
+      <div style="margin: 20px 0; padding: 15px; border-left: 4px solid #006400; background:#f9f9f9;">
+        <h3 style="color:#333;">📅 Linha do Tempo da Competição</h3>
+        <ul style="list-style:none; padding-left:10px;">
+          <li>✅ <strong>Convocação Oficial:</strong> Setembro de 2025</li>
+          <li>🌍 <strong>Local:</strong> Bolívia</li>
+          <li>🏊 <strong>Competição:</strong> Copa Pacífico de Natação</li>
+          <li>📆 <strong>Datas:</strong> 10 a 16 de novembro de 2025</li>
+        </ul>
+      </div>
+
+      <p style="text-align: justify;">
+        A participação da nossa treinadora nesta importante competição internacional reafirma o compromisso do 
+        <strong>CPR</strong> em contribuir para o desenvolvimento do esporte nacional.  
+      </p>
+
+      <p style="text-align: center; font-size:1.1em; font-weight:bold; color:#d32f2f;">
+        Parabéns, Keycy! Você é motivo de orgulho para todo o CPR e para Pernambuco. ❤️💚
+      </p>
+    </div>
+  `,
+  author: 'Priscila',
+  date: '2025-09-24',
+  category: 'esportes',
+  image: noticia2,
+  readTime: '3 min'
+}
+,
   {
     id: 3,
     title: 'Novo chef português renova cardápio do restaurante',
