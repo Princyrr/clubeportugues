@@ -11,7 +11,7 @@ import noticia5 from '../../assets/noticia5.png';
 import noticia6 from '../../assets/noticia6.png';
 import noticia7 from '../../assets/noticia7.png';
 import noticia8 from '../../assets/noticia8.png';
-
+import noticia9 from '../../assets/noticia9.jpg';
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -264,7 +264,41 @@ Orgulho de Pernambuco!</p>
   category: 'esportes',
   image: noticia8,
   readTime: '4 min'
+},
+
+{ 
+  id: 10,
+  title: '🍻 Barcelos Bar e Restaurante – Uma nova fase está chegando!',
+  content: `
+    <p style="text-align: justify;">
+      O <strong>Barcelos Bar e Restaurante</strong>, localizado dentro do 
+      <strong>Clube Português do Recife</strong>, está passando por um momento de transformação. 
+      <strong>Temporariamente fechado</strong>, o espaço retorna em breve com uma proposta totalmente renovada, 
+      trazendo mais qualidade e experiências únicas para o público.
+    </p>
+
+    <p style="text-align: justify;">
+      Sob uma <strong>nova administração</strong>, o Barcelos se prepara para surpreender os clientes 
+      com novidades especiais, gastronomia de excelência e um ambiente ainda mais acolhedor. 
+      A promessa é de uma experiência completa que une tradição, modernidade e um atendimento de alto padrão.
+    </p>
+
+    <p style="text-align: justify;">
+      Em breve, todos poderão aproveitar um espaço repaginado, cheio de boas surpresas e momentos inesquecíveis.
+    </p>
+
+    <p style="text-align: center; margin-top: 20px;">
+      👀🔥 <strong>Fica de olho!</strong> Em breve o Barcelos estará de volta com muitas novidades para você e sua família.  
+      Acompanhe as atualizações e prepare-se para viver essa nova experiência!
+    </p>
+  `,
+  author: 'Priscila',
+  date: '2025-10-01',
+  category: 'gastronomia',
+  image: noticia9,
+  readTime: '3 min'
 }
+
 
 
 ];
@@ -356,11 +390,13 @@ const NewsDetail = () => {
                   ))}
                 </div>
               ) : (
-                <img
-                  src={article.image}
-                  alt={article.title}
-                  className="w-full h-96 md:h-[600px] object-cover"
-                />
+               <img
+  src={article.image}
+  alt={article.title}
+  className="w-full max-h-[700px] h-auto object-cover"
+/>
+
+
               )}
             </div>
 

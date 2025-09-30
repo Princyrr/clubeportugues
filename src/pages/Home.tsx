@@ -6,8 +6,9 @@ import HeroCarousel from "../components/HeroCarousel";
 // Importando imagens do assets
 import noticia7 from '../assets/noticia7.png';
 import noticia2 from '../assets/noticia2.jpg';
-import noticia3 from '../assets/noticia5.png';
+import noticia9 from '../assets/noticia9.jpg';
 import noticia8 from '../assets/noticia8.png';
+
 
 // Banners do slideshow
 import banner1 from '../assets/banner1.png';
@@ -54,9 +55,9 @@ const Home = () => {
       description: 'Treinadora do Clube Português do Recife, Keycy Florêncio, foi convocada para integrar a Seleção Brasileira de Natação.',
     },
     {
-      img: noticia3,
-      title: 'Natação',
-      description: 'Adrielly Alana e Ana Clara Lyra foram convocadas para a Seleção Brasileira de Natação.',
+      img: noticia9,
+      title: 'Bar Barcelos temporariamente fechado',
+      description: 'Vem novidade boa por aí, com nova administração e muitas surpresas! Aguardem!!!',
     },
     {
       img: noticia8,

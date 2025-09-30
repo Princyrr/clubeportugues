@@ -12,6 +12,9 @@ import noticia5 from '../../assets/noticia5.png';
 import noticia6 from '../../assets/noticia6.png';
 import noticia7 from '../../assets/noticia7.png';
 import noticia8 from '../../assets/noticia8.png';
+import noticia9 from '../../assets/noticia9.jpg';
+
+
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
 
@@ -48,7 +51,7 @@ const News = () => {
   date: '2025-09-24',
   category: 'esporte',
   image: noticia2,
-  featured: true
+  featured: false
 },
 
     {
@@ -128,6 +131,17 @@ const News = () => {
   category: 'esportes',
   image: noticia8,
   featured: false
+},
+{
+  id: 10,
+  title: 'Bar Barcelos temporariamente fechado',
+  excerpt: 'Vem novidade boa por aí, com nova administração e muitas surpresas! Aguardem!!!',
+  content: 'Vem novidade boa por aí, com nova administração e muitas surpresas! Aguardem!!!',
+  author: 'Priscila',
+  date: '2025-10-01',
+  category: 'gastronomia',
+  image: noticia9,
+  featured: true
 }
 
 
