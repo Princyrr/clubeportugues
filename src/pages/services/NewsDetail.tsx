@@ -9,6 +9,9 @@ import noticia3 from '../../assets/noticia3.jpg';
 import noticia4 from '../../assets/noticia4.png';
 import noticia5 from '../../assets/noticia5.png';
 import noticia6 from '../../assets/noticia6.png';
+import noticia7 from '../../assets/noticia7.png';
+import noticia8 from '../../assets/noticia8.png';
+
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -178,7 +181,92 @@ Orgulho de Pernambuco!</p>
     image: galeria1, // thumb principal
     gallery: [galeria1, galeria2, galeria3, galeria4, galeria5, galeria6, galeria7],
     readTime: '3 min'
-  }
+  },
+{
+  id: 8,
+  title: '🏆 Lusas do Juvenil no Campeonato Brasileiro 2025',
+  content: `
+    <p style="text-align: justify;">
+      As <strong>Lusas do Juvenil</strong> partem para um grande desafio no 
+      <strong>Campeonato Brasileiro de Clubes Juvenil Feminino de Handebol 2025</strong>, 
+      que acontecerá na cidade de <strong>Balneário Camboriú-SC</strong>, entre os dias 
+      <strong>29/09 a 04/10</strong>.
+    </p>
+
+    <p style="text-align: justify;">
+      A estreia foi marcada por uma vitória expressiva diante da equipe do 
+      <strong>@lhhandebol</strong>, com o placar final de 
+      <strong>FMO/PORTUGUÊS 31 x 17 LIGA HAMBURGENCE</strong>.
+    </p>
+
+    <p style="text-align: justify;">
+      Amanhã <strong>(30/09/2025)</strong>, nossas atletas enfrentam a equipe paulista <strong>São Caetano</strong>, 
+      às <strong>18h00</strong>. Todos os jogos estão sendo transmitidos ao vivo 
+      pelo canal oficial <strong>CBHBTV</strong> no YouTube. 
+      Acompanhe também os bastidores e atualizações em nossos <em>storys</em>!
+    </p>
+
+    <p style="text-align: center; margin-top: 20px; font-weight: bold;">
+      ✨ Patrocínio ✨ <br/>
+      <a href="https://fmo.edu.br" target="_blank">@fmo.edu.br</a> &nbsp;|&nbsp; 
+      <a href="https://instagram.com/instituto.maria" target="_blank">@instituto.maria</a>
+    </p>
+  `,
+  author: 'Diretoria do Clube',
+  date: '2025-09-27',
+  category: 'esportes',
+  image: noticia7,
+  readTime: '4 min'
+},
+{
+  id: 9,
+  title: '🏊‍♀️ Pernambucanas convocadas para representar o Brasil na Copa Pacífico de Natação',
+  content: `
+    <p style="text-align: justify;">
+      É com orgulho que anunciamos a convocação das jovens atletas do 
+      <strong>Clube Português do Recife</strong>: 
+      <strong>Beatriz Andrade</strong> e <strong>Adrielly Alana</strong>, ambas de 14 anos, 
+      e <strong>Ana Clara Lyra</strong>, de 15 anos. 
+      Pela primeira vez, elas vestirão as cores da <strong>Seleção Brasileira Infantil e Juvenil de Natação</strong>, 
+      representando o país na <strong>Copa Pacífico</strong>, que será realizada em 
+      <strong>Cochabamba, Bolívia</strong>, de <strong>10 a 16 de novembro</strong>.
+    </p>
+
+    <p style="text-align: justify;">
+      As nadadoras terão ainda a companhia da experiente treinadora 
+      <strong>Keycy Florêncio</strong>, que retorna à seleção nacional após uma década, 
+      integrando a comissão técnica durante a competição. 
+      Cada atleta participará de provas específicas: 
+      Beatriz competirá nos <strong>50m, 100m e 200m peito</strong>; 
+      Adrielly disputará os <strong>200m e 400m livre</strong>, além dos 
+      <strong>100m e 200m borboleta</strong>; 
+      já Ana Clara estará nas provas de <strong>50m e 100m peito</strong> e 
+      <strong>50m e 100m borboleta</strong>.
+    </p>
+
+    <p style="text-align: justify;">
+      A <strong>Confederação Brasileira de Desportos Aquáticos (CBDA)</strong> destacou que 
+      os custos com passagens, hospedagem, alimentação, transporte, uniformes e inscrições 
+      são de responsabilidade dos convocados. 
+      Por isso, atletas e comissão estão em busca de <strong>patrocinadores e apoiadores</strong> 
+      que possam contribuir para viabilizar esta importante participação internacional.
+    </p>
+
+    <p style="text-align: center; margin-top: 20px;">
+      📩 <strong>Interessados em apoiar</strong> podem entrar em contato diretamente com a treinadora 
+      <strong>Keycy Florêncio</strong> pelo telefone 
+      <a href="tel:+5581997592238">(81) 99759-2238</a> 
+      ou pelo e-mail <a href="mailto:keycykf@hotmail.com">keycykf@hotmail.com</a>.
+    </p>
+  `,
+  author: 'Diretoria do Clube',
+  date: '2025-10-01',
+  category: 'esportes',
+  image: noticia8,
+  readTime: '4 min'
+}
+
+
 ];
 
 const NewsDetail = () => {

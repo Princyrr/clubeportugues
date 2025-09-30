@@ -10,7 +10,8 @@ import noticia3 from '../../assets/noticia3.jpg';
 import noticia4 from '../../assets/noticia4.png';
 import noticia5 from '../../assets/noticia5.png';
 import noticia6 from '../../assets/noticia6.png';
-
+import noticia7 from '../../assets/noticia7.png';
+import noticia8 from '../../assets/noticia8.png';
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
 
@@ -105,7 +106,31 @@ const News = () => {
       // 🔥 Usar apenas galeria1 como capa na listagem
       image: galeria1,
       featured: false
-    }
+    },
+   {
+  id: 8,
+  title: 'Handebol: Campeonato Brasileiro 2025',
+  excerpt: 'Lusas do juvenil partem para o desafio do Campeonato Brasileiro 2025 que acontecerá na cidade de Balneário Camboriú-SC.',
+  content: 'Lusas do juvenil partem para o desafio do Campeonato Brasileiro 2025 que acontecerá na cidade de Balneário Camboriú-SC.',
+  author: 'Priscila',
+  date: '2025-09-27',
+  category: 'esportes',
+  image: noticia7,
+  featured: false
+},
+ {
+  id: 9,
+  title: 'Natação: Convocadas para defender o Brasil na Copa Pacífico',
+  excerpt: 'As adolescentes pernambucanas convocadas para defender o Brasil na Copa Pacífico.',
+  content: 'As adolescentes pernambucanas convocadas para defender o Brasil na Copa Pacífico.',
+  author: 'Priscila',
+  date: '2025-10-01',
+  category: 'esportes',
+  image: noticia8,
+  featured: false
+}
+
+
   ];
 
   // Ordena sempre do maior id para o menor

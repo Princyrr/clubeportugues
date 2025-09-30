@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Trophy, Users, Calendar, Utensils } from 'lucide-react';
 import HeroCarousel from "../components/HeroCarousel";
 // Importando imagens do assets
-import noticia1 from '../assets/galeria1.jpg';
+import noticia7 from '../assets/noticia7.png';
 import noticia2 from '../assets/noticia2.jpg';
 import noticia3 from '../assets/noticia5.png';
-import noticia4 from '../assets/noticia6.png';
+import noticia8 from '../assets/noticia8.png';
 
 // Banners do slideshow
 import banner1 from '../assets/banner1.png';
@@ -44,9 +44,9 @@ const Home = () => {
 
   const noticias = [
     {
-      img: noticia1,
-      title: 'Novo Presidente e Vice-Presidente',
-      description: 'A cerimônia de posse aconteceu no dia 01/09/2025, marcando o início de um novo ciclo no Clube Português do Recife.',
+      img: noticia7,
+      title: 'Handebol Feminino',
+      description: 'Lusas do juvenil partem para o desafio do Campeonato Brasileiro 2025 que acontecerá na cidade de Balneário Camboriú-SC.',
     },
     {
       img: noticia2,
@@ -59,9 +59,9 @@ const Home = () => {
       description: 'Adrielly Alana e Ana Clara Lyra foram convocadas para a Seleção Brasileira de Natação.',
     },
     {
-      img: noticia4,
-      title: 'Gratidão e reconhecimento',
-      description: 'Durante este mandato, os senhores deixaram uma marca de seriedade, conquistas e união...',
+      img: noticia8,
+      title: 'Copa Pacífico de Natação',
+      description: 'Pernambucanas convocadas para representar o Brasil na Copa Pacífico de Natação.',
     }
   ];
 
