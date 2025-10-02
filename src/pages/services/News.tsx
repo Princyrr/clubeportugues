@@ -13,7 +13,8 @@ import noticia6 from '../../assets/noticia6.png';
 import noticia7 from '../../assets/noticia7.png';
 import noticia8 from '../../assets/noticia8.png';
 import noticia9 from '../../assets/noticia9.jpg';
-
+import noticia10 from '../../assets/noticia10.jpg';
+import noticia11 from '../../assets/noticia11.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -103,7 +104,7 @@ const News = () => {
       title: 'Posse do Presidente e Vice-Presidente',
       excerpt: 'A cerimônia de posse aconteceu no dia 01/09/2025, marcando o início de um novo ciclo no Clube Português do Recife.',
       content: 'A posse oficial do Presidente Daniel Ferreira Rodrigues e do Vice-Presidente Celso Stamford Gaspar...',
-      author: 'Priscila',
+      author: 'Diretoria',
       date: '2025-09-04',
       category: 'eventos',
       // 🔥 Usar apenas galeria1 como capa na listagem
@@ -113,9 +114,9 @@ const News = () => {
    {
   id: 8,
   title: 'Handebol: Campeonato Brasileiro 2025',
-  excerpt: 'Lusas do juvenil partem para o desafio do Campeonato Brasileiro 2025 que acontecerá na cidade de Balneário Camboriú-SC.',
-  content: 'Lusas do juvenil partem para o desafio do Campeonato Brasileiro 2025 que acontecerá na cidade de Balneário Camboriú-SC.',
-  author: 'Priscila',
+  excerpt: 'Em último jogo da chave contra a equipe de @ahbchandebol as lusas saem da disputa com a vitória pelo placar de FMO/PORTUGUÊS 30 X 21 FMEBC-SC e o primeiro lugar do grupo B do Campeonato Brasileiro de handebol Juvenil Feminino 2025.',
+  content: 'Em último jogo da chave contra a equipe de @ahbchandebol as lusas saem da disputa com a vitória pelo placar de FMO/PORTUGUÊS 30 X 21 FMEBC-SC e o primeiro lugar do grupo B do Campeonato Brasileiro de handebol Juvenil Feminino 2025.',
+  author: 'Diretoria de Esportes',
   date: '2025-09-27',
   category: 'esportes',
   image: noticia7,
@@ -142,8 +143,29 @@ const News = () => {
   category: 'gastronomia',
   image: noticia9,
   featured: true
+},
+{
+  id: 12,
+  title: 'Comunicado Importante',
+  excerpt: 'Reafirmamos nosso compromisso com a segurança e o bem-estar dos Associados e convidados!',
+  content: 'Reafirmamos nosso compromisso com a segurança e o bem-estar dos Associados e convidados!',
+  author: 'Diretoria do Clube',
+  date: '2025-10-03',
+  category: 'gastronomia',
+  image: noticia10,
+  featured: false
+},
+{
+  id: 13,
+  title: 'Lusos na Seleção 🇧🇷',
+  excerpt: 'Nossa atleta Julia Gabrielly e nosso treinador João Prestrelo representaram o Brasil no Sul-Centro Americano Sub-15 em Assunção, Paraguai, conquistando o 3º lugar! ',
+  content: 'Nossa atleta Julia Gabrielly e nosso treinador João Prestrelo representaram o Brasil no Sul-Centro Americano Sub-15 em Assunção, Paraguai, conquistando o 3º lugar! ',
+  author: 'Clube Português do Recife',
+  date: '2025-10-02',
+  category: 'esporte',
+  image: noticia11,
+  featured: false
 }
-
 
   ];
 

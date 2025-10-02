@@ -12,6 +12,8 @@ import noticia6 from '../../assets/noticia6.png';
 import noticia7 from '../../assets/noticia7.png';
 import noticia8 from '../../assets/noticia8.png';
 import noticia9 from '../../assets/noticia9.jpg';
+import noticia10 from '../../assets/noticia10.jpg';
+import noticia11 from '../../assets/noticia11.png';
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -186,34 +188,28 @@ Orgulho de Pernambuco!</p>
   id: 8,
   title: '🏆 Lusas do Juvenil no Campeonato Brasileiro 2025',
   content: `
-    <p style="text-align: justify;">
-      As <strong>Lusas do Juvenil</strong> partem para um grande desafio no 
-      <strong>Campeonato Brasileiro de Clubes Juvenil Feminino de Handebol 2025</strong>, 
-      que acontecerá na cidade de <strong>Balneário Camboriú-SC</strong>, entre os dias 
-      <strong>29/09 a 04/10</strong>.
-    </p>
+   <p style="text-align: justify;">
+  Em último jogo da chave contra a equipe de <strong>@ahbchandebol</strong>, as <strong>Lusas</strong> saem da disputa com a vitória pelo placar de <strong>FMO/PORTUGUÊS 30 X 21 FMEBC-SC</strong> e conquistam o <strong>primeiro lugar do Grupo B</strong> do <strong>Campeonato Brasileiro de Handebol Juvenil Feminino 2025</strong>.
+</p>
 
-    <p style="text-align: justify;">
-      A estreia foi marcada por uma vitória expressiva diante da equipe do 
-      <strong>@lhhandebol</strong>, com o placar final de 
-      <strong>FMO/PORTUGUÊS 31 x 17 LIGA HAMBURGENCE</strong>.
-    </p>
+<p style="text-align: justify;">
+  Lusas se preparam agora para a disputa das <strong>quartas de final</strong> contra a equipe de <strong>@acrihf.criciuma</strong>. A partida irá ocorrer nesta tarde de quinta-feira <strong>(02/10) </strong> às <strong>16h30</strong>.
+</p>
 
-    <p style="text-align: justify;">
-      Amanhã <strong>(30/09/2025)</strong>, nossas atletas enfrentam a equipe paulista <strong>São Caetano</strong>, 
-      às <strong>18h00</strong>. Todos os jogos estão sendo transmitidos ao vivo 
-      pelo canal oficial <strong>CBHBTV</strong> no YouTube. 
-      Acompanhe também os bastidores e atualizações em nossos <em>storys</em>!
-    </p>
+<p style="text-align: center; font-weight: bold; margin-top: 15px;">
+  CONTAMOS COM A SUA TORCIDA!<br/>
+  TRANSMISSÃO NO YOUTUBE: <strong>TVCBHB</strong>
+</p>
 
-    <p style="text-align: center; margin-top: 20px; font-weight: bold;">
-      ✨ Patrocínio ✨ <br/>
-      <a href="https://fmo.edu.br" target="_blank">@fmo.edu.br</a> &nbsp;|&nbsp; 
-      <a href="https://instagram.com/instituto.maria" target="_blank">@instituto.maria</a>
-    </p>
+<p style="text-align: center; margin-top: 20px; font-weight: bold;">
+  PATROCÍNIO: <br/>
+  <a href="https://fmo.edu.br" target="_blank">@fmo.edu.br</a> &nbsp;|&nbsp; 
+  <a href="https://instagram.com/instituto.maria" target="_blank">@instituto.maria</a>
+</p>
+
   `,
   author: 'Diretoria do Clube',
-  date: '2025-09-27',
+  date: '2025-10-03',
   category: 'esportes',
   image: noticia7,
   readTime: '4 min'
@@ -296,6 +292,73 @@ Orgulho de Pernambuco!</p>
   date: '2025-10-01',
   category: 'gastronomia',
   image: noticia9,
+  readTime: '3 min'
+},
+{ 
+  id: 12,
+  title: ' ⚠️ Comunicado Importante',
+  content: `
+    <p style="text-align: justify;">
+  Diante das recentes notícias veiculadas em âmbito nacional sobre a <strong>adulteração de bebidas alcoólicas</strong>, 
+  o <strong>Clube Português do Recife</strong> vem a público reafirmar o seu compromisso com a <strong>segurança, 
+  qualidade e procedência</strong> de todos os produtos comercializados em suas dependências.
+</p>
+
+<p style="text-align: justify;">
+  Informamos que todas as bebidas disponibilizadas aos nossos associados e clientes são adquiridas <strong>exclusivamente 
+  de distribuidores oficiais, idôneos e reconhecidos no mercado</strong>, sempre acompanhadas de <strong>nota fiscal</strong> 
+  e seguindo rigorosos critérios de controle. 
+</p>
+
+<p style="text-align: justify;">
+  Esse cuidado garante a <strong>autenticidade, a qualidade e a segurança</strong> das bebidas que oferecemos, 
+  preservando a confiança e o bem-estar de todos que frequentam nosso espaço.
+</p>
+
+<p style="text-align: justify;">
+  O <strong>Clube Português do Recife</strong> reafirma seu compromisso de atuar com <strong>responsabilidade, 
+  transparência e respeito</strong> aos seus associados, parceiros e clientes, garantindo sempre um ambiente seguro 
+  e de excelência.
+</p>
+
+
+  `,
+  author: 'Diretoria do Clube',
+  date: '2025-10-03',
+  category: 'gastronomia',
+  image: noticia10,
+  readTime: '5 min'
+},
+{ 
+  id: 13,
+  title: '✨ Lusos na Seleção 🇧🇷   ',
+  content: `
+  <p style="text-align: center; font-size: 18px; font-weight: bold; margin-bottom: 10px;">
+  🇧🇷✨ Orgulho que transborda nossas cores!
+</p>
+
+<p style="text-align: justify;">
+  Nossa atleta <strong>Julia Gabrielly</strong> e nosso treinador <strong>João Prestrelo</strong> representaram o Brasil 
+  no <strong>Sul-Centro Americano Sub-15</strong>, realizado em Assunção, Paraguai, conquistando o <strong>3º lugar</strong>! 
+  🥉🏆 
+</p>
+
+<p style="text-align: justify;">
+  Uma vitória que enche de orgulho toda a família do <strong>Clube Português do Recife</strong>, mostrando a força da dedicação, 
+  da disciplina e do espírito esportivo que nos move.
+</p>
+
+<p style="text-align: center; margin-top: 20px; font-size: 16px;">
+
+  👏👏 Parabéns, <strong>Julia Gabrielly</strong> e <strong>João Prestrelo</strong>, por levarem o nome do nosso clube 
+  e do nosso país ao pódio internacional! 
+  
+</p>
+  `,
+  author: 'Clube Português do Recife',
+  date: '2025-10-02',
+  category: 'esporte',
+  image: noticia11,
   readTime: '3 min'
 }
 

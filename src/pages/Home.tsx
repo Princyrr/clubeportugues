@@ -6,7 +6,7 @@ import HeroCarousel from "../components/HeroCarousel";
 // Importando imagens do assets
 import noticia7 from '../assets/noticia7.png';
 import noticia2 from '../assets/noticia2.jpg';
-import noticia9 from '../assets/noticia9.jpg';
+import noticia11 from '../assets/noticia11.png';
 import noticia8 from '../assets/noticia8.png';
 
 
@@ -47,7 +47,7 @@ const Home = () => {
     {
       img: noticia7,
       title: 'Handebol Feminino',
-      description: 'Lusas do juvenil partem para o desafio do Campeonato Brasileiro 2025 que acontecerá na cidade de Balneário Camboriú-SC.',
+      description: 'As lusas saem da disputa com a vitória pelo placar de FMO/PORTUGUÊS 30 X 21 FMEBC-SC e o primeiro lugar do grupo B do Campeonato Brasileiro de handebol Juvenil Feminino 2025.',
     },
     {
       img: noticia2,
@@ -55,9 +55,9 @@ const Home = () => {
       description: 'Treinadora do Clube Português do Recife, Keycy Florêncio, foi convocada para integrar a Seleção Brasileira de Natação.',
     },
     {
-      img: noticia9,
-      title: 'Bar Barcelos temporariamente fechado',
-      description: 'Vem novidade boa por aí, com nova administração e muitas surpresas! Aguardem!!!',
+      img: noticia11,
+      title: 'Lusos na Seleção 🇧🇷',
+      description: 'Nossa atleta Julia Gabrielly e nosso treinador João Prestrelo representaram o Brasil no Sul-Centro Americano Sub-15 em Assunção, Paraguai, conquistando o 3º lugar! ',
     },
     {
       img: noticia8,
