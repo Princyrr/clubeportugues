@@ -15,6 +15,7 @@ import noticia8 from '../../assets/noticia8.png';
 import noticia9 from '../../assets/noticia9.jpg';
 import noticia10 from '../../assets/noticia10.jpg';
 import noticia11 from '../../assets/noticia11.png';
+import noticia12 from '../../assets/noticia12.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -142,7 +143,7 @@ const News = () => {
   date: '2025-10-01',
   category: 'gastronomia',
   image: noticia9,
-  featured: true
+  featured: false
 },
 {
   id: 12,
@@ -165,6 +166,17 @@ const News = () => {
   category: 'esporte',
   image: noticia11,
   featured: false
+},
+{
+  id: 14,
+  title: 'Novo Horário da Secretaria',
+  excerpt: 'Informamos que a Secretaria do Clube Português do Recife está com novo horário de funcionamento.',
+  content: 'Informamos que a Secretaria do Clube Português do Recife está com novo horário de funcionamento. ',
+  author: 'Secretaria',
+  date: '2025-10-07',
+  category: 'todas',
+  image: noticia12,
+  featured: true
 }
 
   ];
@@ -444,35 +456,35 @@ const News = () => {
         </div>
       </section>
 
-      {/* Newsletter Section */}
+      {/*Section */}
       <section className="py-20 bg-gradient-to-r from-green-800 to-red-800">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Receba Nossas Notícias
-            </h2>
-            <p className="text-xl text-gray-200 mb-8">
-              Cadastre-se em nossa newsletter e fique sempre informado sobre os eventos e novidades do clube
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-              <input
-                type="email"
-                placeholder="Seu melhor e-mail"
-                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
-              />
-              <button className="bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-400 transition-colors duration-300">
-                Cadastrar
-              </button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <h2 className="text-4xl font-bold text-white mb-6">
+        Fale com o Clube Português do Recife
+      </h2>
+      <p className="text-xl text-gray-200 mb-8">
+        Para saber mais informações sobre o <strong>Clube Português do Recife</strong>,
+        eventos, atividades e serviços disponíveis, entre em contato conosco.
+      </p>
+
+      <div className="flex justify-center">
+        <a
+          href="/fale-conosco"
+          className="bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg hover:bg-yellow-400 transition-colors duration-300"
+        >
+          Fale Conosco
+        </a>
+      </div>
+    </motion.div>
+  </div>
+</section>
+
     </div>
   );
 };

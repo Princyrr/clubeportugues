@@ -1,33 +1,56 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, Music, Users, Star, Ticket } from 'lucide-react';
 
 // Importando as imagens locais
+import evento2 from '../../assets/evento1.png';
 import evento1 from '../../assets/evento1.jpg';
-import evento2 from '../../assets/semevento.png';
 
 
 const Events = () => {
-  const [selectedMonth, setSelectedMonth] = useState('setembro');
+  const [selectedMonth, setSelectedMonth] = useState('outubro');
 
   const months = [
     'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
     'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
   ];
 
-  const events = {
-    setembro: [
-   
-      {
-        date: '01 Set',
-        title: 'Sem evento no momento',
-        artist: '--',
-        time: '19h00',
-        price: '----',
-        image: evento2
-      }
-    ]
-  };
+const events = {
+  outubro: [
+    {
+      date: '12 Out',
+      title: 'Dia das Crianças no Clube Português!',
+      description: (
+        <div className="space-y-4 text-gray-700">
+                 <p>
+            O dia <strong>12 de outubro</strong> será de pura diversão para a garotada! 💙<br />
+            Das <strong>11h às 14h</strong>, teremos atividades recreativas especiais, na piscina e no parque infantil, 
+            garantindo muita alegria, brincadeiras e boa energia, para celebrarmos essa data tão especial! ✨
+          </p>
+
+          <p>
+            Traga a família, venha viver momentos únicos e fazer a festa com a criançada! 🥳
+          </p>
+
+          <div className="space-y-2">
+            <p>📍 <strong>Clube Português do Recife</strong></p>
+            <p>🗓 <strong>12 de outubro</strong> | ⏰ <strong>11h às 14h</strong></p>
+          </div>
+
+          <p className="italic text-green-800 font-semibold">
+            Porque ser criança é brincar, sorrir e se divertir! 
+          </p>
+        </div>
+      ),
+      time: 'Das 11h às 14h',
+      price: 'Livre',
+      image: evento2
+    }
+  ]
+};
+
+
+  
 
   const eventTypes = [
     {
@@ -49,7 +72,7 @@ const Events = () => {
 
   // contato da instituição
   const whatsappNumber = '5581982524617'; // coloque o número sem caracteres especiais
-  const emailAddress = 'clube@clubeportuguesdorecife.com.br';
+  const emailAddress = 'portugues@clubeportuguesdorecife.com.br';
 
   return (
     <div className="pt-32">
@@ -72,7 +95,7 @@ const Events = () => {
           >
             <Calendar className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Agenda de <span className="text-yellow-600">Shows</span>
+              Agenda de <span className="text-yellow-600">Eventos</span>
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
               Eventos culturais, shows musicais e celebrações que mantêm viva a tradição portuguesa
@@ -148,7 +171,7 @@ const Events = () => {
 
           {/* Month Selector */}
           <div className="flex flex-wrap justify-center mb-12 gap-2">
-            {months.slice(8, 12).map((month) => (
+            {months.slice(9, 12).map((month) => (
               <button
                 key={month}
                 onClick={() => setSelectedMonth(month.toLowerCase())}
@@ -198,10 +221,11 @@ const Events = () => {
                   </div>
                   
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{event.title}</h3>
-                  <p className="text-gray-600 mb-4">{event.artist}</p>
+                 <p className="text-gray-600 mb-4">{event.description}</p>
+
                   
                   <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-purple-800">{event.price}</span>
+                    <span className="text-2xl font-bold text-red-800">{event.price}</span>
                     <a
                       href={`https://wa.me/${whatsappNumber}?text=Olá, gostaria de informações sobre o evento: ${event.title}`}
                       target="_blank"

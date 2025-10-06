@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Trophy, Users, Calendar, Utensils } from 'lucide-react';
 import HeroCarousel from "../components/HeroCarousel";
 // Importando imagens do assets
-import noticia7 from '../assets/noticia7.png';
+import noticia12 from '../assets/noticia12.png';
 import noticia2 from '../assets/noticia2.jpg';
 import noticia11 from '../assets/noticia11.png';
 import noticia8 from '../assets/noticia8.png';
@@ -45,10 +45,11 @@ const Home = () => {
 
   const noticias = [
     {
-      img: noticia7,
-      title: 'Handebol Feminino',
-      description: 'As lusas saem da disputa com a vitória pelo placar de FMO/PORTUGUÊS 30 X 21 FMEBC-SC e o primeiro lugar do grupo B do Campeonato Brasileiro de handebol Juvenil Feminino 2025.',
-    },
+  img: noticia12,
+  title: 'Novo Horário da Secretaria',
+  description: 'Informamos que a secretaria do Clube Português do Recife está com novo horário de funcionamento, vem conferir!',
+}
+,
     {
       img: noticia2,
       title: 'Técnica Convocada',

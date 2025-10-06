@@ -1,6 +1,7 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Instagram, MessageCircle } from 'lucide-react';
+import VisitCounter from "./VisitCounter";
 
 const Footer = () => {
   return (
@@ -53,6 +54,7 @@ const Footer = () => {
               <li><Link to="/servicos/restaurante" className="text-gray-300 hover:text-white transition-colors duration-300">Restaurante Adega</Link></li>
               <li><Link to="/servicos/barcelos" className="text-gray-300 hover:text-white transition-colors duration-300">Bar Barcelos</Link></li>
               <li><Link to="/servicos/agenda-shows" className="text-gray-300 hover:text-white transition-colors duration-300">Agenda de Shows</Link></li>
+            <li><Link to="/servicos/noticias" className="text-gray-300 hover:text-white transition-colors duration-300">Noticias</Link></li>
             </ul>
           </div>
 
@@ -104,6 +106,7 @@ const Footer = () => {
 
         {/* Footer bottom */}
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
+         <VisitCounter />
           <p className="text-gray-300">
             © 2025 Clube Português do Recife. Desenvolvido por Priscila Ramonna.
           </p>

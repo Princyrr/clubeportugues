@@ -34,7 +34,7 @@ const Header = () => {
         { name: 'Serviços', path: '/servicos/servicos' },
         { name: 'Adega Restaurante', path: '/servicos/restaurante' },
         { name: 'Bar Barcelos', path: '/servicos/barcelos' },
-        { name: 'Agenda de Shows', path: '/servicos/agenda-shows' },
+        { name: 'Agenda de Eventos', path: '/servicos/agenda-shows' },
         { name: 'Notícias', path: '/servicos/noticias' },
       ],
     },

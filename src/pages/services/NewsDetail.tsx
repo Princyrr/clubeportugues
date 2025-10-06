@@ -14,6 +14,7 @@ import noticia8 from '../../assets/noticia8.png';
 import noticia9 from '../../assets/noticia9.jpg';
 import noticia10 from '../../assets/noticia10.jpg';
 import noticia11 from '../../assets/noticia11.png';
+import noticia12 from '../../assets/noticia12.png';
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -360,8 +361,63 @@ Orgulho de Pernambuco!</p>
   category: 'esporte',
   image: noticia11,
   readTime: '3 min'
-}
+},
+{
+  id: 14,
+  title: '🕗 Novo Horário de Funcionamento da Secretaria',
+  content: `
+  <div style="color: #2b2b2b; font-family: 'Arial', sans-serif; padding: 20px;">
+    <h2 style="text-align: center; font-size: 24px; font-weight: bold; color: #1b5e20; margin-bottom: 10px;">
+      📢 Comunicado Oficial
+    </h2>
 
+    <p style="text-align: center; font-size: 18px; font-weight: 500; margin-bottom: 25px;">
+      <strong>Clube Português do Recife</strong>
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
+      A partir do dia <strong>06 de outubro de 2025</strong>, a <strong>Secretaria</strong> do 
+      <strong>Clube Português do Recife</strong> passará a funcionar em <strong>novo horário</strong>. 
+      Confira abaixo os dias e horários atualizados:
+    </p>
+
+    <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px; line-height: 1.8;">
+      <li style="margin-bottom: 8px;">🕗 <strong>Segunda a Quinta-feira:</strong> <span style="color: #1b5e20;">8h às 18h</span></li>
+      <li style="margin-bottom: 8px;">🕔 <strong>Sexta-feira:</strong> <span style="color: #1b5e20;">8h às 17h</span></li>
+      <li>🌿 <strong>Sábados, Domingos e Feriados:</strong> <span style="color: #1b5e20;">8h às 12h</span></li>
+    </ul>
+
+    <p style="text-align: justify; margin-top: 25px; font-size: 16px;">
+      Agradecemos a compreensão e esperamos por você. Será um prazer recebê-lo dentro do novo horário!
+    </p>
+
+    <div style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 20px;">
+      <p style="text-align: justify; font-size: 16px; line-height: 1.6;">
+        ⚠️ <strong>Importante:</strong> o <strong>funcionamento geral do clube</strong> permanece o mesmo:
+      </p>
+
+      <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px; line-height: 1.8;">
+        <li>🏋️‍♀️ <strong>Segunda a Sexta:</strong> 6h às 21h</li>
+        <li>🌞 <strong>Sábado e Domingo:</strong> 8h às 16h</li>
+        <li>🎉 <strong>Feriados:</strong> 8h às 16h</li>
+      </ul>
+
+      <p style="margin-top: 15px; text-align: justify;">
+        Apenas o <strong>horário da Secretaria</strong> passou por alteração.
+      </p>
+    </div>
+
+    <p style="text-align: center; margin-top: 25px; font-size: 16px; font-weight: bold; color: #1b5e20;">
+      💚 Secretaria do Clube Português do Recife
+    </p>
+  </div>
+  `,
+  author: 'Secretaria',
+  date: '2025-10-07',
+  category: 'todas',
+  image: noticia12,
+  readTime: '2 min'
+}
 
 
 ];
