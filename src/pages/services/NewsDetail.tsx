@@ -428,7 +428,7 @@ const NewsDetail = () => {
 
   if (!article) {
     return (
-      <div className="pt-32 text-center">
+      <div className="pt-24 text-center">
         <h1 className="text-2xl font-bold text-red-600">Notícia não encontrada</h1>
         <Link
           to="/servicos/noticias"
@@ -445,7 +445,7 @@ const NewsDetail = () => {
     .slice(0, 2);
 
   return (
-    <div className="pt-32">
+    <div className="pt-12 md:pt-24">
       {/* Botão Voltar */}
       <section className="py-6 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

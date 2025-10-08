@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-32">
+    <div className="pt-24">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-green-800 to-red-800">
         <div className="absolute inset-0 bg-black/20" />

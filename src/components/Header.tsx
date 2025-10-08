@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -8,7 +8,6 @@ const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -54,40 +53,42 @@ const Header = () => {
       transition={{ duration: 0.5 }}
     >
       {/* Fundo gradiente fixo */}
-      <div
-        className={`absolute inset-0 transition-colors duration-300 ${
-          scrolled
-            ? 'bg-white/90 backdrop-blur-md shadow-lg'
-            : 'bg-gradient-to-r from-green-800/80 to-red-800/80'
-        }`}
-      />
+    <div
+  className={`absolute inset-0 transition-colors duration-300 ${
+    scrolled
+      ? 'bg-gradient-to-r from-yellow-50 to-yellow-100 backdrop-blur-md shadow-lg'
+      : 'bg-gradient-to-r from-green-800/80 to-red-800/80'
+  }`}
+/>
+
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-32">
+        <div className="flex justify-between items-center h-12 sm:h-16 md:h-20 lg:h-24">
+
           {/* Logo + Nome */}
           <Link
             to="/"
             className="flex items-center relative z-10 space-x-4"
             onClick={scrollToTop}
           >
-           <img
-  src="/Logo.png"
-  alt="Clube Português do Recife"
-  className="
-    h-12 w-auto object-contain       /* padrão no celular */
-    sm:h-14                         /* tablets pequenos */
-    md:h-16                         /* tablets médios */
-    lg:h-20                         /* desktops */
-    transition-transform duration-300 hover:scale-105
-  "
-/>
-
+            <img
+              src="/Logo.png"
+              alt="Clube Português do Recife"
+              className="
+                h-10 sm:h-12 md:h-14 lg:h-16 transition-transform duration-300 hover:scale-105
+              "
+            />
             <span
-              className={`text-2xl font-bold tracking-wide transition-colors duration-300 ${
+              className={`flex flex-col leading-tight transition-colors duration-300 ${
                 scrolled ? 'text-gray-800' : 'text-white'
               }`}
             >
-              Clube Português do Recife
+              <span className="text-sm sm:text-base md:text-lg lg:text-2xl font-bold tracking-wide">
+                Clube Português
+              </span>
+              <span className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold">
+                do Recife
+              </span>
             </span>
           </Link>
 
@@ -102,7 +103,7 @@ const Header = () => {
                     onMouseLeave={() => setIsServicesOpen(false)}
                   >
                     <span
-                      className={`font-medium transition-colors duration-300 hover:text-yellow-300 ${
+                      className={`font-medium transition-colors duration-300 hover:text-yellow-500 ${
                         scrolled ? 'text-gray-800' : 'text-white'
                       }`}
                     >
@@ -144,7 +145,7 @@ const Header = () => {
                     href={item.path}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`font-medium transition-colors duration-300 hover:text-yellow-300 ${
+                    className={`font-medium transition-colors duration-300 hover:text-yellow-500 ${
                       scrolled ? 'text-gray-800' : 'text-white'
                     }`}
                   >
@@ -153,7 +154,7 @@ const Header = () => {
                 ) : (
                   <Link
                     to={item.path}
-                    className={`font-medium transition-colors duration-300 hover:text-yellow-300 ${
+                    className={`font-medium transition-colors duration-300 hover:text-yellow-400 ${
                       scrolled ? 'text-gray-800' : 'text-white'
                     } ${location.pathname === item.path ? 'text-yellow-400' : ''}`}
                     onClick={() => {
@@ -189,13 +190,13 @@ const Header = () => {
               transition={{ duration: 0.3 }}
               className="lg:hidden bg-white rounded-lg mt-2 overflow-hidden shadow-xl relative z-10"
             >
-              <div className="py-4 space-y-1">
+              <div className="py-2 sm:py-4 space-y-1">
                 {menuItems.map((item) => (
                   <div key={item.name}>
                     {item.submenu ? (
                       <div>
                         <button
-                          className="flex items-center justify-between w-full px-4 py-3 text-left text-gray-800 hover:bg-green-50 font-medium"
+                          className="flex items-center justify-between w-full px-4 py-2 sm:py-3 text-left text-gray-800 hover:bg-green-50 font-medium"
                           onClick={() => setIsServicesOpen(!isServicesOpen)}
                         >
                           {item.name}
@@ -217,7 +218,7 @@ const Header = () => {
                                 <Link
                                   key={subItem.name}
                                   to={subItem.path}
-                                  className="block px-8 py-2 text-gray-600 hover:text-green-800 hover:bg-green-50 transition-colors duration-200"
+                                  className="block px-8 py-1 sm:py-2 text-gray-600 hover:text-green-800 hover:bg-green-50 transition-colors duration-200"
                                   onClick={() => {
                                     setIsMenuOpen(false);
                                     setIsServicesOpen(false);
@@ -236,7 +237,7 @@ const Header = () => {
                         href={item.path}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block px-4 py-3 text-gray-800 hover:bg-green-50 hover:text-green-800 transition-colors duration-200 font-medium"
+                        className="block px-4 py-2 sm:py-3 text-gray-800 hover:bg-green-50 hover:text-green-800 transition-colors duration-200 font-medium"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {item.name}
@@ -244,7 +245,7 @@ const Header = () => {
                     ) : (
                       <Link
                         to={item.path}
-                        className={`block px-4 py-3 text-gray-800 hover:bg-green-50 hover:text-green-800 transition-colors duration-200 font-medium ${
+                        className={`block px-4 py-2 sm:py-3 text-gray-800 hover:bg-green-50 hover:text-green-800 transition-colors duration-200 font-medium ${
                           location.pathname === item.path ? 'bg-green-50 text-green-800' : ''
                         }`}
                         onClick={() => {

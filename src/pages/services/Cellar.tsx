@@ -61,7 +61,7 @@ const Cellar = () => {
   ];
 
   return (
-    <div className="pt-32">
+    <div className="pt-12 md:pt-24">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-purple-900 via-red-900 to-green-900 overflow-hidden">
         <div className="absolute inset-0 bg-black/40" />

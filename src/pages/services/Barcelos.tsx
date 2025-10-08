@@ -75,7 +75,7 @@ const Barcelos = () => {
   ];
 
   return (
-    <div className="pt-32">
+    <div className="pt-12 md:pt-24">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-r from-green-600 via-red-600 to-green-600 overflow-hidden">
         <div className="absolute inset-0 bg-black/20" />
@@ -152,11 +152,14 @@ const Barcelos = () => {
                   className="w-full h-96 object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white p-6 rounded-2xl shadow-xl">
-                <Utensils className="w-8 h-8 mb-2" />
-                <div className="text-lg font-bold">Sabor e Tradição</div>
-                <div className="text-sm opacity-90">Desde 1923</div>
-              </div>
+              <div className="absolute -bottom-6 -right-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white 
+                p-4 sm:p-6 rounded-2xl shadow-xl 
+                w-36 sm:w-48 md:w-56 text-center">
+  <Utensils className="w-6 h-6 sm:w-8 sm:h-8 mb-1 sm:mb-2 mx-auto" />
+  <div className="text-sm sm:text-lg font-bold">Sabor e Tradição</div>
+  <div className="text-xs sm:text-sm opacity-90">Desde 1923</div>
+</div>
+
             </motion.div>
           </div>
         </div>

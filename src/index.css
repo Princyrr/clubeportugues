@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.card-hover-gradient {
+  position: relative;
+  border-radius: 1.5rem; /* mesmo do card */
+  overflow: hidden;
+}
+
+/* A borda animada */
+.card-hover-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  padding: 2px; /* espessura da borda */
+  background: linear-gradient(90deg, green, red, green, red);
+  background-size: 200% 100%; /* necessário para animar */
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Hover ativa a borda animada */
+.card-hover-gradient:hover::before {
+  opacity: 1;
+  animation: moveGradient 1.5s linear forwards;
+}
+
+/* Animação do gradiente se movendo ao redor do card */
+@keyframes moveGradient {
+  0% { background-position: 0% 0; }
+  100% { background-position: 200% 0; }
+}
+
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-move {
+  animation: gradient-move 3s ease-in-out infinite;
+}
