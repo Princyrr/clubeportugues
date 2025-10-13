@@ -1,6 +1,7 @@
 // src/components/HeroCarousel.jsx
-import  { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -19,8 +20,11 @@ import clube1 from "../assets/clube1.png";
 import clube3 from "../assets/clube3.png";
 import parque1 from "../assets/parque1.png";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const HeroCarousel = () => {
   const carouselRef = useRef(null);
+  const textRef = useRef(null); // <--- referência para a seção de texto
 
   const imagens = [
     adega1,
@@ -38,39 +42,54 @@ const HeroCarousel = () => {
     parque1,
   ];
 
- useEffect(() => {
-  const ctx = gsap.context(() => {
-    const slides = gsap.utils.toArray<HTMLElement>(".carousel-slide"); // ⬅️ tipando como HTMLElement
-    const angle = 360 / slides.length;
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const slides = gsap.utils.toArray<HTMLElement>(".carousel-slide");
+      const angle = 360 / slides.length;
 
-    gsap.set(slides, {
-      rotateY: (i) => i * angle,
-      transformOrigin: "50% 50% -650px",
-      backfaceVisibility: "hidden",
-      opacity: (i) => (i === 0 ? 1 : 0),
-    });
+      // Posiciona os slides
+      gsap.set(slides, {
+        rotateY: (i) => i * angle,
+        transformOrigin: "50% 50% -650px",
+        backfaceVisibility: "hidden",
+        opacity: (i) => (i === 0 ? 1 : 0),
+      });
 
-    gsap.to(slides, {
-      rotateY: "+=360",
-      duration: 100,
-      ease: "linear",
-      repeat: -1,
-      onUpdate: () => {
-        slides.forEach((slide) => {
-          const rotation = gsap.getProperty(slide, "rotateY") as number; // ⬅️ tipo number
-          const normalized = (rotation % 360 + 360) % 360;
-          gsap.set(slide, { opacity: normalized < 90 || normalized > 270 ? 1 : 0 });
-        });
-      },
-    });
-  }, carouselRef);
+      // Animação de rotação contínua dos slides
+      gsap.to(slides, {
+        rotateY: "+=360",
+        duration: 100,
+        ease: "linear",
+        repeat: -1,
+        onUpdate: () => {
+          slides.forEach((slide) => {
+            const rotation = gsap.getProperty(slide, "rotateY") as number;
+            const normalized = (rotation % 360 + 360) % 360;
+            gsap.set(slide, { opacity: normalized < 90 || normalized > 270 ? 1 : 0 });
+          });
+        },
+      });
 
-  return () => ctx.revert();
-}, []);
+      // Scroll animation apenas para o texto
+      gsap.from(textRef.current, {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "top 80%", // quando o topo do texto atingir 80% da viewport
+          end: "bottom 60%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    }, carouselRef);
 
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <section className="relative min-h-[90vh] bg-gradient-to-r from-green-800 via-green-700 to-red-800 flex flex-col items-center justify-center overflow-hidden px-4 pb-20  ">
+    <section className="relative min-h-[90vh] bg-gradient-to-r from-green-800 via-green-700 to-red-800 flex flex-col items-center justify-center overflow-hidden px-4 pb-20">
       
       {/* Carrossel 3D */}
       <div
@@ -81,7 +100,16 @@ const HeroCarousel = () => {
           {imagens.map((img, i) => (
             <div
               key={i}
-              className="carousel-slide absolute w-[300px] sm:w-[310px] h-[180px] sm:h-[220px] rounded-lg shadow-lg overflow-hidden"
+              className="
+                carousel-slide 
+                absolute 
+                w-[300px] sm:w-[310px] 
+                h-[180px] sm:h-[220px] 
+                rounded-lg 
+                border-2 border-yellow-400 
+                shadow-[0_0_30px_5px_rgba(255,255,0,0.6)] 
+                overflow-hidden
+              "
             >
               <img
                 src={img}
@@ -94,7 +122,7 @@ const HeroCarousel = () => {
       </div>
 
       {/* Texto abaixo */}
-      <div className="relative z-10 mt-12 text-center px-4 sm:px-6">
+      <div ref={textRef} className="relative z-10 mt-12 text-center px-4 sm:px-6">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-4 sm:mb-6">
           Seja Sócio do <span className="text-yellow-400">Clube Português</span>
         </h1>

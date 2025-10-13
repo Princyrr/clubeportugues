@@ -5,7 +5,7 @@ import { ArrowRight, Trophy, Users, Calendar, Utensils } from 'lucide-react';
 import HeroCarousel from "../components/HeroCarousel";
 import NoticiasSection from "../components/NoticiasSection";
 import CtaSection from "../components/CtaSection";
-import EventoSection from "../components/EventoSection";
+import ContactForm from "../components/ContactForm";
 import piscina from '../assets/piscina.jpg';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -16,6 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 import banner1 from '../assets/banner1.png';
 import banner2 from '../assets/banner2.png';
 import banner3 from '../assets/banner3.png';
+
 
 const Home = () => {
   const featuresRef = useRef(null);
@@ -185,7 +186,7 @@ const Home = () => {
      <CtaSection />
      {/*eventos*/}
 
-    <EventoSection />
+    <ContactForm />
     </div>
   );
 };
