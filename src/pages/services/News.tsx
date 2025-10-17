@@ -16,6 +16,7 @@ import noticia9 from '../../assets/noticia9.jpg';
 import noticia10 from '../../assets/noticia10.jpg';
 import noticia11 from '../../assets/noticia11.png';
 import noticia12 from '../../assets/noticia12.png';
+import noticia13 from '../../assets/noticia13.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -177,7 +178,19 @@ const News = () => {
   category: 'todas',
   image: noticia12,
   featured: true
+},
+{
+  id: 15,
+  title: ' Orgulho Luso no Handebol!',
+  excerpt: 'Quatro jogadoras formadas no FMO/Clube Português foram convocadas para a Seleção Brasileira de Handebol.',
+  content: 'Quatro jogadoras formadas no FMO/Clube Português foram convocadas para a Seleção Brasileira de Handebol. ',
+  author: 'Diretoria de Esportes',
+  date: '2025-10-17',
+  category: 'esporte',
+  image: noticia13,
+  featured: false
 }
+
 
   ];
 

@@ -15,6 +15,7 @@ import noticia9 from '../../assets/noticia9.jpg';
 import noticia10 from '../../assets/noticia10.jpg';
 import noticia11 from '../../assets/noticia11.png';
 import noticia12 from '../../assets/noticia12.png';
+import noticia13 from '../../assets/noticia13.png';
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -417,7 +418,60 @@ Orgulho de Pernambuco!</p>
   category: 'todas',
   image: noticia12,
   readTime: '2 min'
+},
+{
+  id: 15,
+  title: '🏐💚 Orgulho Luso no Handebol!',
+  content: `
+  <div style="color: #2b2b2b; font-family: 'Arial', sans-serif; padding: 20px;">
+    <h2 style="text-align: center; font-size: 24px; font-weight: bold; color: #1b5e20; margin-bottom: 15px;">
+      Orgulho Luso no Handebol!
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Quatro jogadoras formadas no <strong>FMO/Clube Português</strong> foram convocadas para a 
+      <strong>Seleção Brasileira de Handebol</strong>, que realiza fase de treinamentos em Portugal, 
+      rumo ao <strong>Mundial 2025</strong>! 🇧🇷🇵🇹
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Entre elas, a ponta-esquerda <strong>Jamily Félix</strong>, que segue defendendo o <strong>FMO/Português</strong>, 
+      e as ex-lusas <strong>Renata Arruda</strong>, <strong>Maria Grasielly</strong> e <strong>Mirela Maria</strong>, 
+      que hoje atuam na Europa.
+    </p>
+
+    <blockquote style="font-style: italic; color: #1b5e20; border-left: 4px solid #1b5e20; padding-left: 12px; margin: 25px 0;">
+      “É o resultado de um trabalho de formação de mais de 20 anos, que segue revelando talentos para o handebol brasileiro.”
+    </blockquote>
+
+    <p style="text-align: right; font-size: 15px; font-weight: bold; margin-bottom: 30px;">
+      — Técnico Cristiano Rocha
+    </p>
+
+    <p style="text-align: center; font-size: 17px; font-weight: 600; color: #1b5e20; margin-bottom: 25px;">
+      💪 Orgulho que atravessa fronteiras!
+    </p>
+
+    <p style="text-align: center; font-size: 15px;">
+      📖 Leia a matéria completa no site:<br>
+      <a href="https://www.diariodepernambuco.com.br" target="_blank" style="color: #1b5e20; font-weight: bold; text-decoration: none;">
+        diariodepernambuco.com.br
+      </a>
+    </p>
+
+    <div style="margin-top: 25px; text-align: center; font-size: 15px; color: #444;">
+      #ClubePortuguês &nbsp;|&nbsp; #OrgulhoLuso &nbsp;|&nbsp; #Handebol &nbsp;|&nbsp; #SeleçãoBrasileira &nbsp;|&nbsp; #FMO &nbsp;|&nbsp; #TalentosDoPortuguês
+    </div>
+  </div>
+  `,
+  author: 'Diretoria de Esportes',
+  date: '2025-10-17',
+  category: 'esporte',
+  image: noticia13, // substitua pelo nome da imagem correspondente
+  readTime: '3 min'
 }
+
+
 
 
 ];

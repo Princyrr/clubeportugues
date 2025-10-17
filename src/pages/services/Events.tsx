@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, Music, Users, Star, Ticket } from 'lucide-react';
 
 // Importando as imagens locais
-import evento2 from '../../assets/evento1.png';
+import evento2 from '../../assets/semevento.png';
 import evento1 from '../../assets/evento1.jpg';
 
 
@@ -17,35 +17,43 @@ const Events = () => {
 
 const events = {
   outubro: [
-    {
-      date: '12 Out',
-      title: 'Dia das Crianças no Clube Português!',
-      description: (
-        <div className="space-y-4 text-gray-700">
-                 <p>
-            O dia <strong>12 de outubro</strong> será de pura diversão para a garotada! 💙<br />
-            Das <strong>11h às 14h</strong>, teremos atividades recreativas especiais, na piscina e no parque infantil, 
-            garantindo muita alegria, brincadeiras e boa energia, para celebrarmos essa data tão especial! ✨
-          </p>
+   {
+  date: '--',
+  title: '📢 Aviso Importante sobre Divulgação de Eventos',
+  description: (
+    <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
+      <p>
+        O <strong>Clube Português do Recife</strong> informa que <strong>não realiza divulgação de eventos terceirizados</strong>, 
+        em seus canais oficiais, incluindo o site e as redes sociais.
+      </p>
 
-          <p>
-            Traga a família, venha viver momentos únicos e fazer a festa com a criançada! 🥳
-          </p>
+      <p>
+        Apenas são divulgadas as <strong>atividades, eventos e ações promovidas pelo próprio Clube</strong>,  
+        ou diretamente pela sua diretoria e departamentos internos.
+      </p>
 
-          <div className="space-y-2">
-            <p>📍 <strong>Clube Português do Recife</strong></p>
-            <p>🗓 <strong>12 de outubro</strong> | ⏰ <strong>11h às 14h</strong></p>
-          </div>
+      <p>
+        Agradecemos a compreensão e reforçamos nosso compromisso com a 
+        <strong> transparência e a comunicação institucional</strong> com nossos associados e o público em geral.
+      </p>
 
-          <p className="italic text-green-800 font-semibold">
-            Porque ser criança é brincar, sorrir e se divertir! 
-          </p>
-        </div>
-      ),
-      time: 'Das 11h às 14h',
-      price: 'Livre',
-      image: evento2
-    }
+      <p>
+        Para <strong>mais informações</strong> ou dúvidas sobre eventos e atividades, entre em contato com a 
+        <strong> Secretaria do Clube Português</strong> pelo <strong>WhatsApp</strong> oficial. 
+        Nossa equipe está disponível para prestar todos os esclarecimentos necessários.
+      </p>
+      
+      <p className="italic text-green-800 font-semibold text-center">
+        💚 Clube Português do Recife
+      </p>
+    </div>
+  ),
+  time: '--',
+  price: '--',
+  image: evento2
+}
+
+
   ]
 };
 
