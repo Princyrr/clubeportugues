@@ -17,6 +17,7 @@ import noticia10 from '../../assets/noticia10.jpg';
 import noticia11 from '../../assets/noticia11.png';
 import noticia12 from '../../assets/noticia12.png';
 import noticia13 from '../../assets/noticia13.png';
+import noticia14 from '../../assets/noticia14.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -188,6 +189,17 @@ const News = () => {
   date: '2025-10-17',
   category: 'esporte',
   image: noticia13,
+  featured: false
+},
+{
+  id: 16,
+  title: 'Tetracampeão Brasileiro de Handebol ',
+  excerpt: 'Fmo/Clube Português é tetracampeão brasileiro de handebol na categoria cadete!',
+  content: 'Fmo/Clube Português é tetracampeão brasileiro de handebol na categoria cadete! ',
+  author: 'Diretoria de Esportes',
+  date: '2025-10-25',
+  category: 'esporte',
+  image: noticia14,
   featured: false
 }
 

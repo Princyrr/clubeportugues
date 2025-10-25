@@ -16,6 +16,7 @@ import noticia10 from '../../assets/noticia10.jpg';
 import noticia11 from '../../assets/noticia11.png';
 import noticia12 from '../../assets/noticia12.png';
 import noticia13 from '../../assets/noticia13.png';
+import noticia14 from '../../assets/noticia14.png';
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -469,8 +470,62 @@ Orgulho de Pernambuco!</p>
   category: 'esporte',
   image: noticia13, // substitua pelo nome da imagem correspondente
   readTime: '3 min'
-}
+},
+{
+  id: 16,
+  title: '🏐💚 FMO/Clube Português é tetracampeão brasileiro de handebol!',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #1b5e20; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      🏆 FMO/Clube Português é tetracampeão brasileiro de handebol!
+    </h2>
 
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Após um campeonato intenso, com derrota no primeiro jogo, nossas <strong>Lusinhas</strong> sagraram-se campeãs 
+      em um confronto emocionante contra a equipe do <strong>Itajaí</strong>. Que orgulho de ser Luso! 💚💛
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+      Além disso, tivemos representantes na seleção do campeonato:
+    </p>
+
+    <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
+      <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+        <span style="color: #1b5e20; font-size: 18px;">🥅</span> Melhor goleira: <strong>@saraherzborges</strong>
+      </li>
+      <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+        <span style="color: #1b5e20; font-size: 18px;">➡️</span> Melhor ponta direita: <strong>@annygsilvaa</strong>
+      </li>
+      <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+        <span style="color: #1b5e20; font-size: 18px;">💪</span> Melhor pivô: <strong>@anaa_dangelis</strong>
+      </li>
+      <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+        <span style="color: #1b5e20; font-size: 18px;">🎯</span> Melhor técnico: <strong>@joao.prestrelo</strong>
+      </li>
+    </ul>
+
+    <p style="text-align: center; font-size: 18px; font-weight: 600; color: #1b5e20; margin-bottom: 20px; background: #e1f5e4; padding: 10px 15px; border-radius: 10px;">
+      Luso lenha ❤️💚
+    </p>
+
+    <div style="text-align: center; font-size: 15px; margin-bottom: 20px; color: #555;">
+      Patrocínio:<br>
+      <strong>@fmo.edu.br</strong> &nbsp;|&nbsp; <strong>@instituto.maria</strong>
+    </div>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #777;">
+      #ClubePortuguêsRecife &nbsp;|&nbsp; #Handebol &nbsp;|&nbsp; #Tetracampeão
+    </div>
+
+  </div>
+  `,
+  author: 'Diretoria de Esportes',
+  date: '2025-10-24',
+  category: 'esporte',
+  image: noticia14, // substitua pelo nome da imagem correspondente
+  readTime: '3 min'
+}
 
 
 

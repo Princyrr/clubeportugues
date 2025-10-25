@@ -17,6 +17,7 @@ import NewsDetail from './pages/services/NewsDetail';
 import Diretoria from './components/Diretoria';
 import logo from './assets/logo.png';
 
+
 const Loading: React.FC = () => {
   const dots = ['.', '.', '.'];
   return (
