@@ -2,14 +2,14 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import noticia12 from '../assets/noticia12.png';
-import noticia14 from '../assets/noticia14.png';
+import noticia15 from '../assets/noticia15.png';
 import noticia11 from '../assets/noticia11.png';
 import noticia8 from '../assets/noticia8.png';
 
 const NoticiasSection = () => {
   const noticias = [
     { img: noticia12, title: 'Novo Horário da Secretaria', description: 'Informamos que a secretaria do Clube Português do Recife está com novo horário de funcionamento, vem conferir!' },
-    { img: noticia14, title: 'Tetracampeão Brasileiro de Handebol', description: 'Fmo/Clube Português é tetracampeão brasileiro de handebol na categoria cadete!' },
+    { img: noticia15, title: 'Nova Administração', description: ' Um novo capítulo começa na Adega do Clube Português, agora está sob a administração da Garrafeira Brasil ' },
     { img: noticia11, title: 'Lusos na Seleção 🇧🇷', description: 'Nossa atleta Julia Gabrielly e nosso treinador João Prestrelo representaram o Brasil no Sul-Centro Americano Sub-15 em Assunção, Paraguai, conquistando o 3º lugar!' },
     { img: noticia8, title: 'Copa Pacífico de Natação', description: 'Pernambucanas convocadas para representar o Brasil na Copa Pacífico de Natação.' }
   ];

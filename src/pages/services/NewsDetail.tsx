@@ -17,6 +17,8 @@ import noticia11 from '../../assets/noticia11.png';
 import noticia12 from '../../assets/noticia12.png';
 import noticia13 from '../../assets/noticia13.png';
 import noticia14 from '../../assets/noticia14.png';
+import noticia15 from '../../assets/noticia15.png';
+
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -525,7 +527,51 @@ Orgulho de Pernambuco!</p>
   category: 'esporte',
   image: noticia14, // substitua pelo nome da imagem correspondente
   readTime: '3 min'
+},
+{
+  id: 17,
+  title: '🍷 Um novo capítulo na Adega do Clube Português 🍷',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      🥂 Um novo capítulo começa na Adega do Clube Português
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      A tradição encontra um novo sabor.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      A <strong>Adega do Clube Português</strong> agora está sob a administração da 
+      <strong>Garrafeira Brasil</strong> junto com <strong>@mariana.chalita.figueiredo</strong>.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Mais do que um espaço, é uma experiência onde o vinho, a gastronomia e os bons encontros se encontram à mesa.
+    </p>
+
+    <p style="text-align: center; font-size: 18px; font-weight: 600; color: #6a1b1a; margin: 25px 0;">
+      🍷 Venha viver essa nova fase conosco.
+    </p>
+
+    <p style="text-align: center; font-size: 16px; color: #333; margin-bottom: 20px;">
+      <strong>Adega Garrafeira Brasil – Clube Português</strong>
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #777;">
+      #GarrafeiraBrasil &nbsp;|&nbsp; #AdegaDoClubePortuguês &nbsp;|&nbsp; #VinhosComHistória &nbsp;|&nbsp; #NovoCapítulo
+    </div>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-10-30',
+  category: 'gastronomia',
+  image: noticia15,
+  readTime: '2 min'
 }
+
 
 
 

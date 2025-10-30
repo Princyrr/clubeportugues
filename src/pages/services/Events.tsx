@@ -5,6 +5,7 @@ import { Calendar, Clock, MapPin, Music, Users, Star, Ticket } from 'lucide-reac
 // Importando as imagens locais
 import evento2 from '../../assets/evento1.png';
 import evento1 from '../../assets/evento1.jpg';
+import evento3 from '../../assets/evento2.jpg';
 
 // ✅ Tipando os eventos para evitar erro TS
 type EventItem = {
@@ -50,7 +51,28 @@ const Events = () => {
         time: '12h30 - 16h30',
         price: 'R$ 150,00',
         image: evento2
-      }
+      },
+      {
+  date: '22 de Novembro',
+  title: '🏊‍♀️ Festival CPR de Natação 🏊‍♂️',
+  description: (
+    <div className="space-y-2 text-gray-700 leading-relaxed text-justify">
+      <p className="font-semibold">O FESTIVAL CPR DE NATAÇÃO VEM AÍ!♥️💚</p>
+      <p>Uma proposta totalmente lúdica para todos.</p>
+      <p>“Não fique fora dessa! Festival CPR: onde todos brilham dentro d’água!”</p>
+      <p><strong>Dia:</strong> 22.11.25</p>
+      <p><strong>Horário:</strong> 08h</p>
+      <p><strong>Faixa etária:</strong> 2 aos 100 anos</p>
+      <p><strong>Informações:</strong> 99759-2238</p>
+      <p className="font-semibold text-green-800 text-center">Inscrições até o dia 08.11</p>
+    </div>
+  ),
+  time: '08h',
+  image: evento3
+}
+
+
+
     ]
   };
 

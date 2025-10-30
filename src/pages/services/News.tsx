@@ -18,6 +18,8 @@ import noticia11 from '../../assets/noticia11.png';
 import noticia12 from '../../assets/noticia12.png';
 import noticia13 from '../../assets/noticia13.png';
 import noticia14 from '../../assets/noticia14.png';
+import noticia15 from '../../assets/noticia15.png';
+
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -201,7 +203,19 @@ const News = () => {
   category: 'esporte',
   image: noticia14,
   featured: false
+},
+{
+  id: 17,
+  title: 'Restaurante Adega ',
+  excerpt: 'O Restaurante Adega do Clube Português agora está sob a administração da Garrafeira Brasil',
+  content: 'O Restaurante Adega do Clube Português agora está sob a administração da Garrafeira Brasil',
+  author: 'Clube Português',
+  date: '2025-10-30',
+  category: 'gastronomia',
+  image: noticia15,
+  featured: false
 }
+
 
 
   ];
