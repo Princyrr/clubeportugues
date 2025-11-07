@@ -14,7 +14,9 @@ import Barcelos from './pages/services/Barcelos';
 import Events from './pages/services/Events';
 import News from './pages/services/News';
 import NewsDetail from './pages/services/NewsDetail';
+import Balancetes from "./pages/services/Balancetes";
 import Diretoria from './components/Diretoria';
+
 import logo from './assets/logo.png';
 
 
@@ -116,6 +118,7 @@ const App: React.FC = () => {
                   <Route path="/servicos/noticias" element={<News />} />
                   <Route path="/servicos/noticias/:id" element={<NewsDetail />} />
                   <Route path="/diretoria" element={<Diretoria />} />
+                  <Route path="/balancetes" element={<Balancetes />} />
                 </Routes>
               </main>
               <Footer />

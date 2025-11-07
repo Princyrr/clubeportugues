@@ -380,7 +380,7 @@ Orgulho de Pernambuco!</p>
     </p>
 
     <p style="text-align: justify; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-      A partir do dia <strong>06 de outubro de 2025</strong>, a <strong>Secretaria</strong> do 
+      A partir do dia <strong>Novembro de 2025</strong>, a <strong>Secretaria</strong> do 
       <strong>Clube Português do Recife</strong> passará a funcionar em <strong>novo horário</strong>. 
       Confira abaixo os dias e horários atualizados:
     </p>
@@ -388,7 +388,8 @@ Orgulho de Pernambuco!</p>
     <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px; line-height: 1.8;">
       <li style="margin-bottom: 8px;">🕗 <strong>Segunda a Quinta-feira:</strong> <span style="color: #1b5e20;">8h às 18h</span></li>
       <li style="margin-bottom: 8px;">🕔 <strong>Sexta-feira:</strong> <span style="color: #1b5e20;">8h às 17h</span></li>
-      <li>🌿 <strong>Sábados, Domingos e Feriados:</strong> <span style="color: #1b5e20;">8h às 12h</span></li>
+      <li>🌿 <strong>Sábado:</strong> <span style="color: #1b5e20;">8h às 12h</span></li>
+      <li>🌞 <strong>Domingos e Feriados:</strong> <span style="color: #1b5e20;">Fechado</span></li>
     </ul>
 
     <p style="text-align: justify; margin-top: 25px; font-size: 16px;">
@@ -417,11 +418,12 @@ Orgulho de Pernambuco!</p>
   </div>
   `,
   author: 'Secretaria',
-  date: '2025-10-07',
+  date: '2025-11-08',
   category: 'todas',
   image: noticia12,
   readTime: '2 min'
 },
+
 {
   id: 15,
   title: '🏐💚 Orgulho Luso no Handebol!',

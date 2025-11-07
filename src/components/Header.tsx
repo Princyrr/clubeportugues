@@ -35,6 +35,8 @@ const Header = () => {
         { name: 'Bar Barcelos', path: '/servicos/barcelos' },
         { name: 'Agenda de Eventos', path: '/servicos/agenda-shows' },
         { name: 'Notícias', path: '/servicos/noticias' },
+        { name: "Balancetes", path: "/balancetes" }
+
       ],
     },
     { name: 'Fale Conosco', path: '/fale-conosco' },
