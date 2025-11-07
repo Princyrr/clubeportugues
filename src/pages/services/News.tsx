@@ -19,7 +19,7 @@ import noticia12 from '../../assets/noticia12.png';
 import noticia13 from '../../assets/noticia13.png';
 import noticia14 from '../../assets/noticia14.png';
 import noticia15 from '../../assets/noticia15.png';
-
+import noticia16 from '../../assets/noticia16.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -213,6 +213,17 @@ const News = () => {
   date: '2025-10-30',
   category: 'gastronomia',
   image: noticia15,
+  featured: false
+},
+{
+  id: 18,
+  title: 'Bar Barcelos',
+  excerpt: 'O Bar Barcelos reabriu com muitas novidades e agora temos também chopp da Brahma!',
+  content: 'O Bar Barcelos reabriu suas portas com muitas novidades para os sócios e visitantes. O ambiente está ainda mais acolhedor, com um novo cardápio e chopp gelado da Brahma, perfeito para aproveitar bons momentos no Clube Português.',
+  author: 'Clube Português',
+  date: '2025-11-07',
+  category: 'gastronomia',
+  image: noticia16,
   featured: false
 }
 

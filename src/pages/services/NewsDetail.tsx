@@ -18,7 +18,7 @@ import noticia12 from '../../assets/noticia12.png';
 import noticia13 from '../../assets/noticia13.png';
 import noticia14 from '../../assets/noticia14.png';
 import noticia15 from '../../assets/noticia15.png';
-
+import noticia16 from '../../assets/noticia16.png';
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -572,7 +572,50 @@ Orgulho de Pernambuco!</p>
   category: 'gastronomia',
   image: noticia15,
   readTime: '2 min'
+},
+{
+  id: 18,
+  title: '🍻 Bar Barcelos está de volta! 🍻',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      🍻 O Bar Barcelos reabriu no Clube Português!
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O tradicional <strong>Bar Barcelos</strong> está de volta e cheio de novidades! Agora funcionando <strong>de domingo a domingo</strong>, o espaço foi totalmente revitalizado para receber os sócios e visitantes com muito conforto e boa energia.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      No novo cardápio, você encontra <strong>petiscos deliciosos</strong>, <strong>almoços saborosos</strong> e o destaque da casa: o <strong>chopp Brahma gelado</strong>, servido na temperatura perfeita para acompanhar bons momentos com os amigos e a família.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O Bar Barcelos está funcionando em um <strong>horário especial</strong>: abre às <strong>11h</strong> e fecha às <strong>20h</strong>, garantindo aquele clima agradável e seguro.
+    </p>
+
+    <p style="text-align: center; font-size: 18px; font-weight: 600; color: #6a1b1a; margin: 25px 0;">
+      🍺 Venha conferir o novo Bar Barcelos e brindar essa nova fase no Clube Português!
+    </p>
+
+    <p style="text-align: center; font-size: 16px; color: #333; margin-bottom: 20px;">
+      <strong>Bar Barcelos – Clube Português</strong>
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #777;">
+      #BarBarcelos &nbsp;|&nbsp; #ClubePortuguês &nbsp;|&nbsp; #ChoppBrahma &nbsp;|&nbsp; #Petiscos &nbsp;|&nbsp; #NovidadesNoClube
+    </div>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-11-07',
+  category: 'gastronomia',
+  image: noticia16,
+  readTime: '2 min'
 }
+
 
 
 
