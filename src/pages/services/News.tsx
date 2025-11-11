@@ -20,6 +20,7 @@ import noticia13 from '../../assets/noticia13.png';
 import noticia14 from '../../assets/noticia14.png';
 import noticia15 from '../../assets/noticia15.png';
 import noticia16 from '../../assets/noticia16.png';
+import noticia17 from '../../assets/noticia17.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -224,6 +225,17 @@ const News = () => {
   date: '2025-11-07',
   category: 'gastronomia',
   image: noticia16,
+  featured: false
+},
+{
+  id: 19,
+  title: '🥉 ORGULHO LUSO! ',
+  excerpt: 'O Clube Português do Recife encerrou sua participação no Campeonato Brasileiro de Hóquei sobre Patins Masculino 2025 com medalha de bronze!',
+  content: 'O Clube Português do Recife encerrou sua participação no Campeonato Brasileiro de Hóquei sobre Patins Masculino 2025 com medalha de bronze! ',
+  author: 'Diretoria de Esportes',
+  date: '2025-11-11',
+  category: 'esportes',
+  image: noticia17,
   featured: false
 }
 

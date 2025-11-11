@@ -19,6 +19,8 @@ import noticia13 from '../../assets/noticia13.png';
 import noticia14 from '../../assets/noticia14.png';
 import noticia15 from '../../assets/noticia15.png';
 import noticia16 from '../../assets/noticia16.png';
+import noticia17 from '../../assets/noticia17.png';
+
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -614,7 +616,55 @@ Orgulho de Pernambuco!</p>
   category: 'gastronomia',
   image: noticia16,
   readTime: '2 min'
+},
+{
+  id: 19,
+  title: '🥉 Orgulho Luso! 🇵🇹',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      🥉 ORGULHO LUSO! 🇵🇹
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O <strong>Clube Português do Recife</strong> encerrou sua participação no <strong>Campeonato Brasileiro de Hóquei sobre Patins Masculino 2025</strong> com medalha de bronze! 💪🏑
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Jogando em casa, o Luso goleou o <strong>Internacional de Santos (SP)</strong> por <strong>6×0</strong>, garantindo o <strong>3° lugar</strong> e coroando uma campanha sólida, com <strong>cinco vitórias em sete partidas</strong>! 🔥
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O destaque individual ficou por conta do chileno <strong>Nico Fernandez</strong>, artilheiro da equipe com <strong>17 gols marcados</strong>.
+      Para o técnico <strong>Leônidas Agra</strong>, o resultado reflete o excelente desempenho e a força da equipe:
+    </p>
+
+    <blockquote style="font-style: italic; background: #fff; border-left: 4px solid #6a1b1a; padding: 10px 15px; margin: 20px 0; color: #444;">
+      “O time esteve muito bem e se comportou muito bem. Foi uma grande campanha, e todos estão de parabéns.”
+    </blockquote>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Além do desempenho em quadra, o torneio — realizado no <strong>Clube Português</strong> — foi uma verdadeira <strong>festa do hóquei nacional</strong>, mostrando que <strong>Pernambuco é uma potência da modalidade!</strong> 👏
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+      Agora, o <strong>Luso</strong> volta suas atenções para o <strong>Campeonato Pernambucano</strong>, em busca de novas conquistas. 💚❤️
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #777;">
+      #OrgulhoLuso &nbsp;|&nbsp; #ClubePortuguês &nbsp;|&nbsp; #HóqueiSobrePatins &nbsp;|&nbsp; #Bronze2025 &nbsp;|&nbsp; #ForçaLusa
+    </div>
+
+  </div>
+  `,
+  author: 'Diretoria de Esportes',
+  date: '2025-11-11',
+  category: 'esportes',
+  image: noticia17,
+  readTime: '2 min'
 }
+
 
 
 
