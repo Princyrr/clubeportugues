@@ -21,6 +21,10 @@ import noticia14 from '../../assets/noticia14.png';
 import noticia15 from '../../assets/noticia15.png';
 import noticia16 from '../../assets/noticia16.png';
 import noticia17 from '../../assets/noticia17.png';
+import noticia18 from '../../assets/noticia18.png';
+import noticia19 from '../../assets/noticia19.jpg';
+import noticia20 from '../../assets/noticia20.jpg';
+import noticia21 from '../../assets/noticia21.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -236,6 +240,50 @@ const News = () => {
   date: '2025-11-11',
   category: 'esportes',
   image: noticia17,
+  featured: false
+},
+{
+  id: 20,
+  title: '175 ANOS DE HISTÓRIA ',
+  excerpt: 'O Clube Português do Recife parabeniza o Gabinete Português de Leitura de Pernambuco pelos seus 175 anos de fundação, celebrados neste mês!',
+  content: 'O Clube Português do Recife parabeniza o Gabinete Português de Leitura de Pernambuco pelos seus 175 anos de fundação, celebrados neste mês! ',
+  author: 'Clube Português',
+  date: '2025-11-14',
+  category: 'cultura',
+  image: noticia21,
+  featured: false
+},
+{
+  id: 21,
+  title: 'FMO / CLUBE PORTUGUÊS (PE) ESTÁ NA FINAL!',
+  excerpt: 'FMO / Clube Português (PE) venceu o Cascavel (PR) por 33 a 29 e garantiu sua vaga na grande final da Liga Nacional Feminina 2025!',
+  content: 'FMO / Clube Português (PE) venceu o Cascavel (PR) por 33 a 29 e garantiu sua vaga na grande final da Liga Nacional Feminina 2025!',
+  author: 'Clube Português',
+  date: '2025-11-14',
+  category: 'esportes',
+  image: noticia18,
+  featured: false
+},
+{
+  id: 22,
+  title: 'Final - Clube Português e Taubaté decidem a Liga Nacional',
+  excerpt: 'Sábado às 20:00h, Clube Português x Taubaté, o duelo que promete parar o Handebol Nacional!',
+  content: 'Sábado às 20:00h, Clube Português x Taubaté, o duelo que promete parar o Handebol Nacional! ',
+  author: 'Clube Português',
+  date: '2025-11-14',
+  category: 'esportes',
+  image: noticia19,
+  featured: false
+},
+{
+  id: 23,
+  title: 'Campeonato Brasileiro Master de Hóquei em Recife!',
+  excerpt: 'Campeonato Brasileiro Master de Hóquei sobre Patins, que acontecerá entre os dias 20 e 22 de novembro!',
+  content: 'Campeonato Brasileiro Master de Hóquei sobre Patins, que acontecerá entre os dias 20 e 22 de novembro!',
+  author: 'Clube Português',
+  date: '2025-11-14',
+  category: 'esportes',
+  image: noticia20,
   featured: false
 }
 

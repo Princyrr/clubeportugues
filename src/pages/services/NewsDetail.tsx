@@ -20,6 +20,11 @@ import noticia14 from '../../assets/noticia14.png';
 import noticia15 from '../../assets/noticia15.png';
 import noticia16 from '../../assets/noticia16.png';
 import noticia17 from '../../assets/noticia17.png';
+import noticia18 from '../../assets/noticia18.png';
+import noticia19 from '../../assets/noticia19.jpg';
+import noticia20 from '../../assets/noticia20.jpg';
+import noticia21 from '../../assets/noticia21.png';
+
 
 
 // Importando imagens da galeria da posse
@@ -590,7 +595,7 @@ Orgulho de Pernambuco!</p>
     </p>
 
     <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
-      No novo cardápio, você encontra <strong>petiscos deliciosos</strong>, <strong>almoços saborosos</strong> e o destaque da casa: o <strong>chopp Brahma gelado</strong>, servido na temperatura perfeita para acompanhar bons momentos com os amigos e a família.
+      No novo cardápio, você encontra <strong>petiscos deliciosos</strong>, <strong>almoços saborosos</strong> e o destaque da casa: o <strong>chopp Brahma gelado(Apenas sextas, sábados e domingos)</strong>, servido na temperatura perfeita para acompanhar bons momentos com os amigos e a família.
     </p>
 
     <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
@@ -663,7 +668,166 @@ Orgulho de Pernambuco!</p>
   category: 'esportes',
   image: noticia17,
   readTime: '2 min'
+},
+{
+  id: 20,
+  title: '📚 175 Anos de História e Cultura Lusa!',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      📚175 ANOS DE HISTÓRIA E CULTURA LUSA!
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O <strong>Clube Português do Recife</strong> parabeniza o <strong>Gabinete Português de Leitura de Pernambuco</strong> pelos seus <strong>175 anos de fundação</strong>, celebrados neste mês — uma data que simboliza a força da cultura, da língua e da presença portuguesa em nosso Estado. ✨
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Fundado em <strong>1849</strong>, o Gabinete nasceu do ideal de um grupo de imigrantes portugueses que buscavam promover a leitura, o conhecimento e o convívio intelectual em Pernambuco. Ao longo de quase dois séculos, tornou-se um dos mais importantes espaços de preservação da <strong>memória luso-brasileira</strong>, abrigando um riquíssimo acervo literário e histórico. 📖
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O <strong>Clube Português</strong> se une às homenagens, com orgulho e admiração, celebrando essa trajetória que inspira e conecta gerações em torno dos mesmos valores de <strong>tradição, cultura e identidade portuguesa</strong>. ❤️
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+      Parabéns ao <strong>Gabinete Português de Leitura de Pernambuco</strong>, símbolo vivo da herança cultural que compartilhamos!
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #777;">
+      #ClubePortuguês &nbsp;|&nbsp; #GabinetePortuguêsDeLeitura &nbsp;|&nbsp; #175Anos &nbsp;|&nbsp; #CulturaLusa &nbsp;|&nbsp; #PortugalNoBrasil &nbsp;|&nbsp; #OrgulhoLuso &nbsp;|&nbsp; #TradiçãoEHistória &nbsp;|&nbsp; #Recife &nbsp;|&nbsp; #Pernambuco
+    </div>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-11-14',
+  category: 'cultura',
+  image: noticia21,
+  readTime: '3 min'
+},
+{
+  id: 21,
+  title: '🏆 FMO / CLUBE PORTUGUÊS (PE) ESTÁ NA FINAL!',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      🏆 FMO / CLUBE PORTUGUÊS (PE) ESTÁ NA FINAL!
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Em uma semifinal muito disputada, o <strong>FMO / Clube Português (PE)</strong> venceu o <strong>Cascavel (PR)</strong> por 33 a 29 e garantiu sua vaga na grande final da <strong>Liga Nacional Feminina 2025</strong>!
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Agora, o Português enfrenta o <strong>E.C. Pinheiros (SP)</strong> na decisão nacional, que será dia <strong>15 de novembro</strong>, a partir das 18h (de Brasília).!
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      <strong>📍 Arena Sorriso – Sorriso/MT</strong><br/>
+      <strong>📺 Transmissão exclusiva pela TV CBHb</strong><br/>
+      <strong>📸 @ruasmidia</strong>
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #777;">
+      #FinalFour2025 &nbsp;|&nbsp; #LigaNacional &nbsp;|&nbsp; #Handebol &nbsp;|&nbsp; #CBHb &nbsp;|&nbsp; #Português &nbsp;|&nbsp; #Cascavel &nbsp;|&nbsp; #SorrisoMT &nbsp;|&nbsp; #TVCBHb
+    </div>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-11-14',
+  category: 'esportes',
+  image: noticia18,
+  readTime: '3 min'
+},
+{
+  id: 22,
+  title: '🤾‍♂️ Liga Nacional de Handebol: Clube Português e Taubaté na Grande Final!',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      🤾‍♂️🔥Clube Português  e Taubaté decidem a Liga Nacional!
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      A noite desta quarta-feira (12) foi marcada por muita emoção no <strong>Final Four da Liga Nacional de Handebol Masculino</strong>. Em duas semifinais intensas, <strong>Taubaté</strong> e <strong>Clube Português</strong> garantiram vaga na grande decisão do torneio.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O <strong>Taubaté</strong> avançou após um confronto extremamente equilibrado contra o <strong>Pinheiros</strong>, definido apenas na disputa de tiros de sete metros. Já o <strong>Clube Português</strong> venceu o <strong>Itajaí</strong> em uma partida igualmente disputada, assegurando seu lugar na final.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      A grande final acontece no <strong>sábado (15)</strong>, às <strong>20h</strong> (horário de Brasília). Antes disso, às <strong>19h</strong>, será decidido o bronze. Toda a fase final está sendo realizada em <strong>Sorriso, no Mato Grosso</strong>. No horário local, os jogos ocorrem às 19h (final) e 18h (bronze).
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+      A transmissão ao vivo será feita pela <strong>TV CBHb</strong> no YouTube, permitindo que os torcedores acompanhem cada momento dessa decisão emocionante.
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #777;">
+      #LigaNacionalDeHandebol &nbsp;|&nbsp; #HandebolBrasil &nbsp;|&nbsp; #Taubaté &nbsp;|&nbsp; #ClubePortuguês &nbsp;|&nbsp; #FinalFour &nbsp;|&nbsp; #Esportes &nbsp;|&nbsp; #Handebol
+    </div>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-11-14',
+  category: 'esportes',
+  image: noticia19,
+  readTime: '3 min'
+},
+{
+  id: 23,
+  title: '🏑 Campeonato Brasileiro Master de Hóquei em Recife!',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      🏑 RECIFE RECEBE O BRASILEIRO MASTER DE HÓQUEI SOBRE PATINS!
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      A capital pernambucana será o cenário de mais um grande momento da modalidade! Entre os dias <strong>20 e 22 de novembro</strong>, Recife sediará o 
+      <strong>Campeonato Brasileiro Master de Hóquei sobre Patins</strong>, reunindo atletas veteranos de diversas regiões do país para uma competição marcada por técnica, reencontros e muita paixão pelo esporte.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O torneio chega como uma verdadeira celebração do hóquei nacional, oferecendo ao público jogos emocionantes e uma atmosfera de confraternização entre antigos e novos talentos da categoria Master.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      A organização geral está a cargo do <strong>Pernambuco Hóquei Clube</strong>, que já iniciou reuniões e definições logísticas para garantir um evento bem estruturado. A equipe trabalha lado a lado com atletas, dirigentes e apoiadores para entregar uma competição de qualidade dentro e fora da quadra.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+      Para acompanhar as partidas, resultados e atualizações, acesse o link oficial:
+      <br/><br/>
+      <a href="https://drive.google.com/file/d/10w_JeFPSrBpN4s9e55K9uAZO4IBBdAfj/view?usp=sharing" target="_blank" style="color:#6a1b1a; font-weight:bold;">
+        👉 Clique aqui para acompanhar a Tabela
+      </a>
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #777;">
+      #HóqueiMaster &nbsp;|&nbsp; #HóqueiSobrePatins &nbsp;|&nbsp; #Recife2025 &nbsp;|&nbsp; #EsporteVeterano &nbsp;|&nbsp; #ClubePortuguês &nbsp;|&nbsp; #PernambucoHóqueiClube
+    </div>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-11-14',
+  category: 'esportes',
+  image: noticia20,
+  readTime: '3 min'
 }
+,
+
+
+
 
 
 

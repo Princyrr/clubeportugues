@@ -4,14 +4,14 @@ import { motion } from 'framer-motion';
 import noticia12 from '../assets/noticia12.png';
 import noticia15 from '../assets/noticia15.png';
 import noticia11 from '../assets/noticia16.png';
-import noticia8 from '../assets/noticia8.png';
+import noticia21 from '../assets/noticia21.png';
 
 const NoticiasSection = () => {
   const noticias = [
     { img: noticia12, title: 'Novo Horário da Secretaria', description: 'Informamos que a secretaria do Clube Português do Recife está com novo horário de funcionamento, vem conferir!' },
     { img: noticia15, title: 'Nova Administração', description: ' Um novo capítulo começa na Adega do Clube Português, agora está sob a administração da Garrafeira Brasil ' },
     { img: noticia11, title: 'Bar Barcelos', description: 'Está aberto e está com muitas novidades, agora temos Chopp da Brahma!' },
-    { img: noticia8, title: 'Copa Pacífico de Natação', description: 'Pernambucanas convocadas para representar o Brasil na Copa Pacífico de Natação.' }
+    { img: noticia21, title: '175 Anos De História e Cultura LUSA!', description: 'O Clube Português do Recife parabeniza o Gabinete Português de Leitura de Pernambuco pelos seus 175 anos de fundação!' }
   ];
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
