@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, Music, Users, Star, Ticket } from 'lucide-react';
 
 // Importando as imagens locais
-import evento2 from '../../assets/evento1.png';
+import evento2 from '../../assets/semevento.png';
 import evento1 from '../../assets/evento1.jpg';
-import evento3 from '../../assets/evento2.jpg';
+
 
 // ✅ Tipando os eventos para evitar erro TS
 type EventItem = {
@@ -30,47 +30,27 @@ const Events = () => {
   // ✅ Agora o TypeScript aceita selectedMonth como chave
   const events: EventsByMonth = {
     novembro: [
-      {
-        date: '22 de Novembro',
-        title: '🐟✨ Grande Sardinhada de São Martinho! ✨🐟',
-        description: (
-          <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
-            <p>Prepare-se para uma tarde deliciosa, repleta de sabor e tradição!</p>
-            <p>
-              No dia <strong>22 de novembro</strong>, das <strong>12h30 às 16h30</strong>, o
-              <strong> Salão Nobre do Clube Português</strong> será o cenário da nossa
-              <strong> Grande Sardinhada de São Martinho</strong>. 🎶
-            </p>
-            <p>💰 <strong>Valor da adesão:</strong> R$ 150,00</p>
-            <p>📞 <strong>Informações e reservas:</strong> (81) 3231-5400</p>
-            <p className="font-semibold text-green-800 text-center">
-              Garanta já o seu lugar e venha celebrar com boa comida, boa música e ótimas companhias! 💚❤️
-            </p>
-          </div>
-        ),
-        time: '12h30 - 16h30',
-        price: 'R$ 150,00',
-        image: evento2
-      },
-      {
-  date: '22 de Novembro',
-  title: '🏊‍♀️ Festival CPR de Natação 🏊‍♂️',
+     {
+  date: '--',
+  title: '--',
   description: (
-    <div className="space-y-2 text-gray-700 leading-relaxed text-justify">
-      <p className="font-semibold">O FESTIVAL CPR DE NATAÇÃO VEM AÍ!♥️💚</p>
-      <p>Uma proposta totalmente lúdica para todos.</p>
-      <p>“Não fique fora dessa! Festival CPR: onde todos brilham dentro d’água!”</p>
-      <p><strong>Dia:</strong> 22.11.25</p>
-      <p><strong>Horário:</strong> 08h</p>
-      <p><strong>Faixa etária:</strong> 2 aos 100 anos</p>
-      <p><strong>Informações:</strong> 99759-2238</p>
-      <p className="font-semibold text-green-800 text-center">Inscrições até o dia 08.11</p>
+    <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
+      <p>Em breve divulgaremos mais informações sobre os próximos eventos do Clube.</p>
+      <p>
+        Informamos que não realizamos divulgação de eventos terceirizados. Para confirmar qualquer
+        evento sendo divulgado externamente, orientamos entrar em contato diretamente com a secretaria.
+      </p>
+      <p>
+        Aqui são publicados somente eventos oficiais organizados pelo Clube Português do Recife.
+      </p>
     </div>
   ),
-  time: '08h',
-  image: evento3
+  time: '--',
+  price: '--',
+  image: evento2
 }
 
+     
 
 
     ]

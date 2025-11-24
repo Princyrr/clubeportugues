@@ -25,6 +25,7 @@ import noticia18 from '../../assets/noticia18.png';
 import noticia19 from '../../assets/noticia19.jpg';
 import noticia20 from '../../assets/noticia20.jpg';
 import noticia21 from '../../assets/noticia21.png';
+import noticia22 from '../../assets/noticia22.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -284,6 +285,17 @@ const News = () => {
   date: '2025-11-14',
   category: 'esportes',
   image: noticia20,
+  featured: false
+},
+{
+  id: 24,
+  title: ' Sardinhada de São Martinho',
+  excerpt: 'O salão nobre esteve cheio de alegria, tradição e sabor neste sábado (22/11)!',
+  content: 'O salão nobre esteve cheio de alegria, tradição e sabor neste sábado (22/11)!',
+  author: 'Clube Português',
+  date: '2025-11-25',
+  category: 'cultura',
+  image: noticia22,
   featured: false
 }
 

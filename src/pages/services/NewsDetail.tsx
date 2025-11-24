@@ -24,6 +24,7 @@ import noticia18 from '../../assets/noticia18.png';
 import noticia19 from '../../assets/noticia19.jpg';
 import noticia20 from '../../assets/noticia20.jpg';
 import noticia21 from '../../assets/noticia21.png';
+import noticia22 from '../../assets/noticia22.png';
 
 
 
@@ -825,6 +826,42 @@ Orgulho de Pernambuco!</p>
   readTime: '3 min'
 }
 ,
+{
+  id: 24,
+  title: '✨🇵🇹 Sardinhada de São Martinho no Clube Português!',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      Sardinhada de São Martinho no Clube Português! ✨🇵🇹
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O salão nobre esteve cheio de alegria, tradição e sabor neste sábado (22/11)! 🥂🔥  
+      Cerca de 130 pessoas, entre portugueses, sócios e amigos do Clube, se reuniram para celebrar a Sardinhada de São Martinho, um momento especial que preserva a cultura, reúne famílias e fortalece os laços com as nossas raízes.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Foram boas conversas, mesa farta, música, vinho e muita animação — exatamente como manda a tradição! 🍷🐟🎶
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+      Agradecemos a todos que participaram e fizeram dessa festa um encontro inesquecível!  
+      Que venham mais celebrações que aquecem o coração e enchem o Clube de vida! ❤️💚
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #777;">
+      #Sardinhada &nbsp;|&nbsp; #SãoMartinho &nbsp;|&nbsp; #ClubePortuguês &nbsp;|&nbsp; #TradiçãoPortuguesa
+    </div>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-11-24',
+  category: 'cultura',
+  image: noticia22,
+  readTime: '3 min'
+}
 
 
 
