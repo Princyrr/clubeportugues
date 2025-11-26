@@ -26,6 +26,7 @@ import noticia19 from '../../assets/noticia19.jpg';
 import noticia20 from '../../assets/noticia20.jpg';
 import noticia21 from '../../assets/noticia21.png';
 import noticia22 from '../../assets/noticia22.png';
+import noticia23 from '../../assets/noticia23.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -297,8 +298,18 @@ const News = () => {
   category: 'cultura',
   image: noticia22,
   featured: false
+},
+{
+  id: 25,
+  title: ' Brasileiro Master de Hóquei ',
+  excerpt: 'Brasileiro Master de Hóquei encerra com grandes jogos e espírito de confraternização!',
+  content: 'Brasileiro Master de Hóquei encerra com grandes jogos e espírito de confraternização!',
+  author: 'Clube Português',
+  date: '2025-11-26',
+  category: 'esportes',
+  image: noticia23,
+  featured: false
 }
-
 
 
   ];

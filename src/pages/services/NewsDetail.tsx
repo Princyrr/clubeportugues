@@ -25,7 +25,7 @@ import noticia19 from '../../assets/noticia19.jpg';
 import noticia20 from '../../assets/noticia20.jpg';
 import noticia21 from '../../assets/noticia21.png';
 import noticia22 from '../../assets/noticia22.png';
-
+import noticia23 from '../../assets/noticia23.png';
 
 
 // Importando imagens da galeria da posse
@@ -861,7 +861,65 @@ Orgulho de Pernambuco!</p>
   category: 'cultura',
   image: noticia22,
   readTime: '3 min'
+},
+{
+  id: 25,
+  title: 'Brasileiro Master de Hóquei encerra com grandes jogos e espírito de confraternização',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      Brasileiro Master de Hóquei encerra com grandes jogos e espírito de confraternização
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Entre os dias 20 e 22 de novembro, a quadra do Clube Português do Recife foi palco do Campeonato Brasileiro Master de Hóquei sobre Patins, reunindo atletas veteranos e quatro clubes pernambucanos. A competição ficou marcada pelo clima de amizade, reencontros e fair play, além da presença de nomes históricos do hóquei nacional.
+    </p>
+
+    <h3 style="font-size: 20px; font-weight: 600; margin-top: 20px; margin-bottom: 10px; color: #6a1b1a;">
+      🏆 Equipes campeãs
+    </h3>
+
+    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+      🥇 <strong>Categoria +55:</strong> O título ficou com o Pernambuco Hóquei Clube (PHC), que venceu a Portuguesa-SP por 4 x 2. Vitória pernambucana com emoção e experiência na quadra!
+    </p>
+
+    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+      🥇 <strong>Categoria +45:</strong> O Sertãozinho-SP garantiu o troféu ao bater o Natal Hóquei Clube (NHC) por 6 x 2, mostrando ritmo forte e alto desempenho técnico.
+    </p>
+
+    <h3 style="font-size: 20px; font-weight: 600; margin-top: 20px; margin-bottom: 10px; color: #6a1b1a;">
+      🌎 Participação nacional
+    </h3>
+
+    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      O torneio contou com equipes de quatro estados, reforçando a representatividade do hóquei brasileiro:
+    </p>
+
+    <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 25px; padding-left: 20px;">
+      <li><strong>Pernambuco:</strong> Clube Português do Recife, Pernambuco Hóquei Clube, Confraria do Hóquei, Sport Club do Recife</li>
+      <li><strong>Rio Grande do Norte:</strong> Natal Hóquei Clube</li>
+      <li><strong>Rio de Janeiro:</strong> Teresópolis Hóquei Clube</li>
+      <li><strong>São Paulo:</strong> Sertãozinho Hóquei Clube, Portuguesa (A. Portuguesa de Desportos), Veteranos Hóquei Clube</li>
+    </ul>
+
+    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+      O Brasileiro Master reafirmou o valor da modalidade, celebrando tradição, longevidade esportiva e união entre gerações que seguem fazendo história no hóquei nacional.
+    </p>
+
+    <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #777;">
+      #BrasileiroMaster &nbsp;|&nbsp; #HóqueiSobrePatins &nbsp;|&nbsp; #ClubePortuguês &nbsp;|&nbsp; #EsporteVeterano &nbsp;|&nbsp; #HóqueiBrasil
+    </div>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-11-26',
+  category: 'esportes',
+  image: noticia23,
+  readTime: '5 min'
 }
+
 
 
 
