@@ -1,16 +1,16 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import noticia12 from '../assets/noticia12.png';
+import noticia12 from '../assets/noticia24.png';
 import noticia15 from '../assets/noticia15.png';
-import noticia11 from '../assets/noticia16.png';
+import noticia25 from '../assets/noticia25.jpg';
 import noticia21 from '../assets/noticia21.png';
 
 const NoticiasSection = () => {
   const noticias = [
-    { img: noticia12, title: 'Novo Horário da Secretaria', description: 'Informamos que a secretaria do Clube Português do Recife está com novo horário de funcionamento, vem conferir!' },
+    { img: noticia12, title: 'Informações Seletiva LUSA', description: 'Não perca essa chance, vem ser luso! 💪🏽!' },
     { img: noticia15, title: 'Nova Administração', description: ' Um novo capítulo começa na Adega do Clube Português, agora está sob a administração da Garrafeira Brasil ' },
-    { img: noticia11, title: 'Bar Barcelos', description: 'Está aberto e está com muitas novidades, agora temos Chopp da Brahma!' },
+    { img: noticia25, title: 'Nota De Esclarecimento', description: '91ᵒ Aniversário Do Clube Português Do Recife' },
     { img: noticia21, title: '175 Anos De História e Cultura LUSA!', description: 'O Clube Português do Recife parabeniza o Gabinete Português de Leitura de Pernambuco pelos seus 175 anos de fundação!' }
   ];
 
@@ -120,7 +120,8 @@ const NoticiasSection = () => {
                   <img
                     src={noticia.img}
                     alt={noticia.title}
-                    className="w-full h-56 sm:h-56 md:h-64 lg:h-72 xl:h-80 object-cover transition-transform duration-500 group-hover:scale-105"
+                   className="w-full h-56 sm:h-56 md:h-80 lg:h-[22rem] xl:h-[23rem] object-cover transition-transform duration-500 group-hover:scale-105"
+
                   />
                   <div className="p-6 flex flex-col flex-1">
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">{noticia.title}</h3>

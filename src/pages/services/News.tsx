@@ -27,6 +27,8 @@ import noticia20 from '../../assets/noticia20.jpg';
 import noticia21 from '../../assets/noticia21.png';
 import noticia22 from '../../assets/noticia22.png';
 import noticia23 from '../../assets/noticia23.png';
+import noticia24 from '../../assets/noticia24.png';
+import noticia25 from '../../assets/noticia25.jpg';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -187,7 +189,7 @@ const News = () => {
   date: '2025-10-07',
   category: 'todas',
   image: noticia12,
-  featured: true
+  featured: false
 },
 {
   id: 15,
@@ -309,7 +311,30 @@ const News = () => {
   category: 'esportes',
   image: noticia23,
   featured: false
+},
+{
+  id: 26,
+  title: ' 🚨 INFORMAÇÕES SELETIVA LUSA🚨 ',
+  excerpt: 'Não perca essa chance, vem ser luso! ',
+  content: 'Não perca essa chance, vem ser luso! ',
+  author: 'Clube Português',
+  date: '2025-12-03',
+  category: 'esportes',
+  image: noticia24,
+  featured: false
+},
+{
+  id: 27,
+  title: ' NOTA DE ESCLARECIMENTO ',
+  excerpt: '91ᵒ ANIVERSÁRIO DO CLUBE PORTUGUÊS DO RECIFE',
+  content: '91ᵒ ANIVERSÁRIO DO CLUBE PORTUGUÊS DO RECIFE',
+  author: 'Clube Português',
+  date: '2025-12-04',
+  category: 'eventos',
+  image: noticia25,
+  featured: true
 }
+
 
 
   ];

@@ -26,6 +26,8 @@ import noticia20 from '../../assets/noticia20.jpg';
 import noticia21 from '../../assets/noticia21.png';
 import noticia22 from '../../assets/noticia22.png';
 import noticia23 from '../../assets/noticia23.png';
+import noticia24 from '../../assets/noticia24.png';
+import noticia25 from '../../assets/noticia25.jpg';
 
 
 // Importando imagens da galeria da posse
@@ -918,7 +920,95 @@ Orgulho de Pernambuco!</p>
   category: 'esportes',
   image: noticia23,
   readTime: '5 min'
+},
+{
+  id: 26,
+  title: '🚨 Informações da Seletiva Lusa – Atualização Importante! 🚨',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      🚨 INFORMAÇÕES SELETIVA LUSA 🚨
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+      <strong>Data:</strong> 06/12<br>
+      <strong>Local:</strong> Clube Português do Recife<br>
+      <strong>Horário:</strong> 13h às 15h
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      1 - Houve uma breve alteração nos horários. A seletiva acontecerá das <strong>13:00 às 15:00</strong> para todas as categorias. Fiquem atentas para chegar com <strong>30 minutos de antecedência</strong> ao clube.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      2 - Sobre a seletiva online: no dia <strong>06/12</strong> também se encerram as inscrições e o recebimento dos formulários online.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; font-weight: 600; line-height: 1.8; margin-bottom: 25px;">
+      Não perca essa chance, vem ser Luso! 💪🏽
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #555;">
+      Patrocínio:<br>
+      @fmo.edu.br &nbsp;|&nbsp; @instituto.maria
+    </div>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-12-03',
+  category: 'esportes',
+  image: noticia24,
+  readTime: '4 min'
+},
+{
+  id: 27,
+  title: ' NOTA DE ESCLARECIMENTO ',
+  content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      NOTA DE ESCLARECIMENTO
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 15px; font-weight: bold;">
+      91ᵒ ANIVERSÁRIO DO CLUBE PORTUGUÊS DO RECIFE
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      A Diretoria Executiva recém-empossada do Clube Português do Recife informa aos seus associados, frequentadores e à comunidade em geral que, excepcionalmente neste ano, não será realizada a tradicional festa comemorativa do 91ᵒ aniversário da nossa instituição.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      A decisão foi tomada com responsabilidade e transparência, considerando o atual processo de reorganização financeira do Clube. Esta medida reflete o compromisso de austeridade fiscal assumido desde o início da nova gestão.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Estamos certos de que decisões como esta, ainda que temporárias, são fundamentais para garantir a saúde financeira do Clube e construir um futuro mais vigoroso, sustentável e vitorioso para todos que fazem parte desta casa.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Contamos com a compreensão de todos e seguimos trabalhando com dedicação para honrar a história do Clube Português do Recife e fortalecer ainda mais o seu legado.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; font-weight: 600; line-height: 1.8; margin-top: 30px;">
+      Cordialmente,<br>
+      Daniel Ferreira Rodrigues – Presidente<br>
+      Celso Stamford Gaspar – Vice-Presidente<br>
+      Diretoria Executiva - Clube Português do Recife
+    </p>
+
+  </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-12-04',
+  category: 'eventos',
+  image: noticia25,
+  readTime: '4 min'
 }
+
+
 
 
 
