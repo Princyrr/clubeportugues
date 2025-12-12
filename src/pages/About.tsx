@@ -21,7 +21,8 @@ const About = () => {
     { year: '1960', event: 'Criação da equipe de handebol, que se tornaria referência nacional' },
     { year: '1980', event: 'Reforma e modernização das instalações' },
     { year: '2014', event: 'Comemoração solene dos 80 anos na Assembleia Legislativa' },
-    { year: '2024', event: 'Reconhecimento como Patrimônio Cultural Imaterial do Recife' }
+    { year: '2024', event: 'Reconhecimento como Patrimônio Cultural Imaterial do Recife' },
+     { year: '2025', event: '91 anos do Clube Português do Recife' }
   ];
 
   const values = [
@@ -110,7 +111,7 @@ const About = () => {
                 <div className="flex items-center space-x-3">
                   <Award className="w-6 h-6 md:w-8 md:h-8" />
                   <div>
-                    <div className="text-xl md:text-2xl font-bold">90+</div>
+                    <div className="text-xl md:text-2xl font-bold">91+</div>
                     <div className="text-xs md:text-sm font-medium">Anos de História</div>
                   </div>
                 </div>

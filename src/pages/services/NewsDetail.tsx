@@ -28,6 +28,7 @@ import noticia22 from '../../assets/noticia22.png';
 import noticia23 from '../../assets/noticia23.png';
 import noticia24 from '../../assets/noticia24.png';
 import noticia25 from '../../assets/noticia25.jpg';
+import noticia26 from '../../assets/banner1.png';
 
 
 // Importando imagens da galeria da posse
@@ -1006,7 +1007,47 @@ Orgulho de Pernambuco!</p>
   category: 'eventos',
   image: noticia25,
   readTime: '4 min'
+},
+{
+ id: 28,
+title: '🎉✨ 91 anos do Clube Português do Recife ✨🎉',
+content: `
+  <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    
+    <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+      🎉✨ 91 anos do Clube Português do Recife ✨🎉
+    </h2>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Hoje é dia de celebrar as tradições, amizades fortalecidas e histórias escritas e marcadas no coração do Recife.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Ao longo de quase um século, vivemos momentos que marcaram gerações, acolhemos famílias, promovemos cultura, esporte, gastronomia e celebramos com orgulho nossas raízes portuguesas.
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+      Agradecemos a cada associado, colaborador e amigo que fez — e faz — parte dessa trajetória tão vitoriosa 🇵🇹
+    </p>
+
+    <p style="text-align: justify; font-size: 16px; font-weight: 600; line-height: 1.8; margin-bottom: 25px;">
+      Parabéns, Clube Português do Recife!!! Que venham muitos outros anos de memória, união e grandes conquistas!
+    </p>
+
+    <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #555;">
+      #ClubePortuguês &nbsp;|&nbsp; #91Anos &nbsp;|&nbsp; #Tradição &nbsp;|&nbsp; #História &nbsp;|&nbsp; #Celebração
+    </div>
+
+  </div>
+`,
+author: 'Clube Português',
+date: '2025-12-05',
+category: 'eventos',
+image: noticia26,
+readTime: '4 min'
+
 }
+
 
 
 

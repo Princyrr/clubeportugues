@@ -29,6 +29,7 @@ import noticia22 from '../../assets/noticia22.png';
 import noticia23 from '../../assets/noticia23.png';
 import noticia24 from '../../assets/noticia24.png';
 import noticia25 from '../../assets/noticia25.jpg';
+import noticia26 from '../../assets/noticia26.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -333,6 +334,17 @@ const News = () => {
   category: 'eventos',
   image: noticia25,
   featured: true
+},
+{
+  id: 28,
+  title: ' 91 anos do Clube Português do Recife ✨🎉',
+  excerpt: 'Parabéns, Clube Português do Recife!!! Que venham muitos outros anos de memória, união e grandes conquistas!',
+  content: 'Parabéns, Clube Português do Recife!!! Que venham muitos outros anos de memória, união e grandes conquistas!',
+  author: 'Clube Português',
+  date: '2025-12-05',
+  category: 'eventos',
+  image: noticia26,
+  featured: false
 }
 
 

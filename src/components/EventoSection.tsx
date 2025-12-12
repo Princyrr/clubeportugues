@@ -1,7 +1,6 @@
 import { motion } from "framer-motion"; 
-import { Link } from "react-router-dom";
-import { Calendar, Clock, MapPin, Phone, Ticket } from "lucide-react";
-import evento1 from "../assets/evento1.png";
+import { Calendar, Clock, MapPin, Ticket } from "lucide-react";
+import evento1 from "../assets/evento2.jpg";
 
 const EventoSection: React.FC = () => {
   return (
@@ -31,7 +30,7 @@ const EventoSection: React.FC = () => {
             <div className="absolute -inset-2 rounded-2xl bg-gradient-to-r from-red-600 to-green-700 opacity-30 blur-lg group-hover:opacity-50 transition" />
             <img
               src={evento1}
-              alt="Grande Sardinhada de São Martinho"
+              alt="Encontro de Brechós"
               className="relative rounded-2xl shadow-2xl w-full border-4 border-white"
             />
           </div>
@@ -46,28 +45,36 @@ const EventoSection: React.FC = () => {
           className="md:w-1/2 text-gray-800"
         >
           <h3 className="text-3xl font-extrabold text-green-800 mb-6 leading-snug">
-            🐟✨ Grande Sardinhada de São Martinho ✨
+            🎉 Vem aí mais uma edição do Encontro de Brechós!
           </h3>
 
           <ul className="space-y-4 text-lg">
-            <li className="flex items-center gap-3"><Calendar className="text-red-700" /> 22 de novembro</li>
-            <li className="flex items-center gap-3"><Clock className="text-red-700" /> Das 12h30 às 16h30</li>
-            <li className="flex items-center gap-3"><MapPin className="text-red-700" /> Salão Nobre – Clube Português 🇵🇹</li>
-            <li className="flex items-center gap-3"><Ticket className="text-red-700" /> Adesão: R$ 150,00</li>
-            <li className="flex items-center gap-3"><Phone className="text-red-700" /> Informações: (81) 3231.5400</li>
-          </ul>
+  <li className="flex items-center gap-3">
+    <Calendar className="text-red-700" /> 21 de dezembro
+  </li>
+  <li className="flex items-center gap-3">
+    <Clock className="text-red-700" /> Das 9h às 16h
+  </li>
+  <li className="flex items-center gap-3">
+    <MapPin className="text-red-700" /> Clube Português do Recife 🇵🇹
+  </li>
+  <li className="flex items-center gap-3">
+    <Ticket className="text-red-700" /> Entrada gratuita
+  </li>
+</ul>
 
-          <p className="mt-6 text-justify text-gray-700 leading-relaxed">
-            Venha viver uma tarde deliciosa com sabores tradicionais, boa música e ótimas companhias 
-            no clima acolhedor do São Martinho 🍷🔥.
-          </p>
+<p className="mt-6 text-justify text-gray-700 leading-relaxed">
+  👗 Um dos maiores eventos de moda circular da região, reunindo brechós incríveis, peças garimpadas com carinho e empreendedoras que fazem a diferença.
+  <br /><br />
+  🌍 Muito além da moda: o encontro incentiva o consumo consciente, fortalece a economia criativa, promove integração e destaca o protagonismo feminino.
+  <br /><br />
+  📈 Com mais de 6 anos de história, o Encontro de Brechós já virou referência em Pernambuco — e cresce a cada edição!
+  <br /><br />
+  ✨ Prepare-se para garimpar, se inspirar e viver um dia especial!
+</p>
 
-          <Link
-            to="/servicos/agenda-shows"
-            className="mt-8 inline-block px-8 py-4 bg-gradient-to-r from-green-700 to-red-700 text-white font-bold rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition"
-          >
-            Reservar agora
-          </Link>
+
+          
         </motion.div>
       </div>
     </section>
