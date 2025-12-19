@@ -29,7 +29,8 @@ import noticia23 from '../../assets/noticia23.png';
 import noticia24 from '../../assets/noticia24.png';
 import noticia25 from '../../assets/noticia25.jpg';
 import noticia26 from '../../assets/banner1.png';
-
+import noticia27 from '../../assets/noticia27.png';
+import noticia28 from '../../assets/noticia28.png';
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -1046,7 +1047,119 @@ category: 'eventos',
 image: noticia26,
 readTime: '4 min'
 
+},
+{
+  id: 29,
+  title: '🚨 Seletiva Infantil Feminina 2026 PRORROGADA!',
+  content: `
+    <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+      
+      <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+        🚨 ATENÇÃO: Seletiva Infantil Feminina 2026 PRORROGADA!
+      </h2>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        A seletiva infantil feminina do Clube Português para a temporada 2026 foi 
+        <strong>prorrogada</strong>. Esta é a oportunidade para jovens atletas que sonham 
+        em fazer parte da equipe lusa.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Podem participar atletas nascidas em <strong>2012, 2013 ou 2014</strong>. 
+        As inscrições devem ser realizadas por meio do formulário online.
+      </p>
+
+      <p style="text-align: center; font-size: 16px; font-weight: 600; margin-bottom: 25px;">
+        👉 <a 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeV4girwYePghu0zIQTC28WU4mAQcD7yr1ZbYNnc3cY8H_mVA/viewform?pli=1" 
+          target="_blank" 
+          style="color: #6a1b1a; text-decoration: underline;"
+        >
+          Clique aqui para acessar o formulário de inscrição
+        </a>
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        A seletiva será realizada de forma <strong>online</strong> e ficará disponível até o dia 
+        <strong>5 de janeiro de 2026</strong>.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; font-weight: 600; line-height: 1.8; margin-bottom: 25px;">
+        📞 Dúvidas e informações: <strong>(81) 99625-1515</strong>
+      </p>
+
+      <div style="margin-bottom: 20px; font-size: 15px;">
+        <strong>Patrocínio:</strong><br />
+        @fmo.edu.br<br />
+        @instituto.maria
+      </div>
+
+      <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #555;">
+        #ClubePortuguês &nbsp;|&nbsp; #SeletivaInfantil &nbsp;|&nbsp; #Handebol &nbsp;|&nbsp; #Luso
+      </div>
+
+    </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-12-19',
+  category: 'esportes',
+  image: noticia27,
+  readTime: '3 min'
+},
+
+{
+  id: 30,
+  title: 'PORTUGUÊS VENCE O SPORT POR 1 A 0 E CONQUISTA O CAMPEONATO PERNAMBUCANO 2025',
+  content: `
+    <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+      
+      <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+        PORTUGUÊS VENCE O SPORT POR 1 A 0 E CONQUISTA O CAMPEONATO PERNAMBUCANO 2025
+      </h2>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        O Clube Português é o grande campeão do Campeonato Pernambucano de Hóquei sobre Patins 2025. 
+        Em um jogo tenso, equilibrado e decidido nos detalhes, o Português venceu o Sport Recife por 
+        1 a 0, conquistando o segundo turno e, de forma direta, garantindo o título estadual.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        A decisão foi marcada por forte disputa defensiva, intensidade do início ao fim e poucas 
+        oportunidades claras de gol. As duas equipes demonstraram organização tática e espírito 
+        competitivo, transformando a final em um duelo de alto nível técnico.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        O gol do título saiu apenas na reta final da partida. Ceará, em jogada decisiva, marcou 
+        faltando apenas 4 minutos para o fim, explodindo a torcida e selando a vitória que coroou 
+        a campanha do Clube Português na temporada.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Com a conquista do segundo turno, somada ao primeiro turno já vencido anteriormente, o 
+        Português confirmou sua superioridade no Estadual e levantou a taça pernambucana de 2025 
+        sem necessidade de partida extra.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; font-weight: 600; line-height: 1.8; margin-bottom: 25px;">
+        A TV OK Brasil acompanha e valoriza o hóquei sobre patins pernambucano, celebrando mais um 
+        capítulo importante da história da modalidade no estado.
+      </p>
+
+      <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #555;">
+        TV OK Brasil – A casa do hóquei sobre patins.
+      </div>
+
+    </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-12-19',
+  category: 'esportes',
+  image: noticia28,
+  readTime: '4 min'
 }
+
+
 
 
 

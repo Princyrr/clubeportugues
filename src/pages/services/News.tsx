@@ -30,6 +30,8 @@ import noticia23 from '../../assets/noticia23.png';
 import noticia24 from '../../assets/noticia24.png';
 import noticia25 from '../../assets/noticia25.jpg';
 import noticia26 from '../../assets/noticia26.png';
+import noticia27 from '../../assets/noticia27.png';
+import noticia28 from '../../assets/noticia28.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -344,6 +346,28 @@ const News = () => {
   date: '2025-12-05',
   category: 'eventos',
   image: noticia26,
+  featured: false
+},
+{
+  id: 29,
+  title: 'ATENÇÃO, a seletiva infantil feminina para a temporada 2026 foi PRORROGADA!',
+  excerpt: 'A seletiva online vai até o dia 5 de janeiro de 2026.',
+  content: 'A seletiva online vai até o dia 5 de janeiro de 2026.',
+  author: 'Clube Português',
+  date: '2025-12-19',
+  category: 'esportes',
+  image: noticia27,
+  featured: false
+},
+{
+  id: 30,
+  title: 'PORTUGUÊS VENCE O SPORT POR 1 A 0 E CONQUISTA O CAMPEONATO PERNAMBUCANO 2025',
+  excerpt: 'O Clube Português é o grande campeão do Campeonato Pernambucano de Hóquei sobre Patins 2025.',
+  content: 'O Clube Português é o grande campeão do Campeonato Pernambucano de Hóquei sobre Patins 2025.',
+  author: 'Clube Português',
+  date: '2025-12-19',
+  category: 'esportes',
+  image: noticia28,
   featured: false
 }
 

@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import noticia26 from '../assets/noticia26.png';
-import noticia15 from '../assets/noticia15.png';
+import noticia27 from '../assets/noticia27.png';
 import noticia25 from '../assets/noticia25.jpg';
 import noticia21 from '../assets/noticia21.png';
 
 const NoticiasSection = () => {
   const noticias = [
     { img: noticia26, title: '91 anos do Clube Português do Recife ', description: 'Parabéns, Clube Português do Recife!!! Que venham muitos outros anos de memória, união e grandes conquistas!' },
-    { img: noticia15, title: 'Nova Administração', description: ' Um novo capítulo começa na Adega do Clube Português, agora está sob a administração da Garrafeira Brasil ' },
+    { img: noticia27, title: 'A seletiva infantil feminina para a temporada 2026', description: 'Se você é atleta nascida em 2012, 2013 ou 2014 e quer fazer parte da equipe infantil feminina do Clube Português, clique em saiba mais! ' },
     { img: noticia25, title: 'Nota De Esclarecimento', description: '91ᵒ Aniversário Do Clube Português Do Recife' },
     { img: noticia21, title: '175 Anos De História e Cultura LUSA!', description: 'O Clube Português do Recife parabeniza o Gabinete Português de Leitura de Pernambuco pelos seus 175 anos de fundação!' }
   ];
