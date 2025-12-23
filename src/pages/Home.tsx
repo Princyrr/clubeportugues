@@ -6,7 +6,7 @@ import HeroCarousel from "../components/HeroCarousel";
 import NoticiasSection from "../components/NoticiasSection";
 import CtaSection from "../components/CtaSection";
 import ContactForm from "../components/ContactForm";
-import EventoSection from "../components/EventoSection";
+
 
 import piscina from '../assets/piscina.jpg';
 import gsap from 'gsap';
@@ -184,7 +184,8 @@ const Home = () => {
         </div>
       </section>
  {/* Evento Section */}
-     <EventoSection />
+    
+    
       {/* CTA Section */}
      <CtaSection />
     

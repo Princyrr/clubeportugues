@@ -32,6 +32,7 @@ import noticia25 from '../../assets/noticia25.jpg';
 import noticia26 from '../../assets/noticia26.png';
 import noticia27 from '../../assets/noticia27.png';
 import noticia28 from '../../assets/noticia28.png';
+import natal from '../../assets/natal.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -368,6 +369,17 @@ const News = () => {
   date: '2025-12-19',
   category: 'esportes',
   image: noticia28,
+  featured: false
+},
+{
+  id: 31,
+  title: '🎄✨ Feliz Natal!',
+  excerpt: 'Neste tempo de reflexão, união e esperança, a Diretoria do Clube Português deseja um Feliz Natal!',
+  content: 'Neste tempo de reflexão, união e esperança, a Diretoria do Clube Português deseja um Feliz Natal!',
+  author: 'Clube Português',
+  date: '2025-12-24',
+  category: 'eventos',
+  image: natal,
   featured: false
 }
 

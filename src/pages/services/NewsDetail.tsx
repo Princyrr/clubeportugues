@@ -31,6 +31,7 @@ import noticia25 from '../../assets/noticia25.jpg';
 import noticia26 from '../../assets/banner1.png';
 import noticia27 from '../../assets/noticia27.png';
 import noticia28 from '../../assets/noticia28.png';
+import natal from '../../assets/natal.png';
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -1157,7 +1158,51 @@ readTime: '4 min'
   category: 'esportes',
   image: noticia28,
   readTime: '4 min'
+},
+{
+  id: 31,
+  title: '🎄✨ Feliz Natal!',
+  content: `
+    <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+
+      <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+        🎄✨ Mensagem de Natal
+      </h2>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Neste período especial marcado pela reflexão, pela esperança e pela união, a Diretoria do 
+        Clube Português manifesta seus mais sinceros votos de um Natal repleto de paz, amor e renovação 
+        a todos os sócios, funcionários, parceiros, colaboradores e amigos.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Que esta data simbólica fortaleça os vínculos que nos conectam, desperte sentimentos de gratidão 
+        e nos motive a continuar construindo, juntos, um clube cada vez mais humano, acolhedor e cheio 
+        de histórias que nos orgulham.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Desejamos que o espírito natalino ilumine cada lar com saúde, harmonia, união e boas energias, 
+        trazendo confiança para um novo ciclo que se inicia.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; font-weight: 600; line-height: 1.8; margin-bottom: 25px;">
+        Recebam nossos votos de um Natal abençoado e repleto de momentos felizes.
+      </p>
+
+      <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #555;">
+        Diretoria do Clube Português do Recife 🎄
+      </div>
+
+    </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-12-24',
+  category: 'eventos',
+  image: natal,
+  readTime: '2 min'
 }
+
 
 
 
