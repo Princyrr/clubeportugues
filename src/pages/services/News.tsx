@@ -34,6 +34,8 @@ import noticia27 from '../../assets/noticia27.png';
 import noticia28 from '../../assets/noticia28.png';
 import natal from '../../assets/natal.png';
 import funcionamento from '../../assets/funcionamento.png';
+import noticia29 from '../../assets/noticia29.jpg';
+
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -393,6 +395,22 @@ const News = () => {
   category: 'eventos',
   image: funcionamento,
   featured: true
+},
+
+{ 
+  id: 33, 
+  title: 'Horário do Restaurante Adega Garrafeira Brasil',
+  excerpt: 'Informamos que o Restaurante Adega Garrafeira Brasil terá funcionamento diferenciado durante as festividades de Natal e Ano Novo 2025. Clique em Saiba Mais.',
+  content: `
+Informamos aos associados e visitantes que o **Restaurante Adega Garrafeira Brasil**, localizado no **Clube Português do Recife**, estará aberto no dia **25/12**, com funcionamento a partir das **11h30**.
+
+Esperamos por você para celebrar este momento especial conosco.
+  `,
+  author: 'Clube Português',
+  date: '2025-12-25',
+  category: 'gastronomia',
+  image: noticia29,
+  featured: false 
 }
 
 

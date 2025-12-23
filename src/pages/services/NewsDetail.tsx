@@ -33,7 +33,7 @@ import noticia27 from '../../assets/noticia27.png';
 import noticia28 from '../../assets/noticia28.png';
 import natal from '../../assets/natal.png';
 import funcionamento from '../../assets/funcionamento.png';
-
+import noticia29 from '../../assets/noticia29.jpg';
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -1260,7 +1260,44 @@ readTime: '4 min'
   category: 'eventos',
   image: funcionamento,
   readTime: '2 min'
+},
+{
+  id: 33,
+  title: '🎄✨ Natal no Restaurante Garrafeira Brasil',
+  content: `
+    <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+      
+      <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px;">
+        🎄✨ Estamos abertos para te receber neste Natal!
+      </h2>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+        🍽️ No dia <strong>25/12</strong>, o <strong>Restaurante Adega Garrafeira Brasil</strong> estará aberto para o <strong>almoço a partir das 11h30</strong>.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+        📍 Localização: <strong>Avenida Conselheiro Rosa e Silva, nº 172</strong>, bairro <strong>Graças</strong>, 
+        <strong>dentro do Clube Português do Recife</strong>.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        📞 Reservas e informações: <strong>(81) 3129-7675</strong>
+      </p>
+
+      <p style="text-align: center; font-size: 16px; font-weight: 600; line-height: 1.8;">
+        🎅🎁 Venha celebrar o Natal com boa gastronomia, conforto e um ambiente especial.  
+        Esperamos por você!
+      </p>
+
+    </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-12-25',
+  category: 'gastronomia',
+  image: noticia29,
+  readTime: '2 min'
 }
+
 
 
 ];
