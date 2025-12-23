@@ -32,6 +32,8 @@ import noticia26 from '../../assets/banner1.png';
 import noticia27 from '../../assets/noticia27.png';
 import noticia28 from '../../assets/noticia28.png';
 import natal from '../../assets/natal.png';
+import funcionamento from '../../assets/funcionamento.png';
+
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -1201,21 +1203,64 @@ readTime: '4 min'
   category: 'eventos',
   image: natal,
   readTime: '2 min'
+},
+{
+  id: 32,
+  title: 'AVISO DE FUNCIONAMENTO – NATAL E ANO NOVO',
+  content: `
+    <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+      
+      <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+        MENSAGEM DE NATAL E AVISO DE FUNCIONAMENTO – FESTIVIDADES 2025/2026
+      </h2>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        O Clube Português do Recife deseja a todos os seus associados, amigos e colaboradores um
+        Natal repleto de amor, felicidade, harmonia e paz, bem como um Ano de 2026 cheio de
+        conquistas, prosperidade e realizações.
+      </p>
+
+      <h3 style="font-size: 18px; font-weight: 700; color: #6a1b1a; margin-bottom: 15px;">
+        Aviso de Funcionamento
+      </h3>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
+        Informamos que o Clube Português do Recife terá funcionamento diferenciado durante as
+        festividades de Natal e Ano Novo 2025, conforme programação abaixo:
+      </p>
+
+      <p style="font-size: 16px; font-weight: 600; margin-bottom: 10px;">
+        Parque Aquático, Sauna e Demais Atividades Esportivas:
+      </p>
+
+      <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        <li>24/12/2025 – Fechado</li>
+        <li>25/12/2025 – Fechado</li>
+        <li>31/12/2025 – Fechado</li>
+        <li>01/01/2026 – Fechado</li>
+      </ul>
+
+      <p style="font-size: 16px; font-weight: 600; margin-bottom: 10px;">
+        Observações:
+      </p>
+
+      <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
+        <li>Salão de Beleza: funcionamento exclusivo para atendimentos previamente agendados.</li>
+        <li>Restaurante Adega Garrafeira: funcionamento no dia 25/12 a partir das 11h30, para almoço.</li>
+      </ul>
+
+      <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #555;">
+        Clube Português do Recife
+      </div>
+
+    </div>
+  `,
+  author: 'Clube Português',
+  date: '2025-12-25',
+  category: 'eventos',
+  image: funcionamento,
+  readTime: '2 min'
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ];
@@ -1310,7 +1355,7 @@ const NewsDetail = () => {
                <img
   src={article.image}
   alt={article.title}
-  className="w-full max-h-[700px] h-auto object-cover"
+  className="w-full max-h-[1000px] h-auto object-cover"
 />
 
 

@@ -33,6 +33,7 @@ import noticia26 from '../../assets/noticia26.png';
 import noticia27 from '../../assets/noticia27.png';
 import noticia28 from '../../assets/noticia28.png';
 import natal from '../../assets/natal.png';
+import funcionamento from '../../assets/funcionamento.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -336,7 +337,7 @@ const News = () => {
   date: '2025-12-04',
   category: 'eventos',
   image: noticia25,
-  featured: true
+  featured: false
 },
 {
   id: 28,
@@ -381,6 +382,17 @@ const News = () => {
   category: 'eventos',
   image: natal,
   featured: false
+},
+{
+  id: 32,
+  title: '🎄Horário de Funcionamento Natal e Ano Novo',
+  excerpt: 'Informamos que o Clube Português do Recife terá funcionamento diferenciado durante as festividades de Natal e Ano Novo 2025, Clique em Saiba Mais.',
+  content: 'Informamos que o Clube Português do Recife terá funcionamento diferenciado durante as festividades de Natal e Ano Novo 2025, Clique em Saiba Mais.',
+  author: 'Clube Português',
+  date: '2025-12-25',
+  category: 'eventos',
+  image: funcionamento,
+  featured: true
 }
 
 

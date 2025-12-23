@@ -100,7 +100,7 @@ const Home = () => {
                 <span className="text-yellow-400 block">do Recife</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
-                Há 90 anos promovendo tradição, cultura e esporte. Venha fazer parte da nossa história.
+                Há 91 anos promovendo tradição, cultura e esporte. Venha fazer parte da nossa história.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
