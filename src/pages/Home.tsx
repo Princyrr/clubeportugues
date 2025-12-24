@@ -6,7 +6,7 @@ import HeroCarousel from "../components/HeroCarousel";
 import NoticiasSection from "../components/NoticiasSection";
 import CtaSection from "../components/CtaSection";
 import ContactForm from "../components/ContactForm";
-
+import CartaSociosSection from "../components/CartaSociosSection";
 
 import piscina from '../assets/piscina.jpg';
 import gsap from 'gsap';
@@ -122,9 +122,15 @@ const Home = () => {
         </div>
       </section>
 
+
+
       {/* Notícias e Carrossel */}
       <NoticiasSection />
       <HeroCarousel />
+
+{/* Carta Socios */}
+
+<CartaSociosSection />
 
       {/* Features Section */}
       <section
