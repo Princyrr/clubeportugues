@@ -54,6 +54,12 @@ const Diretoria = () => {
               WALDOMIRO MARIANO SÁ FILHO
             </p>
           </div>
+          <div>
+            <p className="font-bold">ASSESSOR DA PRESIDÊNCIA:</p>
+            <p className="text-gray-700">
+              MÁRIO HENRIQUE DE LEMOS RODRIGUES
+            </p>
+          </div>
 
           <div>
             <p className="font-bold">COMERCIAL:</p>
@@ -84,6 +90,9 @@ const Diretoria = () => {
             <p className="font-bold">ENGENHARIA E PLANEJAMENTO:</p>
             <p className="text-gray-700">
              LUIZ MOURA DE SANTANA
+            </p>
+            <p className="text-gray-700">
+             VIRGÍNIA BRAGA DE SANTANA
             </p>
           </div>
 
@@ -122,6 +131,7 @@ const Diretoria = () => {
           <div>
             <p className="font-bold">JURÍDICO:</p>
             <p className="text-gray-700">ALESSANDRO LUIS COUTO RODRIGUES</p>
+            <p className="text-gray-700">IVO TINO AMARAL JÚNIOR</p>
           </div>
 
           <div>
@@ -132,12 +142,16 @@ const Diretoria = () => {
             <p className="text-gray-700">
              PAULINO JOSÉ DOS SANTOS ROMEIRA DE SÁ FERREIRA
             </p>
+            <p className="text-gray-700">
+             ROMEIRA DE SÁ FERREIRA
+            </p>
           </div>
 
           <div>
             <p className="font-bold">SOCIAL:</p>
             <p className="text-gray-700">PAULO DE TARSO DORNELAS DE ANDRADE</p>
             <p className="text-gray-700">MARIA LÚCIA BRAVO CISNEIRO CAVALCANTI</p>
+           
           </div>
         </div>
 
