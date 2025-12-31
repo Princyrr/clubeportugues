@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import noticia26 from '../assets/noticia26.png';
-import natal from '../assets/natal.png';
+import anonovo from '../assets/anonovo.png';
 
 import noticia21 from '../assets/noticia29.jpg';
 import funcionamento from '../assets/funcionamento.png';
@@ -9,8 +9,8 @@ import funcionamento from '../assets/funcionamento.png';
 const NoticiasSection = () => {
   const noticias = [
     { img: noticia26, title: '91 anos do Clube Português do Recife ', description: 'Parabéns, Clube Português do Recife!!! Que venham muitos outros anos de memória, união e grandes conquistas!' },
-    { img: natal, title: '🎄✨ Feliz Natal!', description: 'Neste tempo de reflexão, união e esperança, a Diretoria do Clube Português deseja um Feliz Natal! ' },
-    { img: funcionamento, title: 'Horário de Funcionamento Natal e Ano Novo', description: 'Informamos que o Clube Português do Recife terá funcionamento diferenciado durante as festividades de Natal e Ano Novo 2025, Clique em Saiba Mais.' },
+    { img: anonovo, title: '✨ Feliz 2026!', description: 'Que o novo ano traga união, conquistas e muitos momentos especiais para toda a família do Clube Português do Recife. ✨' },
+    { img: funcionamento, title: 'Horário de funcionamento Final de Ano', description: 'Nos dias 31 de dezembro de 2025 e 01 de janeiro de 2026, o Clube Português estará fechado, incluindo o parque aquático, sauna e demais atividades esportivas.' },
     { img: noticia21, title: 'Restaurante Adega Garrafeira Brasil', description: 'No dia 25/12, o Restaurante Garrafeira Brasil estará aberto para o almoço a partir das 11h30' }
   ];
 

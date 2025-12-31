@@ -34,6 +34,8 @@ import noticia28 from '../../assets/noticia28.png';
 import natal from '../../assets/natal.png';
 import funcionamento from '../../assets/funcionamento.png';
 import noticia29 from '../../assets/noticia29.jpg';
+import anonovo from '../../assets/anonovo.png';
+
 
 // Importando imagens da galeria da posse
 import galeria1 from '../../assets/galeria1.jpg';
@@ -1206,60 +1208,39 @@ readTime: '4 min'
 },
 {
   id: 32,
-  title: 'AVISO DE FUNCIONAMENTO – NATAL E ANO NOVO',
+  title: '📢 Comunicado Importante – Horário de Funcionamento Final de Ano',
   content: `
     <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
       
       <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
-        MENSAGEM DE NATAL E AVISO DE FUNCIONAMENTO – FESTIVIDADES 2025/2026
+        📢 Comunicado Importante – Horário de Funcionamento Final de Ano
       </h2>
 
       <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
-        O Clube Português do Recife deseja a todos os seus associados, amigos e colaboradores um
-        Natal repleto de amor, felicidade, harmonia e paz, bem como um Ano de 2026 cheio de
-        conquistas, prosperidade e realizações.
+        Nos dias <strong>31 de dezembro de 2025</strong> e <strong>01 de janeiro de 2026</strong>, o
+        Clube Português estará fechado, incluindo o parque aquático, sauna e demais atividades
+        esportivas.
       </p>
 
-      <h3 style="font-size: 18px; font-weight: 700; color: #6a1b1a; margin-bottom: 15px;">
-        Aviso de Funcionamento
-      </h3>
-
-      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 15px;">
-        Informamos que o Clube Português do Recife terá funcionamento diferenciado durante as
-        festividades de Natal e Ano Novo 2025, conforme programação abaixo:
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        💇‍♀️ O salão de beleza funcionará apenas com atendimentos previamente agendados.
       </p>
 
-      <p style="font-size: 16px; font-weight: 600; margin-bottom: 10px;">
-        Parque Aquático, Sauna e Demais Atividades Esportivas:
+      <p style="text-align: center; font-size: 16px; line-height: 1.8; font-weight: 600;">
+        Agradecemos a compreensão e desejamos a todos um Feliz Ano Novo! ✨🥂
       </p>
 
-      <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
-        <li>24/12/2025 – Fechado</li>
-        <li>25/12/2025 – Fechado</li>
-        <li>31/12/2025 – Fechado</li>
-        <li>01/01/2026 – Fechado</li>
-      </ul>
-
-      <p style="font-size: 16px; font-weight: 600; margin-bottom: 10px;">
-        Observações:
-      </p>
-
-      <ul style="font-size: 16px; line-height: 1.8; margin-bottom: 25px;">
-        <li>Salão de Beleza: funcionamento exclusivo para atendimentos previamente agendados.</li>
-        <li>Restaurante Adega Garrafeira: funcionamento no dia 25/12 a partir das 11h30, para almoço.</li>
-      </ul>
-
-      <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #555;">
+      <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #555;">
         Clube Português do Recife
       </div>
 
     </div>
   `,
   author: 'Clube Português',
-  date: '2025-12-25',
+  date: '2025-12-31',
   category: 'eventos',
   image: funcionamento,
-  readTime: '2 min'
+  readTime: '1 min'
 },
 {
   id: 33,
@@ -1296,7 +1277,60 @@ readTime: '4 min'
   category: 'gastronomia',
   image: noticia29,
   readTime: '2 min'
+},
+{
+  id: 34,
+  title: '✨ Feliz 2026',
+  content: `
+    <div style="font-family: 'Arial', sans-serif; color: #2b2b2b; padding: 20px; max-width: 900px; margin: auto; background: #f9faf6; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+      
+      <h2 style="text-align: center; font-size: 26px; font-weight: 700; color: #6a1b1a; margin-bottom: 20px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+        ✨ Mensagem de Ano Novo – Clube Português do Recife
+      </h2>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Ao nos despedirmos de mais um ano e abrirmos as portas para um novo ciclo, o
+        <strong>Clube Português do Recife</strong> renova seus votos de gratidão, esperança e
+        compromisso com todos aqueles que fazem parte da nossa história.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Cada sócio, frequentador, colaborador e amigo é peça fundamental na construção
+        diária deste espaço que vai além do esporte e do lazer. Somos um clube de tradição,
+        de encontros, de memórias afetivas e de valores que atravessam gerações.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Que o ano de <strong>2026</strong> seja marcado por saúde, união e prosperidade.
+        Que possamos seguir fortalecendo laços, celebrando conquistas e superando desafios
+        com respeito, transparência e espírito coletivo.
+      </p>
+
+      <p style="text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 20px;">
+        Desejamos que cada momento vivido em nossas dependências seja de alegria,
+        convivência harmoniosa e orgulho em fazer parte do Clube Português do Recife.
+        Que novos projetos se realizem, que sonhos se renovem e que a nossa casa continue
+        sendo um espaço de acolhimento e felicidade para todos.
+      </p>
+
+      <p style="text-align: center; font-size: 17px; font-weight: 600; line-height: 1.8; margin-bottom: 25px;">
+        Recebam nossos mais sinceros votos de um <strong>Feliz Ano Novo</strong>,
+        com muita paz, sucesso e realizações. ✨🥂
+      </p>
+
+      <div style="margin-top: 15px; text-align: center; font-size: 14px; color: #555;">
+        Clube Português do Recife
+      </div>
+
+    </div>
+  `,
+  author: 'Clube Português',
+  date: '2026-01-01',
+  category: 'eventos',
+  image: anonovo,
+  readTime: '3 min'
 }
+
 
 
 

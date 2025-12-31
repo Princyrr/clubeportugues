@@ -35,7 +35,7 @@ import noticia28 from '../../assets/noticia28.png';
 import natal from '../../assets/natal.png';
 import funcionamento from '../../assets/funcionamento.png';
 import noticia29 from '../../assets/noticia29.jpg';
-
+import anonovo from '../../assets/anonovo.png';
 
 // 🔥 Importar capa da notícia 7 (apenas galeria1 será usada na listagem)
 import galeria1 from '../../assets/galeria1.jpg';
@@ -387,11 +387,11 @@ const News = () => {
 },
 {
   id: 32,
-  title: '🎄Horário de Funcionamento Natal e Ano Novo',
-  excerpt: 'Informamos que o Clube Português do Recife terá funcionamento diferenciado durante as festividades de Natal e Ano Novo 2025, Clique em Saiba Mais.',
-  content: 'Informamos que o Clube Português do Recife terá funcionamento diferenciado durante as festividades de Natal e Ano Novo 2025, Clique em Saiba Mais.',
+  title: 'Horário de funcionamento Final de Ano',
+  excerpt: 'Nos dias 31 de dezembro de 2025 e 01 de janeiro de 2026, o Clube Português estará fechado, incluindo o parque aquático, sauna e demais atividades esportivas.',
+  content: 'Nos dias 31 de dezembro de 2025 e 01 de janeiro de 2026, o Clube Português estará fechado, incluindo o parque aquático, sauna e demais atividades esportivas.',
   author: 'Clube Português',
-  date: '2025-12-25',
+  date: '2025-12-31',
   category: 'eventos',
   image: funcionamento,
   featured: true
@@ -411,7 +411,19 @@ Esperamos por você para celebrar este momento especial conosco.
   category: 'gastronomia',
   image: noticia29,
   featured: false 
+},
+{
+  id: 34,
+  title: '✨🥂 Feliz Ano Novo!',
+  excerpt: 'Que 2026 seja um ano de paz, união e novas conquistas para todos.',
+  content: 'Que 2026 seja um ano de paz, união e novas conquistas para todos.',
+  author: 'Clube Português',
+  date: '2026-01-01',
+  category: 'eventos',
+  image: anonovo,
+  featured: false
 }
+
 
 
 
@@ -588,10 +600,11 @@ Esperamos por você para celebrar este momento especial conosco.
                 >
                   <div className="h-96 overflow-hidden">
                     <img
-                      src={article.image}
-                      alt={article.title}
-                      className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-                    />
+  src={article.image}
+  alt={article.title}
+  className="w-full h-80 md:h-96 lg:h-[450px] object-cover transform hover:scale-110 transition-transform duration-500"
+/>
+
                   </div>
   
                   <div className="p-6">
